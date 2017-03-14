@@ -12,7 +12,7 @@
   -webkit-user-select:none;
   outline: none;
 }
-html,body{min-height:100%;background: @gray-bg;position: relative;}
+//html,body{min-height:100%;background: @gray-bg;position: relative;}
 body {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 26/@rem;
@@ -103,6 +103,7 @@ sub {
 .f20{font-size: 20/@rem;}
 .f25{font-size: 25/@rem;}
 .f26{font-size: 26/@rem;}
+.f28{font-size: 28/@rem;}
 .f30{font-size: 30/@rem;}
 
 .mb150{margin-bottom: 150/@rem;}
@@ -121,7 +122,7 @@ sub {
 .blue{color:@blue !important;}
 
 /*page-group*/
-.page-group{.wh(100%); min-height: 100%; position: relative;left: 100%; top: 0; .transition(0.3s); overflow: hidden; background: @gray;}
+.page-group{.wh(100%); min-height: 100%; position: relative;left: 100%; top: 0; .transition(0.3s); overflow: hidden; background: @gray-bg;}
 
 /*header*/
 .bar {
@@ -130,8 +131,8 @@ sub {
   right: 0;
   left: 0;
   z-index: 10;
-  padding-right:36/@rem;
-  padding-left: 36/@rem;
+  padding-right:32/@rem;
+  padding-left: 32/@rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
