@@ -1,65 +1,99 @@
 @import "../cssControl/control";
 
 /*初始化样式*/
-*{margin:0px;padding:0px}
-body{height:100%;width:100%;font-size:14px;color:@txt-black;font-family:'Heiti SC','Droidsansfallback','Dengxian',Helvetica,'sans-serif';}
+*,::before,::after{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  -webkit-box-sizing:border-box;
+  -webkit-touch-callout:none;
+  -webkit-text-size-adjust:none;
+  -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+  -webkit-user-select:none;
+  outline: none;
+}
+html,body{min-height:100%;background: @gray-bg;position: relative;}
+body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 26/@rem;
+  font-weight:normal;
+  color: @txt-black;
+  outline: 0;
+  overflow: hidden;
+}
+input, textarea, select, button {
+  font-size:100%;
+  outline:none;
+}
+input{
+  border:0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+button,input,select,textarea {
+  font: inherit;
+  color: inherit;
+}
+a {
+  color: @txt-black;
+  outline: none;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 
-dl,dd,ul{list-style:none;box-sizing: border-box}
+  &:hover{text-decoration: none;}
+  &:visited{text-decoration: none;}
+}
+ul,ol{
+  list-style:none;
+}
+table {
+  border-collapse:collapse;
+  border-spacing:0
+}
+fieldset,img {
+  border:0
+}
 img{vertical-align: middle;}
-a img{border:0;text-decoration: none;}
-a,a:hover{text-decoration: none;}
-a{color:@txt-black;}
-a:-webkit-any-link{text-decoration: none;}
-div,form,img,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6{border-style: none;box-sizing: border-box
-  border-color: inherit;
-  border-width: 0;
-  padding: 0;
-  margin-right: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  word-wrap: break-word;
-  word-break: normal;
+sub,sup{
+  font-size:75%;
+  line-height:0;
+  position:relative;
+  vertical-align:baseline
 }
-body,html{height:100%}
+sup {
+  top:-.5em
+}
+sub {
+  bottom:-.25em
+}
 
-input{font-family:'Heiti SC','Droidsansfallback','Dengxian',Helvetica,'sans-serif'; box-sizing: border-box}
-input:focus, textarea:focus {outline: none}
-button{outline:none;font-family:'Heiti SC','Droidsansfallback','Dengxian',Helvetica,'sans-serif'; font-weight: 400}
-textarea {resize: none;}
 
+/*base*/
 .center{margin-left: auto; margin-right: auto}
-
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-*:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-sup{
-  top: -0.5em;
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-/*灰色背景（body）*/
-.wrap-gray-bg{background: @gray-bg;}
+.hide{display: none}
+.text-align{text-align:center;}
 
 /*左右浮动*/
 .pull-left{display:inline;float: left;}
 .pull-right{display:inline;float: right;}
 
 /*清除浮动*/
-.clear:after{content:'';display:block;clear:both;height:0;overflow:hidden;visibility:hidden;}
-.clear{zoom:1;}
-
-.line{.wh(100%,3px);border-bottom:1px solid @gray-border2;margin:40px 0;}
+.clearfix{
+  &:before,
+  &:after {
+    content: " ";
+    height:0;
+    line-height:0;
+    display:block;
+    visibility:hidden;
+  }
+  &:after {
+    clear: both;
+  }
+}
 
 /*字体大小*/
 .f12{font-size: 12/@rem;}
@@ -89,4 +123,25 @@ sup{
 /*page-group*/
 .page-group{.wh(100%); min-height: 100%; position: relative;left: 100%; top: 0; .transition(0.3s); overflow: hidden; background: @gray;}
 
-/*公共头部*/
+/*header*/
+.bar {
+  width:100%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  padding-right:36/@rem;
+  padding-left: 36/@rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.bar-nav {
+  top: 0;
+}
+
+/*main-bar*/
+.main-nav{height:88/@rem;line-height:88/@rem;background:#ffffff;overflow: hidden;
+  a{display:block;}
+  .img{height:45/@rem;}
+  .home{.wh(56/@rem,100%);background: url("../images/home.png") right center no-repeat;background-size: 100% auto;}
+}

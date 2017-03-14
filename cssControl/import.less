@@ -21,7 +21,7 @@
 @gray:#7F85A3;
 @gray-dark:#4C5374;
 @gray-border:#C3C9D8;
-@gray-border2:#dbe0ed;
+@gray-border2:#c3cad8;
 @gray-hover:#DBE0ED;
 @gray-bg:#EFF2F9;
 
@@ -37,42 +37,7 @@
 @disabled-border:#d6d6d6;
 @disabled-color:#888888;
 
-.hide{display: none}
-
-/*文字省略*/
-.ellipse{
-  overflow:hidden;
-  white-space:nowrap;
-  text-overflow:ellipsis;
-}
-
-/*样式函数定义*/
-.transition(@min:1s){
-  transition:All @min ease-in-out;
-  -webkit-transition:All @min ease-in-out;
-  -moz-transition:All @min ease-in-out;
-  -o-transition:All @min ease-in-out
-}
-.animation(@fun,@min:1s){
-  animation:@fun @min linear 0s infinite;
-  -webkit-animation:@fun @min linear 0s infinite;
-  -moz-animation:@fun @min linear 0s infinite;
-  -o-animation:@fun @min linear 0s infinite;
-}
-
-/*
-盒子阴影
-@s 右边阴影为正数 左边负数
-@y 下边阴影为正数 上边负数
-@blur  阴影大小
-@color 阴影颜色
-*/
-.box-shadow(@x: 0, @y: 0, @blur: 1px, @color: #ddd) {
-  box-shadow:@x @y @blur @color;
-  -moz-box-shadow:@x @y @blur @color;
-  -webkit-box-shadow:@x @y @blur @color;
-}
-
+/*宽高*/
 .wh(@w:auto,@h:auto,@numb:" "){
   width: @w;
   height: @h;
@@ -81,6 +46,22 @@
 }
 .line-height (@numb) when not (isstring(@numb)){
   line-height:@numb;
+}
+
+/*
+文字阴影,可以指定多组阴影
+@right_left1 右边阴影为正数 左边负数
+@bottom_top1 下边阴影为正数 上边负数
+<a href="http://my.oschina.net/text" class="referer" target="_blank">@text</a>  阴影大小
+@text_color 阴影颜色
+*/
+.textshadow(@right_left1:2px,@bottom_top1:2px,@blur :2px,@tetx_color:#ddd){
+  text-shadow:@arguments;
+}
+.box-shadow(@x: 0, @y: 0, @blur: 1px, @color: #ddd) {
+  box-shadow:@x @y @blur @color;
+  -moz-box-shadow:@x @y @blur @color;
+  -webkit-box-shadow:@x @y @blur @color;
 }
 
 /*
@@ -93,15 +74,94 @@
   -moz-border-radius: @radius;
 }
 
-/*
-文字阴影,可以指定多组阴影
-@right_left1 右边阴影为正数 左边负数
-@bottom_top1 下边阴影为正数 上边负数
-<a href="http://my.oschina.net/text" class="referer" target="_blank">@text</a>  阴影大小
-@text_color 阴影颜色
+/*flex*/
+.flex(){
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+/*主轴方向
+@new:默认水平row
+(row | column)
+@old:默认水平horizontal
+(horizontal | vertical)
 */
-.textshadow(@right_left1:2px,@bottom_top1:2px,@blur :2px,@tetx_color:#ddd){
-  text-shadow:@arguments;
+.flex-direction(@new:row,@old:horizontal){
+  -webkit-box-direction: normal;
+  -webkit-box-orient: @old;
+  -moz-flex-direction: @new;
+  -webkit-flex-direction: @new;
+  flex-direction: @new;
+}
+
+/*对齐方式
+@new:新版本参数space-between
+（flex-start：左对齐 | flex-end：右对齐 | center：居中对齐 | space-between：两端对齐 | space-around：相等间隔）
+@old:旧版本参数justify
+（start | end | center | justify）
+*/
+.justify-content(@new:space-between,@old:justify){
+  -webkit-box-pack: @old;
+  justify-content: @new;
+  -webkit-justify-content: @new;
+  -moz-justify-content: @new;
+}
+/*是否换行
+@fw:默认不换行（参数：nowrap，wrap）
+*/
+.flex-wrap(@fw:nowrap){
+  -webkit-flex-wrap: @fw;
+  -ms-flex-wrap: @fw;
+  flex-wrap: @fw;
+}
+/*项目对齐
+@ai：默认中点对齐
+（flex-start：起点对齐 | flex-end：终点对齐 | center；中点对齐 | baseline：文字的基线对齐 | stretch：占满整个容器的高度）
+*/
+.align-items(@ai:center){
+  -webkit-box-align: @ai;
+  -ms-flex-align: @ai;
+  -webkit-align-items: @ai;
+  align-items: @ai;
+}
+/*单个对齐不一致
+@as:默认auto
+（auto：继承父元素 |flex-start：起点对齐 | flex-end：终点对齐 | center；中点对齐 | baseline：文字的基线对齐 | stretch：占满整个容器的高度）
+*/
+.align-self(@as:auto) {
+  -ms-flex-item-align: @as;
+  -webkit-align-self: @as;
+  align-self: @as;
+}
+
+/*省略号
+@line:多行省略（行数）
+*/
+.ellipsis(@line:1){
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: normal !important;
+  -webkit-line-clamp: @line;
+  -webkit-box-orient: vertical;
+}
+/*单行省略*/
+.ellipsis-1{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/*transition*/
+.transition(@min:1s){
+  transition:All @min ease-in-out;
+  -webkit-transition:All @min ease-in-out;
+  -moz-transition:All @min ease-in-out;
+  -o-transition:All @min ease-in-out
 }
 
 /*
@@ -116,45 +176,17 @@ css3 rgba(110, 142, 185, .4)!important;前三个是颜色值 后一个是透明�
 }
 
 /*
-透明背景
-@bg:背景色
+渐变背景：
+@color-from：起始颜色
+@@color-to：终止颜色
 */
-.bg-rgba(@bg:rgba(43, 48, 77, 0.7)){
-  background-color: @bg;
-  -webkit-background-color: @bg;
-  -moz-background-color: @bg;
-}
-
-/*背景渐变
-@drc:渐变方向
-@start  渐变开始颜色
-@end 结束颜色
-*/
-.linear-gradient(@start:#fff,@end:#eee){
-  background:-webkit-gradient(linear,0 0, 0 100%,from(@start),to(@end));
-  background:-moz-linear-gradient(bottom,@start,@end);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=@start ,endColorstr=@end ,grandientType=0);
-}
-
-/*
-旋转角度
-IE不支持 滤镜支持0，1，2，3
-*/
-.rotate(@ro:360deg){
-  transform: rotate(@ro);
-  -webkit-transform: rotate(@ro);
-  -moz-transform: rotate(@ro);
-  -o-transform: rotate(@ro);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-}
-/*背景图*/
-/*
-@url    图片路径
-@r      是否重复(no-repeat)
-@x      背景定位 x 轴
-@y      背景定位 y 轴
-*/
-.icon(@url,@r,@x:0,@y:0){
-  background: url(@url) @r;
-  background-position: @x @y;
+.linear-gradient(@color-from, @color-to) {
+  background-color: @color-from; // Old browsers
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@color-from), color-stop(100%,@color-to)); // Chrome, Safari4+
+  background-image: -webkit-linear-gradient(top, @color-from 0%, @color-to 100%);           // Chrome10+, Safari5.1+
+  background-image:    -moz-linear-gradient(top, @color-from 0%, @color-to 100%);           // FF3.6+
+  background-image:     -ms-linear-gradient(top, @color-from 0%, @color-to 100%);           // IE10+
+  background-image:      -o-linear-gradient(top, @color-from 0%, @color-to 100%);           // Opera 11.10+
+  background-image:         linear-gradient(to bottom, @color-from 0%, @color-to 100%);     // W3C
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{@color-from}', endColorstr='#{@color-to}', GradientType=0 ); // IE6-9
 }
