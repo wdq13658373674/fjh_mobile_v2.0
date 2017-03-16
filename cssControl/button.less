@@ -1,3 +1,15 @@
+/*
+按钮按下
+@red-dark：鼠标按下背景颜色
+*/
+.btn-active(@bg:@red-dark){
+  text-decoration: none;
+  background: @bg;
+  box-shadow: 0 1px 3px #5b0505 inset,0 3px 0 #fff;
+  -moz-box-shadow: 0 1px 3px #5b0505 inset,0 3px 0 #fff;
+  -webkit-box-shadow: 0 1px 3px #5b0505 inset,0 3px 0 #fff;
+}
+
 /*红色按钮（带背景色）*/
 .btn-red-full(@h:84/@rem){
   display:block;
@@ -10,6 +22,9 @@
   .textshadow(0,-1/@rem,0,#dc4144);
   font-size:28/@rem;
   border:none;
+  &:active{
+    .btn-active(@red-dark);
+  }
 }
 
 /*带边框无背景按钮*/
@@ -26,7 +41,7 @@
 }
 
 /*禁止点击按钮*/
-.btn-disabled(@h:84/@rem){
+.btn-disabled(@h:80/@rem){
   cursor: not-allowed;
   pointer-events: none;
   display:block;

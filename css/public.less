@@ -144,6 +144,8 @@ sub {
   height:88/@rem;
   line-height:88/@rem;
 }
+/*fixed-margin*/
+.bar~.page-group{margin-bottom:88/@rem;}
 
 /*nav*/
 .nav{.wh(100%,100/@rem,100/@rem);background:#ffffff;padding:0 32/@rem;
@@ -160,7 +162,7 @@ sub {
   .home{.wh(56/@rem,100%);background: url("../images/home.png") right center no-repeat;background-size: 100% auto;}
 }
 .footer-wrap{margin-top:32/@rem;padding:0 32/@rem;overflow: hidden;background: @txt-black;font-size:18/@rem;color:@gray;
-  .crumbs{padding:32/@rem 0;border-bottom: 1px solid @gray-border2;}
+  .crumbs{padding:32/@rem 0;border-bottom: 1px solid #323a5b;}
   .bottom-box{margin:32/@rem 0;
     .left-box{.wh(270/@rem,auto);}
   }
@@ -198,4 +200,8 @@ sub {
   span{padding:4/@rem 11/@rem;.round(4/@rem);margin-right:8/@rem;font-size:18/@rem;}
 }
 
-.flash{.wh(100%,400/@rem);background: @gray;}
+/*flash*/
+.flash{.wh(100%,400/@rem);
+  .img{height:100%;}
+  .caption-box{.wh(100%,54/@rem,54/@rem);z-index:10;background-color:@gray-dark;.bg-rgba(rgba(42, 48, 76, 0.8));position: absolute;bottom:0;left:0;right:0;color:#ffffff;padding:0 32/@rem;}
+}

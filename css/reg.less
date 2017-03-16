@@ -7,7 +7,7 @@
 }
 
 /*错误提示*/
-.err-tip{.wh(100%,47/@rem,47/@rem);color:@red;font-size:24/@rem;}
+.err-tip{.wh(100%,56/@rem,47/@rem);color:@red;font-size:24/@rem;}
 
 /*form-box*/
 .top-box{.wh(100%,417/@rem);overflow:hidden;background:@red url("../images/login.png") left bottom no-repeat;background-size: 100% auto;
@@ -15,9 +15,9 @@
 }
 .form-box{padding:59/@rem 71/@rem 0;background: #ffffff;overflow: hidden;
 
-  .input-group{padding:16/@rem 0;border-bottom:1px solid @gray-border2;overflow: hidden;margin-top:14/@rem;position:relative;
+  .input-group{padding:16/@rem 0;border-bottom:1px solid @gray-border2;overflow: hidden;position:relative;
     .input{height:41/@rem;width:100%;padding-left:62/@rem;
-      &.w50{width:50%;}
+      &.w5{width:50%;}
       &.pr130{padding-right:135/@rem;}
       &.pl0{padding-left:0;}
     }
@@ -30,6 +30,7 @@
     }
   }
 
+  .code-box{.flex();.justify-content();}
   .code-btn{.btn-empty(@red);width:50%;
     &.disabled{.btn-disabled();cursor: not-allowed;pointer-events: none;.round(100/@rem);}
   }
@@ -38,11 +39,11 @@
     &.disabled{.btn-disabled();}
   }
 
-  .rule-box{margin-top:43/@rem;text-align: center;
-    .rule{.wh(32/@rem,32/@rem);}
+  .rule-box{margin-top:43/@rem;text-align: center;height:31/@rem;line-height:31/@rem;
+    .rule{.wh(31/@rem,31/@rem);vertical-align: top;}
   }
 
-  .link-box{margin-top:40/@rem;
+  .link-box{margin:40/@rem auto 101/@rem;
     color:@gray;text-align: center;
     .link{color:#dc4144;}
   }

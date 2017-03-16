@@ -10,10 +10,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
     <link rel="stylesheet" href="../../css/public.css"/>
+    <link rel="stylesheet" href="../../js/addons/swiper/swiper.min.css"/>
 
     <link rel="stylesheet" href="../../css/house.css"/>
-
-    <script type="text/javascript" src="../../js/zepto.min.js"></script>
 </head>
 <body>
 
@@ -24,7 +23,26 @@
        <span class="title">户型详情</span>
    </header>
 
-    <div class="flash"></div>
+    <!--flash start-->
+    <div class="flash">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img class="img" src="../../images/test/slider1.png" alt=""/></div>
+                <div class="swiper-slide"><img class="img" src="../../images/test/slider1.png" alt=""/></div>
+                <div class="swiper-slide"><img class="img" src="../../images/test/slider1.png" alt=""/></div>
+            </div>
+
+            <div class="caption-box">
+                <span class="pull-left">A-1-1户型</span>
+                <div class="pull-right">
+                    <span>1</span>
+                    /
+                    <span>3</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--flash end-->
 
     <!--dz-house-detail start-->
     <div class="dz-house-detail">
@@ -75,5 +93,16 @@
         </div>
     </footer>
 </div>
+<!--Main-js-->
+<script type="text/javascript" src="../../js/zepto.min.js"></script>
+<script type="text/javascript" src="../../js/addons/swiper/swiper.min.js"></script>
+<!--Main-js end-->
+<script>
+    $(function(){
+        var mySwiper = new Swiper ('.swiper-container', {
+            loop: true
+        });
+    })
+</script>
 </body>
 </html>

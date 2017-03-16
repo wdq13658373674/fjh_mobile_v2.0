@@ -27,6 +27,7 @@ function times() {
 $(function(){
     var tips=$('.err-tip'),
         errMsg='';
+    /*错误信息提示*/
     $('.form-box .input').each(function(index){
         var self=$(this)
             ,inx=index;
