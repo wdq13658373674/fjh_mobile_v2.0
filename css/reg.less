@@ -1,0 +1,50 @@
+@import "../cssControl/control";
+
+/*form-icon*/
+.form-icon{display:block;.wh(38/@rem,41/@rem);position:absolute;left:0;
+  &.icon1{background: url("../images/icon/user_ico1.png") no-repeat;background-size:100% auto; }
+  &.icon2{background: url("../images/icon/user_ico2.png") no-repeat;background-size:100% auto;}
+}
+
+/*错误提示*/
+.err-tip{.wh(100%,47/@rem,47/@rem);color:@red;font-size:24/@rem;}
+
+/*form-box*/
+.top-box{.wh(100%,417/@rem);overflow:hidden;background:@red url("../images/login.png") left bottom no-repeat;background-size: 100% auto;
+  .logo-link{display:block;.wh(100%,150/@rem);margin:90/@rem auto 0;}
+}
+.form-box{padding:59/@rem 71/@rem 0;background: #ffffff;overflow: hidden;
+
+  .input-group{padding:16/@rem 0;border-bottom:1px solid @gray-border2;overflow: hidden;margin-top:14/@rem;position:relative;
+    .input{height:41/@rem;width:100%;padding-left:62/@rem;
+      &.w50{width:50%;}
+      &.pr130{padding-right:135/@rem;}
+      &.pl0{padding-left:0;}
+    }
+
+    .forget{position:absolute;right:0;top:16/@rem;color:@red;}
+    &.active{
+      .input{color:@red;}
+      .icon1{background: url("../images/icon/user_icoh1.png") left center no-repeat;background-size: 100% auto;}
+      .icon2{background: url("../images/icon/user_icoh2.png") left center no-repeat;background-size: 100% auto;}
+    }
+  }
+
+  .code-btn{.btn-empty(@red);width:50%;
+    &.disabled{.btn-disabled();cursor: not-allowed;pointer-events: none;.round(100/@rem);}
+  }
+
+  .refer-btn{.btn-red-full();width:100%;margin-top:25/@rem;
+    &.disabled{.btn-disabled();}
+  }
+
+  .rule-box{margin-top:43/@rem;text-align: center;
+    .rule{.wh(32/@rem,32/@rem);}
+  }
+
+  .link-box{margin-top:40/@rem;
+    color:@gray;text-align: center;
+    .link{color:#dc4144;}
+  }
+}
+

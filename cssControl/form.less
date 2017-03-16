@@ -1,12 +1,18 @@
-input{
-  &::-webkit-input-placeholder
-  ,&:-moz-placeholder
-  ,&::-moz-placeholder
-  ,&:-ms-input-placeholder{
-    color:@gray;
+.placeholder(@c:@gray){
+  &::-webkit-input-placeholder{
+    color:@c;
+  }
+  &:-moz-placeholder{
+    color:@c;
+  }
+  &::-moz-placeholder{
+    color:@c;
+  }
+  &:-ms-input-placeholder{
+    color:@c;
   }
 }
-
+input{.placeholder();}
 textarea{
   &::-webkit-input-placeholder
   ,&:-moz-placeholder
