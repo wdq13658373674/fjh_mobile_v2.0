@@ -60,16 +60,31 @@ $(function(){
                     errTips(errMsg,inx,self);
                 }
             }
+
+            if(tips.text() == ''){
+                $('#register').removeClass('disabled');
+            }
         });
     })
 
-    /*提交*/
-    $('.refer-btn').click(function(){
+    /*登陆提交*/
+    $('#login').click(function(){
         $('.form-box .input').triggerHandler('blur');
         if(tips.text() != ''){
             return false;
         }
         alert('登陆成功');
+    });
+
+    /*注册提交*/
+    $('#register').click(function(){
+        var self=$(this);
+        $('.form-box .input').triggerHandler('blur');
+        if(tips.text() != ''){
+            self.addClass('disabled');
+            return false;
+        }
+        alert('注册成功');
     });
 
     /*错误提示*/
