@@ -37,10 +37,13 @@
   }
 
   .dz-msg-list{margin:0 32/@rem;.flex;.justify-content();border-bottom: 1px solid @gray-border2;overflow: hidden;
-    li{.wh(228.6/@rem,94/@rem,47/@rem);border-right:1px solid @gray-hover;padding-left:40/@rem;margin:35/@rem 0;
+    li{.wh(228.6/@rem,auto);border-right:1px solid @gray-hover;padding:0 25/@rem;margin:35/@rem 0;/*.flex();.flex-direction(@new:column,@old:vertical);.justify-content();*/
       &:last-child{border-right:0;}
       &:first-child{padding-left: 0;}
       .tit{color:@gray;}
+      .con{margin-top:27/@rem;
+        &.mt15{margin-top:14/@rem;}
+      }
     }
   }
 

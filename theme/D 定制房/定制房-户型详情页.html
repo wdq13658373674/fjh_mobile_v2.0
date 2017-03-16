@@ -24,21 +24,20 @@
    </header>
 
     <!--flash start-->
-    <div class="flash">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img class="img" src="../../images/test/slider1.png" alt=""/></div>
-                <div class="swiper-slide"><img class="img" src="../../images/test/slider1.png" alt=""/></div>
-                <div class="swiper-slide"><img class="img" src="../../images/test/slider1.png" alt=""/></div>
-            </div>
+    <div class="swiper-container flash">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="img" src="../../images/test/slider1.png" alt="A-1-1户型"/></div>
+            <div class="swiper-slide"><img class="img" src="../../images/test/slider1.png" alt="A-1-2户型"/></div>
+            <div class="swiper-slide"><img class="img" src="../../images/test/slider1.png" alt="A-1-3户型"/></div>
+            <div class="swiper-slide"><img class="img" src="../../images/test/slider1.png" alt="A-1-4户型"/></div>
+        </div>
 
-            <div class="caption-box">
-                <span class="pull-left">A-1-1户型</span>
-                <div class="pull-right">
-                    <span>1</span>
-                    /
-                    <span>3</span>
-                </div>
+        <div class="caption-box">
+            <span class="caption pull-left">A-1-1户型</span>
+            <div class="pull-right">
+                <span class="cur"></span>
+                /
+                <span class="total"></span>
             </div>
         </div>
     </div>
@@ -99,8 +98,19 @@
 <!--Main-js end-->
 <script>
     $(function(){
+        $('.caption-box .total').text($('.swiper-slide').length);
         var mySwiper = new Swiper ('.swiper-container', {
             loop: true
+            ,autoplay:4000
+            ,onSlideChangeStart:function(e){
+                var cur=$('.caption-box .cur')
+                        ,caption=$('.caption-box .caption')
+                        ,num=e.realIndex + 1
+                        ,title=$('.swiper-slide img').eq(num).attr('alt');
+
+                cur.text(num);
+                caption.text(title);
+            }
         });
     })
 </script>
