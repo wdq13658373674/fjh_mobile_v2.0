@@ -107,7 +107,9 @@ sub {
 .f36{font-size: 36/@rem;}
 .f42{font-size: 42/@rem;}
 
+/*margin*/
 .mb150{margin-bottom: 150/@rem;}
+.mb32{margin-bottom:32/@rem;}
 .mb40{margin-bottom: 40/@rem;}
 
 .mt30{margin-top:30/@rem;}
@@ -115,8 +117,6 @@ sub {
 .mt40{margin-top:40/@rem;}
 .mt20{margin-top:20/@rem;}
 .mt60{margin-top:60/@rem;}
-
-.mb32{margin-bottom:32/@rem;}
 
 .mr20{margin-right:20/@rem;}
 
@@ -129,7 +129,7 @@ sub {
 /*page-group*/
 .page-group{.wh(100%); min-height: 100%; position: relative;left: 100%; top: 0; .transition(0.2s); overflow: hidden; background: @gray-bg;}
 
-/*bar*/
+/*底部固定工具栏fixed*/
 .bar {
   width:100%;
   position: fixed;
@@ -147,7 +147,7 @@ sub {
 /*fixed-margin*/
 .bar~.page-group{margin-bottom:88/@rem;}
 
-/*nav*/
+/*头部标题栏nav*/
 .nav{.wh(100%,100/@rem,100/@rem);background:#ffffff;padding:0 32/@rem;
   .icon{position:relative;z-index:20;.wh(22/@rem,100%);display:block;
     &.arr-l{background: url("../images/icon/arr_l.png") left center no-repeat;background-size: 80% auto;float: left;}
