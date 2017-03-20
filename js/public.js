@@ -11,6 +11,15 @@ var html = document.getElementsByTagName("html")[0];
 var pageWidth = html.getBoundingClientRect().width;
 html.style.fontSize = pageWidth / 15 + "px";
 
+/**
+ * 移动端事件延迟处理
+ */
+if ('addEventListener' in document) {
+    document.addEventListener('DOMContentLoaded', function() {
+        FastClick.attach(document.body);
+    }, false);
+}
+
 /*
  *电话号码验证
  * @phone 手机号码
