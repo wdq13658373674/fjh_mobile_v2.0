@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>index</title>
+    <script type="text/javascript" src="../../js/fastclick.js"></script>
     <script type="text/javascript" src="../../js/public.js"></script>
 
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -90,7 +91,7 @@
     </div>
     <!--dz-type-wrap start-->
     <div class="dz-type-wrap">
-        <div class="swiper-container">
+        <div id="flash1" class="swiper-container">
             <ul class="dz-type-list swiper-wrapper">
                 <li class="swiper-slide">
                     <a href="#">
@@ -185,7 +186,7 @@
         </div>
     </div>
     <!--3-->
-    <div class="tab-box active">
+    <div class="tab-box  active">
         <div class="tab-content pro-progress list-scroll-wrap">
             <ul class="pro-progress-list clearfix list-scroll-box">
                 <li>
@@ -196,6 +197,16 @@
                     <div class="right-box">
                         <p>土石方开标</p>
                         <p class="f25 gray">9月12日——土石方动工（现已有共计40多辆运输车，15台挖掘机开始动工。）9月5日——土石方开标（施工材料准备）</p>
+                        
+                        <!--img-list-->
+                        <div class="progress-img-list clearfix">
+                            <div class="img-box">
+                                <img class="img" src="../../images/test/slider1.png" alt=""/>
+                            </div>
+                            <div class="img-box">
+                                <img class="img" src="../../images/test/slider1.png" alt=""/>
+                            </div>
+                        </div>
                     </div>
                 </li>
                 <li>
@@ -213,9 +224,9 @@
     </div>
     <!--menu-tab start-->
 
-    <!--<div class="bar bar-tab bar-btn-link" style="position: fixed">
+    <div class="bar bar-tab bar-btn-link">
         <a href="#">我要报名</a>
-    </div>-->
+    </div>
     <!--footer-->
     <footer class="footer-wrap">
         <!--面包屑-->
@@ -236,9 +247,24 @@
     </footer>
 </div>
 
+<!--弹出层-->
+<div class="layer-wrap" style="display:none;">
+    <!--flash start-->
+    <div id="flash2" class="swiper-container flash">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="img" src="../../images/test/slider1.png"/></div>
+            <div class="swiper-slide"><img class="img" src="../../images/test/slider2.png"/></div>
+            <div class="swiper-slide"><img class="img" src="../../images/test/slider1.png"/></div>
+            <div class="swiper-slide"><img class="img" src="../../images/test/house2.png"/></div>
+        </div>
+    </div>
+    <!--flash end-->
+</div>
+
 <!--Main-js-->
 <script type="text/javascript" src="../../js/zepto.min.js"></script>
 <script type="text/javascript" src="../../js/addons/swiper/swiper.min.js"></script>
+<script type="text/javascript" src="../../js/addons/layer/layer.js"></script>
 <!--Main-js end-->
 
 <!--scroll-->
@@ -246,6 +272,22 @@
 <script type="text/javascript" src="../../js/common/scroll.js"></script>
 <script>
     $(function(){
+        /*滚动*/
+        $(window).scroll(function(){
+            var docHeight=document.body.clientHeight;
+            var window=$(this).height();
+            var barHeight=$('.footer-wrap').height();
+
+            var top = document.body.scrollTop;
+            var offHeight = docHeight-window-barHeight;
+
+            if(top >= offHeight){
+                $('.bar-btn-link').removeClass('bar');
+            }else{
+                $('.bar-btn-link').addClass('bar');
+            }
+        })
+
         /*
          * tab切换
          * */
@@ -266,11 +308,34 @@
         });
 
         /*flash*/
-        var mySwiper = new Swiper('.swiper-container',{
+        var mySwiper = new Swiper('#flash1',{
             slidesPerView : 3
             ,spaceBetween : 16
         });
+
+        /*图片弹出层*/
+//        $('.progress-img-list > .img-box').click(imgLayer);
     })
+
+    /*var flashHtml;
+    var imgLayer=function(){
+        //页面层
+        if($('.layer-wrap').length > 0){
+            flashHtml=$('.layer-wrap').html();
+            this.html=flashHtml;
+        }
+        $('.layer-wrap').remove();
+
+        layer.open({
+            type: 1
+            ,content: flashHtml
+            ,style:'background:none;'
+        });
+
+        var mySwiper2 = new Swiper ('#flash2', {
+            loop: true
+        });
+    }*/
 </script>
 
 </body>

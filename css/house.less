@@ -12,7 +12,7 @@
     &.active{background: #ffffff;}
   }
 }
-.tab-box{background: #ffffff;min-height:800/@rem;margin-bottom:88/@rem;overflow: hidden;display:none;
+.tab-box{background: #ffffff;min-height:800/@rem;margin-bottom:32/@rem;overflow: hidden;display:none;
   &.active{display: block;}
   .tab-content{padding:0 32/@rem;overflow: hidden;}
 }
@@ -110,10 +110,16 @@
     .left-box{.wh(100/@rem,auto);float:left;}
     .right-box{margin-left:118/@rem;}
   }
+
+  .progress-img-list{
+    .img-box{.wh(104/@rem,104/@rem);float:left;overflow: hidden;border:1px solid @gray-border2;text-align: center;margin:16/@rem 16/@rem 0 0;
+      .img{.wh(auto,100%);min-width:104/@rem;}
+    }
+  }
 }
 
 /*定制房列表*/
-.dz-house-list{background: #ffffff;
+.dz-house-list{background: #ffffff;margin-bottom:32/@rem;min-height: 990/@rem;;
   li{
     a{display:block;padding:0 32/@rem;border-bottom: 1px solid @gray-border2;overflow: hidden;}
 
@@ -136,7 +142,7 @@
 }
 
 /*定制房详情*/
-.dz-house-detail{background: #ffffff;padding:0 32/@rem;margin-top:33/@rem;overflow: hidden;
+.dz-house-detail{background: #ffffff;padding:0 32/@rem;margin:33/@rem 0 32/@rem;overflow: hidden;
   .house-msg{margin-top:40/@rem;border-bottom:1px solid @gray-border2;
     li{margin-bottom:32/@rem;}
     .box{.wh(50%,auto);float:left;

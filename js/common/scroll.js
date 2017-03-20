@@ -5,10 +5,12 @@ var dropload='';
 // 页数
 var page = 0;
 // 每页展示5个
-var size = 5;
+var size = 20;
 $(function(){
     dropload=$('.list-scroll-wrap').dropload({
         scrollArea : window,
+        threshold:1/3,
+        autoLoad:true,
         domDown:{
             domClass : 'down-load',
             domRefresh : '<div class="dropload-refresh"></div>',
@@ -39,13 +41,15 @@ $(function(){
                         $('.list-scroll-box').append(result);
                         //必须重置
                         me.resetload();
-                    },1000)
+                    },500)
                 },
                 error: function(xhr, type){
                     alert('加载失败!');
                     me.resetload();
                 }
             });
+
+            return false;
         }
     });
 })
