@@ -1,10 +1,271 @@
     @import "../cssControl/control";
+    .page-group {
+        position: absolute
+    }
+    html:not(.watch-active-state) .list-block .item-link:active,
+    .list-block .item-link.active-state {
+        -webkit-transition-duration: 0ms;
+        transition-duration: 0ms;
+        background-color: #DBE0ED;
+    }
     .icon-menu {
+        .btn-effect();
         .wh(42/@rem, 100%);
-        background-size: 100% auto;
-        background: url("../images/icon-menu.png") center center no-repeat;
+        background: url("../images/icon/icon-menu.png") center center no-repeat;
+        background-size: 100%;
     }
     
     .user {
-        background: url("../images/icon-menu.png") center center no-repeat;
+        .wh(100%,
+        400/@rem);
+        background-color: #fd5b5f;
+        position: relative;
+        .login-bar {
+            display: block;
+            position: absolute;
+            .wh(300/@rem,
+            300/@rem);
+            border-radius: 50%;
+            background: #ffe4e5;
+            left: 50%;
+            top: 50%;
+            margin-left: -300/@rem/2;
+            margin-top: -300/@rem/2;
+        }
+        .user-login-icon {
+            position: absolute;
+            .wh(117/@rem,
+            117/@rem);
+            background: url("../images/user_home.png") center center no-repeat;
+            background-size: 100%;
+            left: 50%;
+            top: 50%;
+            margin-left: -117/@rem/2;
+            margin-top: -117/@rem/2;
+            p {
+                text-align: center;
+                position: absolute;
+                top: 140/@rem;
+            }
+        }
+
+        .user-online{
+            width: 226/@rem;
+            height: 129/@rem;
+            position: absolute;
+            text-align: center;
+            left: 50%;
+            top: 50%;
+            margin-left: -226/@rem/2;
+            margin-top: -129/@rem/2;
+            .user-icon{
+                display: inline-block;
+                .wh(44/@rem,48/@rem);
+                background-image: url("../images/icon/icon-user.png");
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            .txt-welcome{
+                font-size: 20/@rem;
+                color: #2b314d;
+            }
+        }
+        .line{
+            margin: 8/@rem 0;
+            width: 226/@rem;
+            height: 1px;
+            border-top: 3/@rem dashed #7f85a3;
+        }
+        .user-phone{
+            font-size: 26/@rem;
+            color: #58a4e8;
+        }
+    }
+    .list-block{
+        ul{
+            list-style: none;
+            position: relative;
+        }
+        li{
+            background: #ffffff;
+            box-sizing: border-box;
+            position: relative;
+            margin-top: 8/@rem;
+        }
+        .item-link {
+            -webkit-transition-duration: 300ms;
+            transition-duration: 300ms;
+            display: block;
+            color: inherit;
+        }
+        .item-content{
+            box-sizing: border-box;
+            padding-left: 32/@rem;
+            height: 104/@rem;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            &:active{
+                .btn-effect();
+            }
+        }
+        .item-media {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-shrink: 0;
+            -ms-flex: 0 0 auto;
+            -webkit-flex-shrink: 0;
+            flex-shrink: 0;
+            -webkit-box-lines: single;
+            -moz-box-lines: single;
+            -webkit-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            box-sizing: border-box;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            width: 53/@rem;
+            height: 45/@rem;
+            img{
+                width: 100%;
+            }
+        }
+        .item-inner{
+            width: 100%;
+            margin-left: 32/@rem;
+            display: block;
+            padding-top: 0.5rem;
+            padding-bottom: 0.45rem;
+            padding-right: 36/@rem;
+            background-image: url("../images/icon/rectangle-6.png");
+            background-size: 13/@rem;
+            background-repeat: no-repeat;
+            background-position: 94% center;
+            background-position: -webkit-calc(94% - .5rem) center;
+            background-position: calc(94% - .5rem) center;
+        }
+        .item-title-row{
+            line-height: 26/@rem;
+            font-size: 26/@rem;
+            display: block;
+            overflow: hidden;
+            width: 100%;
+        }
+    }
+
+    .user-safe{
+        padding: 47/@rem 32/@rem;
+        margin-top: 8/@rem;
+        height: 136/@rem;
+        width: 100%;
+        background: #fff;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        .user-safe-item{
+            line-height: 42/@rem;
+            padding-left: 51/@rem;
+            position: relative;
+            margin-left: 41/@rem;
+            font-size: 20/@rem;
+            color: #7f85a3;
+            &:first-child{
+                margin-left: 0;
+            }
+            .user-tips{
+                position: absolute;
+                left: 31/@rem;
+                bottom: 0;
+                display: block;
+                .wh(18/@rem, 18/@rem);
+                background-image: url("../images/icon/fill.png");
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+        }
+        .user-mobile{
+            background: url("../images/icon/icon-mobile.png") no-repeat;
+            background-size: 42/@rem 42/@rem;
+        }
+        .user-identity{
+            background: url("../images/icon/icon-identity.png") no-repeat;
+            background-size: 42/@rem 42/@rem;
+        }
+        .user-bankCard{
+            background: url("../images/icon/icon-bankCard.png") no-repeat;
+            background-size: 42/@rem 42/@rem;
+        }
+        .user-info{
+            background: url("../images/icon/icon-bankCard.png") no-repeat;
+            background-size: 42/@rem 42/@rem;
+        }
+
+        .authenticate{
+            .user-tips{
+                background: url("../images/icon/suss.png") no-repeat;
+                background-size: 100%;
+            }
+
+            &.user-mobile{
+                background: url("../images/icon/group-32.png") no-repeat;
+                background-size: 42/@rem 42/@rem;
+            }
+            &.user-identity{
+                background: url("../images/icon/group-34.png") no-repeat;
+                background-size: 42/@rem 42/@rem;
+            }
+            &.user-bankCard{
+                background: url("../images/icon/group-25.png") no-repeat;
+                background-size: 42/@rem 42/@rem;
+            }
+            &.user-info{
+                background: url("../images/icon/group-24.png") no-repeat;
+                background-size: 42/@rem 42/@rem;
+            }
+
+        }
+
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+        .list-block .item-inner:after {
+            -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+        }
+    }
+    @media only screen and (-webkit-min-device-pixel-ratio: 3) {
+        .list-block .item-inner:after {
+            -webkit-transform: scaleY(0.33);
+            transform: scaleY(0.33);
+        }
+    }
+
+    .right-menu{
+        a{
+            padding-left: 64/@rem;
+            border-bottom: 1px solid #dbe0ed;
+        }
+        .rightMenu-bar-home{
+            background: url("../images/icon/icon-right-menu-home.png") no-repeat .1rem 28/@rem;
+            background-size: 29/@rem 32/@rem;
+        }
+        .rightMenu-bar-project {
+            background: url("../images/icon/icon-right-menu-project.png") no-repeat 0 28/@rem;
+            background-size: 40/@rem 40/@rem;
+        }
+        .rightMenu-bar-mall{
+            background: url("../images/icon/icon-right-menu-mall.png") no-repeat 0 28/@rem;
+            background-size: 40/@rem 40/@rem;
+        }
+        .rightMenu-bar-TB{
+            background: url("../images/icon/icon-right-menu-TB.png") no-repeat 0 28/@rem;
+            background-size: 40/@rem 40/@rem;
+        }
     }

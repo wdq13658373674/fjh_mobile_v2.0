@@ -11,17 +11,145 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
     <link rel="stylesheet" href="../../css/public.css" />
-    <link rel="stylesheet" href="../../css/member.css">
+    <link rel="stylesheet" href="../../css/member.css" />
+
 </head>
 
 <body>
     <div class="page-group">
         <header class="nav">
-            <a class="icon arr-l pull-left" href="#"></a>
-            <a href="#" class="icon icon-menu pull-right"></a>
+            <a class="icon arr-l" href="#"></a>
+            <a href="#" id="menu-btn" class="icon icon-menu pull-right"></a>
             <span class="title">个人中心</span>
         </header>
         <div class="user">
+            <!--未登录-->
+            <!--<a href="#" class="login-bar">-->
+                <!--<div class="user-login-icon">-->
+                    <!--<p>注册/登录</p>-->
+                <!--</div>-->
+            <!--</a>-->
+            <!--登录后-->
+            <div class="login-bar">
+                <div class="user-online center">
+                    <p class="user-icon"></p>
+                    <p class="txt-welcome">你好，房计划用户</p>
+                    <div class="line center"></div>
+                    <p class="user-phone">13983635284</p>
+                </div>
+            </div>
+        </div>
+
+        <!--
+            登录之后显示
+            已认证 则添加 authenticate 类
+        -->
+        <div class="user-safe">
+            <a href="#" class="user-safe-item user-mobile authenticate"><span class="user-tips"></span>手机认证</a>
+            <a href="#" class="user-safe-item user-identity authenticate"><span class="user-tips"></span>身份认证</a>
+            <a href="#" class="user-safe-item user-bankCard"><span class="user-tips"></span>银行卡绑定</a>
+            <a href="#" class="user-safe-item user-info"><span class="user-tips"></span>资料完善</a>
+        </div>
+
+        <div class="user-wrap list-block">
+            <ul>
+                <li>
+                    <a class="item-link item-content" href="#">
+                        <div class="item-media">
+                            <img src="../../images/icon/icon-money.png" alt="">
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title-row">
+                                交易记录
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="item-link item-content" href="#">
+                        <div class="item-media">
+                            <img src="../../images/icon/icon-dz.png" alt="">
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title-row">
+                                我的定制
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="item-link item-content" href="#">
+                        <div class="item-media">
+                            <img src="../../images/icon/icon-zh.png" alt="">
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title-row">
+                                账户管理
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="item-link item-content" href="#">
+                        <div class="item-media">
+                            <img src="../../images/icon/icon-msg.png" alt="">
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title-row">
+                                消息中心
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="item-link item-content" href="#">
+                        <div class="item-media">
+                            <img src="../../images/icon/icon-zl.png" alt="">
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title-row">
+                                个人资料
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="item-link item-content" href="#">
+                        <div class="item-media">
+                            <img src="../../images/icon/icon-tj.png" alt="">
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title-row">
+                                推荐客户
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="mask" class="mask" ></div>
+        <div id="right-menu" class="right-menu">
+            <ul>
+                <li>
+                    <a class="rightMenu-bar-home" href="#">首页</a>
+                </li>
+                <li>
+                    <a class="rightMenu-bar-project" href="#">定制房</a>
+                </li>
+                <li>
+                    <a class="rightMenu-bar-mall" href="#">定制商城</a>
+                </li>
+                <li>
+                    <a class="rightMenu-bar-TB" href="#">T币商城</a>
+                </li>
+            </ul>
+
+            <div class="hot-phone">
+                <h4>客服热线</h4>
+                <p>400-135-6677</p>
+            </div>
 
         </div>
     </div>
@@ -30,5 +158,14 @@
 <script type="text/javascript" src="../../js/zepto.min.js"></script>
 <script type="text/javascript" src="../../js/addons/layer/layer.js"></script>
 <!--Main-js end-->
-
+<script>
+    $('#menu-btn').on('click', function () {
+        $('#mask').show();
+        $('#right-menu').css('left',9.24+'rem');
+    })
+    $('#mask').on('click', function () {
+        $(this).hide();
+        $('#right-menu').css('left',100+'%');
+    })
+</script>
 </html>

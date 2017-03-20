@@ -201,3 +201,52 @@ sub {
 .down-load{.wh(100%,40/@rem,40/@rem);margin:24/@rem 0;text-align: center;color:@gray;
   .dropload-load{.wh(100%,40/@rem);background: url("../js/addons/dropload/loading.gif") top center no-repeat;background-size: auto 100%;}
 }
+/*right menu*/
+.mask{
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  filter:alpha(opacity=50); /*IE滤镜，透明度50%*/
+  -moz-opacity:0.5; /*Firefox私有，透明度50%*/
+  opacity:0.5;/*其他，透明度50%*/
+  display: none;
+}
+.right-menu{
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 999;
+  height: 100%;
+  width: 288/@rem;
+  background: #fff;
+  transition: All .3s ease-in-out;
+  -webkit-transition: All .3s ease-in-out;
+  -moz-transition: All .3s ease-in-out;
+  -o-transition: All .3s ease-in-out;
+  padding: 0 32/@rem;
+  li{
+    height: 90/@rem;
+    line-height: 90/@rem;
+    a{
+      display: block;
+      font-size: 26/@rem;
+    }
+  }
+  .hot-phone{
+    position: absolute;
+    bottom: 56/@rem;
+    h4{
+      font-size: 18/@rem;
+      font-weight: normal;
+      color: #7f85a3;
+    }
+    p{
+      margin-top: 8/@rem;
+      font-size: 22/@rem;
+      color: #58a4e8;
+    }
+  }
+}

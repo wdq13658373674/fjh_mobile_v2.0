@@ -200,3 +200,10 @@ css3 rgba(110, 142, 185, .4)!important;前三个是颜色值 后一个是透明�
   background-image:         linear-gradient(to bottom, @color-from 0%, @color-to 100%);     // W3C
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{@color-from}', endColorstr='#{@color-to}', GradientType=0 ); // IE6-9
 }
+
+/*btn effect*/
+.btn-effect(@color:@gray-hover){
+  -webkit-transition-duration: 0ms;
+  transition-duration: 0ms;
+  background-color: @color;
+}
