@@ -10,15 +10,13 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
     <link rel="stylesheet" href="../../css/public.css"/>
-    <link rel="stylesheet" href="../../js/addons/swiper/swiper.min.css"/>
 
+    <link rel="stylesheet" href="../../js/addons/swiper/swiper.min.css"/>
     <link rel="stylesheet" href="../../css/news.css"/>
     <link rel="stylesheet" href="../../css/house.css"/>
 </head>
 <body>
-<nav class="bar bar-tab bar-btn-link">
-    <a href="#">我要报名</a>
-</nav>
+
 <div class="page-group">
     <header class="header-wrap">
         <a href="#" class="pull-left">
@@ -154,18 +152,17 @@
 
     <!--menu-tab start-->
     <ul class="menu-tab clearfix">
-        <li class="tab active">项目介绍</li>
+        <li class="tab">项目介绍</li>
         <li class="tab">位置及周边</li>
-        <li class="tab">建设进度</li>
+        <li class="tab active">建设进度</li>
     </ul>
-    <!--menu-tab start-->
-    <!--项目介绍-->
-    <div class="tab-box active">
+    <!--1-->
+    <div class="tab-box">
         <div class="tab-content pro-introduction">
             <img src="../../images/test/slider2.png" alt=""/>
         </div>
     </div>
-    <!--位置及周边-->
+    <!--2-->
     <div class="tab-box">
         <div class="tab-content pro-address">
             <div class="mb32">项目区位图</div>
@@ -187,10 +184,10 @@
 
         </div>
     </div>
-    <!--建设进度-->
-    <div class="tab-box">
-        <div class="tab-content pro-progress">
-            <ul class="pro-progress-list clearfix">
+    <!--3-->
+    <div class="tab-box active">
+        <div class="tab-content pro-progress list-scroll-wrap">
+            <ul class="pro-progress-list clearfix list-scroll-box">
                 <li>
                     <div class="left-box">
                         <p class="gray f36">2016</p>
@@ -214,7 +211,11 @@
             </ul>
         </div>
     </div>
+    <!--menu-tab start-->
 
+    <!--<div class="bar bar-tab bar-btn-link" style="position: fixed">
+        <a href="#">我要报名</a>
+    </div>-->
     <!--footer-->
     <footer class="footer-wrap">
         <!--面包屑-->
@@ -239,16 +240,29 @@
 <script type="text/javascript" src="../../js/zepto.min.js"></script>
 <script type="text/javascript" src="../../js/addons/swiper/swiper.min.js"></script>
 <!--Main-js end-->
+
+<!--scroll-->
+<script type="text/javascript" src="../../js/addons/dropload/dropload.min.js"></script>
+<script type="text/javascript" src="../../js/common/scroll.js"></script>
 <script>
     $(function(){
         /*
          * tab切换
          * */
-        $('.menu-tab>.tab').click(function(){
-            var self=$(this)
-                    ,inx=self.index();
+         $('.menu-tab>.tab').click(function(){
+            var self=$(this),tabInx=self.index();
             self.addClass('active').siblings().removeClass('active');
-            $('.tab-box,.tab-box2').eq(inx).addClass('active').siblings().removeClass('active');
+            $('.tab-box,.tab-box2').eq(tabInx).addClass('active').siblings().removeClass('active');
+
+            if(tabInx !==2){
+                // 锁定
+                dropload.lock('down');
+                dropload.noData();
+            }else{
+                // 解锁
+                dropload.unlock();
+                dropload.noData(false);
+            }
         });
 
         /*flash*/

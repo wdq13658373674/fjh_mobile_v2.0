@@ -6,6 +6,17 @@
   .title{padding:0 24/@rem;background: #ffffff;font-size:28/@rem;text-align: center;}
 }
 
+/*tab切换*/
+.menu-tab{margin:32/@rem 32/@rem 0;
+  .tab{.wh(auto,85/@rem,85/@rem);padding:0 32/@rem;float: left;text-align: center;font-size:28/@rem;
+    &.active{background: #ffffff;}
+  }
+}
+.tab-box{background: #ffffff;min-height:800/@rem;margin-bottom:88/@rem;overflow: hidden;display:none;
+  &.active{display: block;}
+  .tab-content{padding:0 32/@rem;overflow: hidden;}
+}
+
 
 /*定制房*/
 .progress-box{.wh(100%,51/@rem);overflow: hidden;

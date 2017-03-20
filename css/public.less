@@ -151,7 +151,8 @@ sub {
 /*头部标题栏nav*/
 .nav{.wh(100%,100/@rem,100/@rem);background:#ffffff;padding:0 32/@rem;
   .icon{position:relative;z-index:20;display:block;
-    &.arr-l{.wh(22/@rem,100%);background: url("../images/icon/arr_l.png") left center no-repeat;background-size: 80% auto;float: left;}
+    &.arr-l{.wh(22/@rem,100%);background: url("../images/icon/arr_l.png") left center no-repeat;background-size: 80% auto;}
+    &.menu-ico{.wh(42/@rem,100%);background: url("../images/menu.png") left center no-repeat;background-size: 100% auto;}
   }
   .title{position: absolute;left:0;right:0;display: block;.wh(100%,100/@rem,100/@rem);text-align: center;font-size:28/@rem;}
 }
@@ -185,17 +186,6 @@ sub {
   }
 }
 
-/*tab切换*/
-.menu-tab{margin:32/@rem 32/@rem 0;
-  .tab{.wh(auto,85/@rem,85/@rem);padding:0 32/@rem;float: left;text-align: center;font-size:28/@rem;
-    &.active{background: #ffffff;}
-  }
-}
-.tab-box{background: #ffffff;min-height:800/@rem;margin-bottom:88/@rem;overflow: hidden;display:none;
-  &.active{display: block;}
-  .tab-content{padding:0 32/@rem;overflow: hidden;}
-}
-
 /*desc-list*/
 .desc-list{
   span{padding:4/@rem 11/@rem;.round(4/@rem);margin-right:8/@rem;font-size:18/@rem;}
@@ -205,4 +195,9 @@ sub {
 .flash{.wh(100%,400/@rem);
   .img{height:100%;}
   .caption-box{.wh(100%,54/@rem,54/@rem);z-index:10;background-color:@gray-dark;.bg-rgba(rgba(42, 48, 76, 0.8));position: absolute;bottom:0;left:0;right:0;color:#ffffff;padding:0 32/@rem;}
+}
+
+/*上拉加载*/
+.down-load{.wh(100%,40/@rem,40/@rem);margin:24/@rem 0;text-align: center;color:@gray;
+  .dropload-load{.wh(100%,40/@rem);background: url("../js/addons/dropload/loading.gif") top center no-repeat;background-size: auto 100%;}
 }
