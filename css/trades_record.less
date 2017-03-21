@@ -1,0 +1,88 @@
+@import "../cssControl/control";
+.page-group {
+  position: absolute
+}
+
+.screen{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  .wh(100%, 96/@rem);
+  padding:0 35/@rem;
+  line-height: 96/@rem;
+  a{
+    display: block;
+    margin-left: 54/@rem;
+    font-size: 26/@rem;
+    &:first-child{
+      margin-left: 0;
+    }
+    &.active{
+      color: #fd5b5f;
+    }
+  }
+}
+.trades-record-list{
+  li{
+    margin-top: 1/@rem;
+    .wh(100%, 128/@rem);
+    background: #fff;
+    a{
+      .wh(100%, 128/@rem);
+      display: table;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      padding: 0 32/@rem;
+      &:active{
+        .btn-effect();
+      }
+    }
+  }
+  .trades-record-time{
+    padding-top: 34/@rem;
+    padding-bottom: 35/@rem;
+    color: #7f85a3;
+    .time{
+      font-size: 26/@rem;
+    }
+    .hour{
+      margin-top: 4/@rem;
+      font-size: 20/@rem;
+      text-align: right;
+    }
+  }
+
+  .trades-record-icon{
+    margin: 26/@rem 32/@rem;
+    .wh(76/@rem, 76/@rem);
+    &.icon-trades-shou{
+      background: url("../images/icon/icon-trades-s.png") no-repeat;
+      background-size: 100%;
+    }
+    &.icon-trades-zhi{
+      background: url("../images/icon/icon-trades-z.png") no-repeat;
+      background-size: 100%;
+    }
+    &.icon-trades-zhuan{
+      background: url("../images/icon/icon-trades-zh.png") no-repeat;
+      background-size: 100%;
+    }
+  }
+  .trades-record-txt{
+    width: 469/@rem;
+    padding: 24/@rem 0;
+    .change-money{
+      font-size: 35/@rem;
+    }
+    .msg{
+      margin-top: 7/@rem;
+      font-size: 24/@rem;
+      color: #7f85a3;
+      width: 100%;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+  }
+}

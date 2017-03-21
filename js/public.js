@@ -55,5 +55,15 @@ function is_email(emails) {
     }
 }
 
+if($('#menu-btn')){
+    $('#menu-btn').on('click', function () {
+        $('#mask').show();
+        $('#right-menu').css('left',9.24+'rem');
+    });
+    $('#mask').on('click', function () {
+        $(this).hide();
+        $('#right-menu').css('left',100+'%');
+    })
+}
 
 

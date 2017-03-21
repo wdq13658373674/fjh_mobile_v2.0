@@ -29,7 +29,8 @@ $(function(){
 
                     if(len > 0){
                         for(var i=0;i<len;i++){
-                            result +='<a href="#" class="news-list">'+ i +'</a>'
+                            //result +='<a href="#" class="news-list">'+ i +'</a>'
+                            result += '<li><a>'+ i +'</a></li>'
                         }
                     }else{
                         me.lock();// 锁定

@@ -4,7 +4,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>个人中心</title>
+    <title>个人中心-交易记录</title>
     <script type="text/javascript" src="../../js/fastclick.js"></script>
     <script type="text/javascript" src="../../js/public.js"></script>
 
@@ -12,20 +12,218 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
     <link rel="stylesheet" href="../../css/public.css" />
-    <link rel="stylesheet" href="../../css/member.css" />
+    <link rel="stylesheet" href="../../css/trades_record.css" />
 
 </head>
 
 <body>
     <div class="page-group">
         <header class="nav">
-            <a class="icon arr-l pull-left" href="#"></a>
-            <a href="#" id="menu-btn" class="icon icon-menu pull-right"></a>
-            <span class="title">个人中心</span>
+            <a class="icon arr-l pull-left" href="javascript:void (0);"></a>
+            <a href="javascript:void (0);" id="menu-btn" class="icon icon-menu pull-right"></a>
+            <span class="title">交易记录</span>
         </header>
 
-        <div class="trades_record">
-            <div class="screen"></div>
+        <div class="trades-record">
+            <div class="screen">
+                <a class="active" href="javascript:void (0);">全部</a>
+                <a href="javascript:void (0);">支付</a>
+                <a href="javascript:void (0);">收入</a>
+                <a href="javascript:void (0);">转让</a>
+            </div>
+            <!--暂无记录-->
+            <!--<div class="no-record center">-->
+                <!--<img src="../../images/no-record.png" alt="暂无记录">-->
+                <!--<p>暂无记录</p>-->
+            <!--</div>-->
+
+            <div class="trades-record-list list-scroll-wrap">
+                <ul class="list-scroll-box">
+                    <li>
+                        <a href="#">
+                            <div class="trades-record-time">
+                                <p class="time">12-30</p>
+                                <p class="hour">09:56</p>
+                            </div>
+                            <div class="trades-record-icon icon-trades-shou"></div>
+                            <div class="trades-record-txt">
+                                <p class="change-money">+10,000.00</p>
+                                <p class="msg">榆林天天下天下天下下缴10000元优惠20榆林天天下天下天下   下缴10000元优惠200榆林天天下天下天下下缴10000元优惠2000</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="trades-record-time">
+                                <p class="time">12-30</p>
+                                <p class="hour">09:56</p>
+                            </div>
+                            <div class="trades-record-icon icon-trades-zhi"></div>
+                            <div class="trades-record-txt">
+                                <p class="change-money">+10,000.00</p>
+                                <p class="msg">榆林天天下天下天下下缴10000元优惠200</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="trades-record-time">
+                                <p class="time">12-30</p>
+                                <p class="hour">09:56</p>
+                            </div>
+                            <div class="trades-record-icon icon-trades-zhuan"></div>
+                            <div class="trades-record-txt">
+                                <p class="change-money">+10,000.00</p>
+                                <p class="msg">榆林天天下天下天下下缴10000元优惠200</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="trades-record-time">
+                                <p class="time">12-30</p>
+                                <p class="hour">09:56</p>
+                            </div>
+                            <div class="trades-record-icon icon-trades-zhuan"></div>
+                            <div class="trades-record-txt">
+                                <p class="change-money">+10,000.00</p>
+                                <p class="msg">榆林天天下天下天下下缴10000元优惠200</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="trades-record-time">
+                                <p class="time">12-30</p>
+                                <p class="hour">09:56</p>
+                            </div>
+                            <div class="trades-record-icon icon-trades-zhuan"></div>
+                            <div class="trades-record-txt">
+                                <p class="change-money">+10,000.00</p>
+                                <p class="msg">榆林天天下天下天下下缴10000元优惠200</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="trades-record-time">
+                                <p class="time">12-30</p>
+                                <p class="hour">09:56</p>
+                            </div>
+                            <div class="trades-record-icon icon-trades-zhuan"></div>
+                            <div class="trades-record-txt">
+                                <p class="change-money">+10,000.00</p>
+                                <p class="msg">榆林天天下天下天下下缴10000元优惠200</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="trades-record-time">
+                                <p class="time">12-30</p>
+                                <p class="hour">09:56</p>
+                            </div>
+                            <div class="trades-record-icon icon-trades-zhuan"></div>
+                            <div class="trades-record-txt">
+                                <p class="change-money">+10,000.00</p>
+                                <p class="msg">榆林天天下天下天下下缴10000元优惠200</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="trades-record-time">
+                                <p class="time">12-30</p>
+                                <p class="hour">09:56</p>
+                            </div>
+                            <div class="trades-record-icon icon-trades-zhuan"></div>
+                            <div class="trades-record-txt">
+                                <p class="change-money">+10,000.00</p>
+                                <p class="msg">榆林天天下天下天下下缴10000元优惠200</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="trades-record-time">
+                                <p class="time">12-30</p>
+                                <p class="hour">09:56</p>
+                            </div>
+                            <div class="trades-record-icon icon-trades-zhuan"></div>
+                            <div class="trades-record-txt">
+                                <p class="change-money">+10,000.00</p>
+                                <p class="msg">榆林天天下天下天下下缴10000元优惠200</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <div class="trades-record-time">
+                                <p class="time">12-30</p>
+                                <p class="hour">09:56</p>
+                            </div>
+                            <div class="trades-record-icon icon-trades-zhuan"></div>
+                            <div class="trades-record-txt">
+                                <p class="change-money">+10,000.00</p>
+                                <p class="msg">榆林天天下天下天下下缴10000元优惠200</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="trades-record-time">
+                                <p class="time">12-30</p>
+                                <p class="hour">09:56</p>
+                            </div>
+                            <div class="trades-record-icon icon-trades-zhuan"></div>
+                            <div class="trades-record-txt">
+                                <p class="change-money">+10,000.00</p>
+                                <p class="msg">榆林天天下天下天下下缴10000元优惠200</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="trades-record-time">
+                                <p class="time">12-30</p>
+                                <p class="hour">09:56</p>
+                            </div>
+                            <div class="trades-record-icon icon-trades-zhuan"></div>
+                            <div class="trades-record-txt">
+                                <p class="change-money">+10,000.00</p>
+                                <p class="msg">榆林天天下天下天下下缴10000元优惠200</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="trades-record-time">
+                                <p class="time">12-30</p>
+                                <p class="hour">09:56</p>
+                            </div>
+                            <div class="trades-record-icon icon-trades-zhuan"></div>
+                            <div class="trades-record-txt">
+                                <p class="change-money">+10,000.00</p>
+                                <p class="msg">榆林天天下天下天下下缴10000元优惠200榆林天天下天下天下下缴10000元优惠200</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="trades-record-time">
+                                <p class="time">12-30</p>
+                                <p class="hour">09:56</p>
+                            </div>
+                            <div class="trades-record-icon icon-trades-zhuan"></div>
+                            <div class="trades-record-txt">
+                                <p class="change-money">+10,000.00</p>
+                                <p class="msg">榆林天天下天下天下下缴10000元优惠200</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <!--右边导航-->
@@ -57,15 +255,15 @@
 <!--Main-js-->
 <script type="text/javascript" src="../../js/zepto.min.js"></script>
 <script type="text/javascript" src="../../js/addons/layer/layer.js"></script>
+<script type="text/javascript" src="../../js/public.js"></script>
+<script type="text/javascript" src="../../js/addons/dropload/dropload.min.js"></script>
+<script type="text/javascript" src="../../js/common/scroll.js"></script>
 <!--Main-js end-->
 <script>
-    $('#menu-btn').on('click', function () {
-        $('#mask').show();
-        $('#right-menu').css('left',9.24+'rem');
-    })
-    $('#mask').on('click', function () {
-        $(this).hide();
-        $('#right-menu').css('left',100+'%');
+    $(function () {
+        $('.screen>a').click(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+        });
     })
 </script>
 </html>
