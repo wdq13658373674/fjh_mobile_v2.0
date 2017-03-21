@@ -112,7 +112,7 @@
   }
 
   .progress-img-list{
-    .img-box{.wh(104/@rem,104/@rem);float:left;overflow: hidden;border:1px solid @gray-border2;text-align: center;margin:16/@rem 16/@rem 0 0;
+    .img-box{display:block;.wh(104/@rem,104/@rem);float:left;overflow: hidden;border:1px solid @gray-border2;text-align: center;margin:16/@rem 16/@rem 0 0;
       .img{.wh(auto,100%);min-width:104/@rem;}
     }
   }
@@ -121,7 +121,9 @@
 /*定制房列表*/
 .dz-house-list{background: #ffffff;margin-bottom:32/@rem;min-height: 990/@rem;;
   li{
-    a{display:block;padding:0 32/@rem;border-bottom: 1px solid @gray-border2;overflow: hidden;}
+    a{display:block;padding:0 32/@rem;border-bottom: 1px solid @gray-border2;overflow: hidden;
+      &:active{.btn-effect();}
+    }
 
     .left-box{.wh(240/@rem,211/@rem);overflow: hidden;position: relative;margin:32/@rem 0;border: 1px solid @gray-border2;
       .img{.wh(auto,100%);min-width:200/@rem;}

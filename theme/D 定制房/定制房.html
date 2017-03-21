@@ -10,9 +10,14 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
+    <!--公共-->
     <link rel="stylesheet" href="../../css/public.css"/>
 
+    <!--插件-->
     <link rel="stylesheet" href="../../js/addons/swiper/swiper.min.css"/>
+    <link rel="stylesheet" href="../../js/addons/gallery/baguetteBox.min.css"/>
+
+    <!--main-->
     <link rel="stylesheet" href="../../css/news.css"/>
     <link rel="stylesheet" href="../../css/house.css"/>
 </head>
@@ -198,15 +203,16 @@
                         <p>土石方开标</p>
                         <p class="f25 gray">9月12日——土石方动工（现已有共计40多辆运输车，15台挖掘机开始动工。）9月5日——土石方开标（施工材料准备）</p>
                         
-                        <!--img-list-->
-                        <div class="progress-img-list clearfix">
-                            <div class="img-box">
+                        <!--img-list start-->
+                        <div class="progress-img-list baguetteBox clearfix">
+                            <a href="../../images/test/slider1.png" class="img-box">
                                 <img class="img" src="../../images/test/slider1.png" alt=""/>
-                            </div>
-                            <div class="img-box">
-                                <img class="img" src="../../images/test/slider1.png" alt=""/>
-                            </div>
+                            </a>
+                            <a href="../../images/test/slider2.png" class="img-box">
+                                <img class="img" src="../../images/test/slider2.png" alt=""/>
+                            </a>
                         </div>
+                        <!--img-list end-->
                     </div>
                 </li>
                 <li>
@@ -263,9 +269,10 @@
 
 <!--Main-js-->
 <script type="text/javascript" src="../../js/zepto.min.js"></script>
+
+<!--插件-->
 <script type="text/javascript" src="../../js/addons/swiper/swiper.min.js"></script>
-<script type="text/javascript" src="../../js/addons/layer/layer.js"></script>
-<!--Main-js end-->
+<script type="text/javascript" src="../../js/addons/gallery/baguetteBox.min.js"></script>
 
 <!--scroll-->
 <script type="text/javascript" src="../../js/addons/dropload/dropload.min.js"></script>
@@ -313,29 +320,9 @@
             ,spaceBetween : 16
         });
 
-        /*图片弹出层*/
-//        $('.progress-img-list > .img-box').click(imgLayer);
+        /*进度图片相册*/
+        baguetteBox.run('.baguetteBox');
     })
-
-    /*var flashHtml;
-    var imgLayer=function(){
-        //页面层
-        if($('.layer-wrap').length > 0){
-            flashHtml=$('.layer-wrap').html();
-            this.html=flashHtml;
-        }
-        $('.layer-wrap').remove();
-
-        layer.open({
-            type: 1
-            ,content: flashHtml
-            ,style:'background:none;'
-        });
-
-        var mySwiper2 = new Swiper ('#flash2', {
-            loop: true
-        });
-    }*/
 </script>
 
 </body>

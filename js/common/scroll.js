@@ -5,11 +5,10 @@ var dropload='';
 // 页数
 var page = 0;
 // 每页展示5个
-var size = 20;
+var size = 5;
 $(function(){
     dropload=$('.list-scroll-wrap').dropload({
         scrollArea : window,
-        threshold:1/3,
         autoLoad:true,
         domDown:{
             domClass : 'down-load',
@@ -48,8 +47,6 @@ $(function(){
                     me.resetload();
                 }
             });
-
-            return false;
         }
     });
 })

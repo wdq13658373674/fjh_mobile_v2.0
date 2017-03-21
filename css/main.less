@@ -11,12 +11,16 @@
 .title-box{.wh(auto,100/@rem,100/@rem);background: #ffffff;border-bottom: 1px solid @gray-border2;margin-top:32/@rem;padding:0 32/@rem;
   .tit{margin-right:32/@rem;}
 }
-.more-box{margin-bottom:32/@rem;display:block;.wh(auto,100/@rem,100/@rem);background: #ffffff;border-bottom: 1px solid @gray-border2;text-align: center;color:@gray;font-size:22/@rem;}
+.more-box{margin-bottom:32/@rem;display:block;.wh(auto,100/@rem,100/@rem);background: #ffffff;border-bottom: 1px solid @gray-border2;text-align: center;color:@gray;font-size:22/@rem;
+  &:active{.btn-effect();}
+}
 
 /*定制房列表*/
 .dz-house-list{background: #ffffff;
   li{
-    a{display:block;padding:0 32/@rem;.wh(auto,237/@rem);border-bottom: 1px solid @gray-border2;overflow: hidden;}
+    a{display:block;padding:0 32/@rem;.wh(auto,237/@rem);border-bottom: 1px solid @gray-border2;overflow: hidden;
+      &:active{.btn-effect();}
+    }
 
     .left-box{.wh(200/@rem,168/@rem);overflow: hidden;.round(5/@rem);position: relative;margin-top:36/@rem;
       .img{.wh(auto,100%);min-width:200/@rem;}
@@ -39,6 +43,8 @@
 .dotted{display:block;.wh(8/@rem,8/@rem);.round(50%);background: @gray-border2;margin-right:25/@rem;float:left;margin-top:46/@rem;}
 .news-list{background: #ffffff;
   li{
-    a{display:block;.wh(auto,100/@rem,100/@rem);padding:0 32/@rem;border-bottom: 1px solid @gray-border2;.ellipsis-1;}
+    a{display:block;.wh(auto,100/@rem,100/@rem);padding:0 32/@rem;border-bottom: 1px solid @gray-border2;.ellipsis-1;
+      &:active{.btn-effect();}
+    }
   }
 }
