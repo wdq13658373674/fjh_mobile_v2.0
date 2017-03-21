@@ -12,6 +12,9 @@
 
     <link rel="stylesheet" href="../../css/public.css"/>
 
+    <!--插件-->
+    <link rel="stylesheet" href="../../js/addons/swiper/swiper.min.css"/>
+
     <link rel="stylesheet" href="../../css/main.css"/>
 </head>
 <body>
@@ -24,8 +27,16 @@
         <a href="../D%20定制房/定制房.html" class="home pull-right"></a>
     </header>
 
-    <!--flash-->
-    <div class="flash"></div>
+    <!--flash start-->
+    <div id="flash1" class="swiper-container flash">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="img" src="../../images/test/slider1.png"/></div>
+            <div class="swiper-slide"><img class="img" src="../../images/test/slider2.png"/></div>
+            <div class="swiper-slide"><img class="img" src="../../images/test/slider1.png"/></div>
+            <div class="swiper-slide"><img class="img" src="../../images/test/slider2.png"/></div>
+        </div>
+    </div>
+    <!--flash end-->
 
     <!--menu-box-->
     <div class="menu-box">
@@ -106,7 +117,7 @@
     </div>
     <!--news-list start-->
     <ul class="news-list">
-        <li><a href="#"> <i class="dotted"></i>购房红包兑换兑换兑换兑换兑换兑换兑换兑换兑换兑换兑换公告</a></li>
+        <li><a href="../G%20公告资讯/楼盘动态-公告详情页.html"><i class="dotted"></i>购房红包兑换兑换兑换兑换兑换兑换兑换兑换兑换兑换兑换公告</a></li>
         <li><a href="#"><i class="dotted"></i>购房红包兑换公告</a></li>
         <li><a href="#"><i class="dotted"></i>购房红包兑换公告</a></li>
     </ul>
@@ -137,10 +148,16 @@
 
 <!--Main-js-->
 <script type="text/javascript" src="../../js/zepto.min.js"></script>
-<script type="text/javascript" src="../../js/addons/layer/layer.js"></script>
 <!--Main-js end-->
-<script>
 
+<script type="text/javascript" src="../../js/addons/swiper/swiper.min.js"></script>
+<script>
+    $(function(){
+        var mySwiper1 = new Swiper('#flash1',{
+            loop: true
+            ,autoplay:4000
+        });
+    })
 </script>
 </body>
 </html>

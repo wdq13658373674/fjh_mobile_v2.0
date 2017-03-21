@@ -31,8 +31,16 @@
         <a href="#" class="home pull-right"></a>
     </header>
 
-    <!--flash-->
-    <div class="flash"></div>
+    <!--flash start-->
+    <div id="flash1" class="swiper-container flash">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="img" src="../../images/test/slider1.png"/></div>
+            <div class="swiper-slide"><img class="img" src="../../images/test/slider2.png"/></div>
+            <div class="swiper-slide"><img class="img" src="../../images/test/slider1.png"/></div>
+            <div class="swiper-slide"><img class="img" src="../../images/test/slider2.png"/></div>
+        </div>
+    </div>
+    <!--flash end-->
 
     <!--进度说明
             bg1：报名
@@ -96,7 +104,7 @@
     </div>
     <!--dz-type-wrap start-->
     <div class="dz-type-wrap">
-        <div id="flash1" class="swiper-container">
+        <div id="flash2" class="swiper-container">
             <ul class="dz-type-list swiper-wrapper">
                 <li class="swiper-slide">
                     <a href="#">
@@ -253,20 +261,6 @@
     </footer>
 </div>
 
-<!--弹出层-->
-<div class="layer-wrap" style="display:none;">
-    <!--flash start-->
-    <div id="flash2" class="swiper-container flash">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img class="img" src="../../images/test/slider1.png"/></div>
-            <div class="swiper-slide"><img class="img" src="../../images/test/slider2.png"/></div>
-            <div class="swiper-slide"><img class="img" src="../../images/test/slider1.png"/></div>
-            <div class="swiper-slide"><img class="img" src="../../images/test/house2.png"/></div>
-        </div>
-    </div>
-    <!--flash end-->
-</div>
-
 <!--Main-js-->
 <script type="text/javascript" src="../../js/zepto.min.js"></script>
 
@@ -315,10 +309,15 @@
         });
 
         /*flash*/
-        var mySwiper = new Swiper('#flash1',{
+        var mySwiper1 = new Swiper('#flash1',{
+            loop: true
+            ,autoplay:4000
+        });
+        var mySwiper2 = new Swiper('#flash2',{
             slidesPerView : 3
             ,spaceBetween : 16
         });
+
 
         /*进度图片相册*/
         baguetteBox.run('.baguetteBox');
