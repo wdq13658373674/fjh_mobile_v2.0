@@ -1,14 +1,20 @@
 @import "../cssControl/control";
 
 /*楼盘动态*/
-//.list-scroll-wrap{min-height:990/@rem;}
-a.news-list:active{.btn-effect();}
 .news-list{display:block;padding:32/@rem;margin-top:8/@rem;overflow: hidden;background: #ffffff;
+  .tit{font-size:26/@rem;}
   .date{font-size:18/@rem;color:@gray;margin-top:8/@rem;}
-  .con{font-size:24/@rem;color:@gray;margin-top:16/@rem;line-height:32/@rem;}
+  .con{font-size:24/@rem;color:@gray;margin-top:16/@rem;line-height:34/@rem;}
   .ellipsis{.ellipsis(2);}
+
+  &:active{.btn-effect();}
 }
-.news-content{min-height:1334/@rem;margin-bottom: 32/@rem;}
+
+.news-content{min-height:1334/@rem;padding:36/@rem 32/@rem;margin: 8/@rem auto 32/@rem;background: #ffffff;
+  .tit{font-size:34/@rem;}
+  .date{font-size:18/@rem;color:@gray;margin-top:24/@rem;}
+  .con{font-size:28/@rem;margin-top:24/@rem;line-height:40/@rem;}
+}
 
 /*加载效果*/
 .load-opacity{
