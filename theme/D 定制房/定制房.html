@@ -166,17 +166,17 @@
 
     <!--menu-tab start-->
     <ul class="menu-tab clearfix">
-        <li class="tab">项目介绍</li>
+        <li class="tab active">项目介绍</li>
         <li class="tab">位置及周边</li>
-        <li class="tab active">建设进度</li>
+        <li class="tab">建设进度</li>
     </ul>
-    <!--1-->
-    <div class="tab-box">
+    <!--项目介绍-->
+    <div class="tab-box active">
         <div class="tab-content pro-introduction">
             <img src="../../images/test/slider2.png" alt=""/>
         </div>
     </div>
-    <!--2-->
+    <!--位置及周边-->
     <div class="tab-box">
         <div class="tab-content pro-address">
             <div class="mb32">项目区位图</div>
@@ -198,8 +198,8 @@
 
         </div>
     </div>
-    <!--3-->
-    <div class="tab-box  active">
+    <!--建设进度-->
+    <div class="tab-box">
         <div class="tab-content pro-progress list-scroll-wrap">
             <ul class="pro-progress-list clearfix list-scroll-box">
                 <li>
@@ -292,8 +292,13 @@
         /*
          * tab切换
          * */
-         $('.menu-tab>.tab').click(function(){
-            var self=$(this),tabInx=self.index();
+        // 锁定
+        dropload.lock('down');
+        dropload.noData();
+        $('.menu-tab>.tab').click(function(){
+            var self=$(this);
+            tabInx=self.index();
+
             self.addClass('active').siblings().removeClass('active');
             $('.tab-box,.tab-box2').eq(tabInx).addClass('active').siblings().removeClass('active');
 

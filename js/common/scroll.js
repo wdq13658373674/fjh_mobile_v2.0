@@ -12,7 +12,7 @@ $(function(){
         autoLoad:true,
         domDown:{
             domClass : 'down-load',
-            domRefresh : '<div class="dropload-refresh"></div>',
+            domRefresh : '<div class="dropload-refresh">上拉加载更多</div>',
             domLoad : '<div class="dropload-load"></div>',
             domNoData : '<div class="dropload-noData">哦～,已经没有了!</div>'
         },
@@ -29,8 +29,8 @@ $(function(){
 
                     if(len > 0){
                         for(var i=0;i<len;i++){
-                            //result +='<a href="#" class="news-list">'+ i +'</a>'
-                            result += '<li><a>'+ i +'</a></li>'
+                            result +='<a href="#" class="news-list">'+ i +'</a>'
+                            //result += '<li><a>'+ i +'</a></li>'
                         }
                     }else{
                         me.lock();// 锁定

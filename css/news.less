@@ -1,7 +1,7 @@
 @import "../cssControl/control";
 
 /*楼盘动态*/
-.list-scroll-wrap{min-height:990/@rem;}
+//.list-scroll-wrap{min-height:990/@rem;}
 a.news-list:active{.btn-effect();}
 .news-list{display:block;padding:32/@rem;margin-top:8/@rem;overflow: hidden;background: #ffffff;
   .date{font-size:18/@rem;color:@gray;margin-top:8/@rem;}
@@ -9,3 +9,25 @@ a.news-list:active{.btn-effect();}
   .ellipsis{.ellipsis(2);}
 }
 .news-content{min-height:1334/@rem;margin-bottom: 32/@rem;}
+
+/*加载效果*/
+.load-opacity{
+  -webkit-animation: opacity 0.3s linear;
+  animation: opacity 0.3s linear;
+}
+@-webkit-keyframes opacity {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}

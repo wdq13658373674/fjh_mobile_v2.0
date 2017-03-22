@@ -55,7 +55,7 @@ function is_email(emails) {
     }
 }
 
-if($('#menu-btn')){
+/*if($('#menu-btn')){
     $('#menu-btn').on('click', function () {
         $('#mask').show();
         $('#right-menu').css('left',9.24+'rem');
@@ -64,6 +64,6 @@ if($('#menu-btn')){
         $(this).hide();
         $('#right-menu').css('left',100+'%');
     })
-}
+}*/
 
 
