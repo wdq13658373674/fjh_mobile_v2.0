@@ -199,7 +199,8 @@
         </div>
     </div>
     <!--建设进度-->
-    <div class="tab-box">
+    <div class="tab-box"
+            >
         <div class="tab-content pro-progress list-scroll-wrap">
             <ul class="pro-progress-list clearfix list-scroll-box">
                 <li>
@@ -238,7 +239,7 @@
     </div>
     <!--menu-tab start-->
 
-    <div class="bar bar-tab bar-btn-link">
+    <div id="bar-btn" class="bar bar-tab bar-btn-link">
         <a href="#">我要报名</a>
     </div>
     <!--footer-->
@@ -275,17 +276,18 @@
     $(function(){
         /*滚动*/
         $(window).scroll(function(){
+            var obj=document.getElementById('bar-btn');
             var docHeight=document.body.clientHeight;
             var window=$(this).height();
             var barHeight=$('.footer-wrap').height();
 
-            var top = document.body.scrollTop;
+            var top = document.documentElement.scrollTop || document.body.scrollTop;
             var offHeight = docHeight-window-barHeight;
 
             if(top >= offHeight){
-                $('.bar-btn-link').removeClass('bar');
+                obj.style.position = 'relative';
             }else{
-                $('.bar-btn-link').addClass('bar');
+                obj.style.position = 'fixed';
             }
         })
 

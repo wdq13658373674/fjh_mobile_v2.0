@@ -9,6 +9,8 @@ var size = 5;
 $(function(){
     dropload=$('.list-scroll-wrap').dropload({
         scrollArea : window,
+        distance:5,
+        threshold :1/4,
         autoLoad:true,
         domDown:{
             domClass : 'down-load',
@@ -37,11 +39,16 @@ $(function(){
                         me.noData();// 无数据
                     }
 
+                    /*$('.list-scroll-box').append(result);
+                    //必须重置
+                    me.resetload();*/
+
+                    /*为了测试设置100ms延迟*/
                     setTimeout(function(){
                         $('.list-scroll-box').append(result);
                         //必须重置
                         me.resetload();
-                    },500)
+                    },100)
                 },
                 error: function(xhr, type){
                     alert('加载失败!');
