@@ -9,7 +9,7 @@ var size = 5;
 $(function(){
     dropload=$('.list-scroll-wrap').dropload({
         scrollArea : window,
-        distance:5,
+        distance:10,
         threshold :500,
         autoLoad:true,
         domDown:{
@@ -30,8 +30,8 @@ $(function(){
 
                     if(len > 0){
                         for(var i=0;i<len;i++){
-                            result +='<a href="#" class="news-list">'+ i +'</a>'
-                            //result += '<li><a>'+ i +'</a></li>'
+                            //result +='<a href="#" class="news-list load-opacity">'+ i +'</a>'
+                            result += '<li><a>'+ i +'</a></li>'
                         }
                     }else{
                         me.lock();// 锁定
@@ -42,12 +42,12 @@ $(function(){
                     //必须重置
                     me.resetload();*/
 
-                    /*为了测试设置200ms延迟*/
+                    /*为了测试设置300ms延迟*/
                     setTimeout(function(){
                         $('.list-scroll-box').append(result);
                         //必须重置
                         me.resetload();
-                    },200)
+                    },300)
                 },
                 error: function(xhr, type){
                     alert('加载失败!');
