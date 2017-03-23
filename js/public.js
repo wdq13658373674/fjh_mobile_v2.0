@@ -55,15 +55,15 @@ function is_email(emails) {
     }
 }
 
-/*if($('#menu-btn')){
+var mentBtn =  document.getElementById('menu-btn');
+if(mentBtn){
     $('#menu-btn').on('click', function () {
         $('#mask').show();
         $('#right-menu').css('left',9.24+'rem');
     });
-    $('#mask').on('click', function () {
-        $(this).hide();
+    $('#close').on('click', function () {
+        $("#mask").hide();
         $('#right-menu').css('left',100+'%');
     })
-}*/
-
+}
 

@@ -1,0 +1,58 @@
+@import "../cssControl/control";
+.messageBox{
+  ul{
+    li{
+      margin-top: 2/@rem;
+      a{
+        color: #7f85a3;
+        position: relative;
+        display: block;
+        height: 128/@rem;
+        background: #fff;
+        padding: 24/@rem 32/@rem 24/@rem 79/@rem;
+        -webkit-transition-duration: 300ms;
+        transition-duration: 300ms;
+        &:active{
+          .btn-effect();
+        }
+      }
+      &.read{
+        a{
+          &:before{
+            content: "";
+            width: 15/@rem;
+            height: 15/@rem;
+            display: block;
+            position: absolute;
+            background: #09bb07;
+            left: 32/@rem;
+            top: 57/@rem;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+  .msg-title{
+    height: 35/@rem;
+    line-height: 35/@rem;
+    h2{
+      font-size: 26/@rem;
+      font-weight: normal;
+      color: #2b314d;
+    }
+    em{
+      font-style: normal;
+      font-size: 20/@rem;
+    }
+  }
+  .msg-text{
+    width: 100%;
+    font-size: 26/@rem;
+    margin-top: 10/@rem;
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+}
