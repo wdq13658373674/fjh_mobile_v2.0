@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>index</title>
+    <script type="text/javascript" src="../../js/fastclick.js"></script>
+    <script type="text/javascript" src="../../js/public.js"></script>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="../../css/public.css"/>
+
+    <link rel="stylesheet" href="../../css/reg.css"/>
+</head>
+<body>
+<div class="page-group">
+    <div class="top-box"><a href="#" class="logo-link"></a></div>
+
+    <ul class="change-step">
+        <li class="active">
+            <div class="pull-left">
+                <i class="icon icon1"></i>
+                <span class="txt">验证身份</span>
+            </div>
+            <div class="line-dotted pull-left"></div>
+        </li>
+        <li class="active">
+            <div class="pull-left">
+                <i class="icon icon2"></i>
+                <span class="txt">绑定新手机</span>
+            </div>
+            <div class="line-dotted pull-left"></div>
+        </li>
+        <li class="active">
+            <div class="pull-left">
+                <i class="icon icon3"></i>
+                <span class="txt">修改成功</span>
+            </div>
+        </li>
+    </ul>
+
+    <!--跳转-->
+    <div class="upDate-suss">
+        <img class="img" src="../../images/icon/href.png" alt="">
+        <h2>恭喜你，修改成功！</h2>
+        <hr class="line">
+        <p>系统将在 <span><em id="mes">3</em>秒</span> 后跳转</p>
+    </div>
+</div>
+
+<!--Main-js-->
+<script type="text/javascript" src="../../js/zepto.min.js"></script>
+<!--Main-js end-->
+
+<!--表单验证-->
+<script type="text/javascript" src="../../js/common/reg.js"></script>
+<script>
+    /*跳转*/
+    var i = 3;
+    var intervalid;
+    intervalid = setInterval("fun()", 1000);
+    function fun() {
+        if (i == 0) {
+            window.location.href = "login.html";
+            clearInterval(intervalid);
+        }
+        document.getElementById("mes").innerHTML = i;
+        i--;
+    }
+</script>
+</body>
+</html>

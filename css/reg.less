@@ -49,3 +49,25 @@
   }
 }
 
+/*修改手机*/
+.change-step{padding:0 71/@rem;background: #ffffff;overflow: hidden;.flex();.justify-content();
+  li{margin-top:65/@rem;float: left;text-align: center;
+    .icon{display:inline-block;.wh(101/@rem,112/@rem);
+      &.icon1{background: url("../images/icon/group1.png") no-repeat;background-size: 100% auto;}
+      &.icon2{background: url("../images/icon/group2_gray.png") no-repeat;background-size: 100% auto;}
+      &.icon3{background: url("../images/icon/group3_gray.png") no-repeat;background-size: 100% auto;}
+    }
+    .txt{display:block;color:@gray;font-size:24/@rem;margin-top:16/@rem;}
+    .line-dotted{margin:0 18/@rem;.wh(100/@rem,56/@rem);border-bottom:2/@rem dashed @gray;overflow: hidden;}
+
+    &.active{
+      .txt{color:@red;}
+      .line-dotted{border-bottom-color:@red;}
+      .icon{
+        &.icon2{background: url("../images/icon/group2.png") no-repeat;background-size: 100% auto;}
+        &.icon3{background: url("../images/icon/group3.png") no-repeat;background-size: 100% auto;}
+      }
+    }
+  }
+}
+

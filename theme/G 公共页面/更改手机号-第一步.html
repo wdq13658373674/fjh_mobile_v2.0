@@ -18,27 +18,33 @@
 <div class="page-group">
     <div class="top-box"><a href="#" class="logo-link"></a></div>
 
+    <ul class="change-step">
+        <li class="active">
+            <div class="pull-left">
+                <i class="icon icon1"></i>
+                <span class="txt">验证身份</span>
+            </div>
+            <div class="line-dotted pull-left"></div>
+        </li>
+        <li>
+            <div class="pull-left">
+                <i class="icon icon2"></i>
+                <span class="txt">绑定新手机</span>
+            </div>
+            <div class="line-dotted pull-left"></div>
+        </li>
+        <li>
+            <div class="pull-left">
+                <i class="icon icon3"></i>
+                <span class="txt">修改成功</span>
+            </div>
+        </li>
+    </ul>
+
     <form class="form-box" action="">
         <!--input-group start-->
         <div class="input-group">
-            <i class="form-icon icon1"></i>
-            <input id="phone" class="input" type="number" placeholder="请输入手机号"/>
-        </div>
-        <div class="err-tip"></div>
-        <!--input-group end-->
-
-        <!--input-group start-->
-        <div class="input-group">
-            <i class="form-icon icon2"></i>
-            <input id="pas" class="input" type="password" placeholder="输入6-16位密码"/>
-        </div>
-        <div class="err-tip"></div>
-        <!--input-group end-->
-
-        <!--input-group start-->
-        <div class="input-group">
-            <i class="form-icon icon2"></i>
-            <input id="pas-sure" class="input" type="password" placeholder="确认密码"/>
+            <input id="phone" class="input pl0" type="number" placeholder="请输入原手机号码"/>
         </div>
         <div class="err-tip"></div>
         <!--input-group end-->
@@ -46,23 +52,14 @@
         <!--input-group start-->
         <div class="code-box clearfix">
             <div class="input-group w5">
-                <input id="code" class="input pl0" type="text" placeholder="填写验证码"/>
+                <input id="code" class="input pl0" type="text" placeholder="请输入验证码"/>
             </div>
             <a href="javascript:times();" id="send" class="code-btn">获取验证码</a>
         </div>
         <div class="err-tip"></div>
         <!--input-group end-->
 
-        <button id="register" type="submit" class="refer-btn">立即注册</button>
-        <div class="rule-box">
-            <input type="checkbox" class="rule" checked="checked"/>&nbsp;
-            我已阅读并同意
-            <a href="#" class="blue">《房计划注册协议》</a>
-        </div>
-
-        <div class="link-box">
-            还没账户？<a href="login.html" class="link">立即登陆</a>
-        </div>
+        <button id="nextStep1" class="refer-btn mb32">下一步</button>
     </form>
 </div>
 

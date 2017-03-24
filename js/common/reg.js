@@ -88,6 +88,23 @@ $(function(){
         alert('注册成功');
     });
 
+    /*修改手机第一步*/
+    $('#nextStep1').click(function(){
+        $('.form-box .input').triggerHandler('blur');
+        if(tips.text() != ''){
+            return false;
+        }
+        alert('下一步');
+    });
+    /*修改手机第二步*/
+    $('#nextStep2').click(function(){
+        $('.form-box .input').triggerHandler('blur');
+        if(tips.text() != ''){
+            return false;
+        }
+        alert('修改成功');
+    })
+
     /*错误提示*/
     function errTips(errMsg,inx,self){
         tips.eq(inx).text(errMsg);
