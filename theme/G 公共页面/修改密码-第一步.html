@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>index</title>
+    <script type="text/javascript" src="../../js/fastclick.js"></script>
+    <script type="text/javascript" src="../../js/public.js"></script>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="../../css/public.css"/>
+
+    <link rel="stylesheet" href="../../css/reg.css"/>
+</head>
+<body>
+<div class="page-group">
+    <div class="top-box"><a href="#" class="logo-link"></a></div>
+
+    <ul class="change-step">
+        <li class="active">
+            <div class="pull-left">
+                <i class="icon icon1"></i>
+                <span class="txt">验证身份</span>
+            </div>
+            <div class="line-dotted pull-left"></div>
+        </li>
+        <li>
+            <div class="pull-left">
+                <i class="icon icon2"></i>
+                <span class="txt">绑定新手机</span>
+            </div>
+            <div class="line-dotted pull-left"></div>
+        </li>
+        <li>
+            <div class="pull-left">
+                <i class="icon icon3"></i>
+                <span class="txt">修改成功</span>
+            </div>
+        </li>
+    </ul>
+
+    <form class="form-box" action="">
+        <!--input-group start-->
+        <div class="input-group">
+            <input id="pas" class="input pl0" type="password" placeholder="请输入你的新密码"/>
+        </div>
+        <div class="err-tip"></div>
+        <!--input-group end-->
+
+        <!--input-group start-->
+        <div class="input-group">
+            <input id="pas-sure" class="input pl0" type="password" placeholder="请确认你的新密码"/>
+        </div>
+        <div class="err-tip"></div>
+        <!--input-group end-->
+
+        <button id="pasStep1" class="refer-btn mb32">下一步</button>
+    </form>
+</div>
+
+<!--Main-js-->
+<script type="text/javascript" src="../../js/zepto.min.js"></script>
+<!--Main-js end-->
+
+<!--表单验证-->
+<script type="text/javascript" src="../../js/common/reg.js"></script>
+</body>
+</html>

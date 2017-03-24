@@ -103,7 +103,24 @@ $(function(){
             return false;
         }
         alert('修改成功');
-    })
+    });
+
+    /*修改密码第一步*/
+    $('#pasStep1').click(function(){
+        $('.form-box .input').triggerHandler('blur');
+        if(tips.text() != ''){
+            return false;
+        }
+        alert('下一步');
+    });
+
+    $('#pasStep2').click(function(){
+        $('.form-box .input').triggerHandler('blur');
+        if(tips.text() != ''){
+            return false;
+        }
+        alert('修改成功');
+    });
 
     /*错误提示*/
     function errTips(errMsg,inx,self){
