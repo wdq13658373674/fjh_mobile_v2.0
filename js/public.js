@@ -55,6 +55,35 @@ function is_email(emails) {
     }
 }
 
+/*中文姓名格式验证
+* @name 中文姓名
+* */
+function is_name(name) {
+    var reg = /^[\u4E00-\u9FA5]{2,5}(?:·[\u4E00-\u9FA5]{2,5})*/;
+    var name = name.match(reg);
+    if (name != null) {
+        return true;  //正确
+    } else {
+        return false; //错误
+    }
+}
+
+/*
+ *身份证格式验证
+ * @card 身份证
+ */
+function is_card(card) {
+    var reg = /^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/;
+    var card = card.match(reg);
+    if (card != null) {
+        return true;  //正确
+    } else {
+        return false; //错误
+    }
+}
+
+
+
 var mentBtn =  document.getElementById('menu-btn');
 if(mentBtn){
     $('#menu-btn').on('click', function () {

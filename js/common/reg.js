@@ -62,6 +62,20 @@ $(function(){
                 }
             }
 
+            if(self.is('#name')){
+                if(this.value != '' && !is_name(this.value)){
+                    errMsg='姓名格式有误!';
+                    errTips(errMsg,inx,self);
+                }
+            }
+
+            if(self.is('#IDcard')){
+                if(this.value != '' && !is_card(this.value)){
+                    errMsg='身份证号码格式有误!';
+                    errTips(errMsg,inx,self);
+                }
+            }
+
             if(tips.text() == ''){
                 $('#register').removeClass('disabled');
             }
@@ -88,38 +102,13 @@ $(function(){
         alert('注册成功');
     });
 
-    /*修改手机第一步*/
-    $('#nextStep1').click(function(){
+    /*实名认证提交*/
+    $('#submit').click(function(){
         $('.form-box .input').triggerHandler('blur');
         if(tips.text() != ''){
             return false;
         }
-        alert('下一步');
-    });
-    /*修改手机第二步*/
-    $('#nextStep2').click(function(){
-        $('.form-box .input').triggerHandler('blur');
-        if(tips.text() != ''){
-            return false;
-        }
-        alert('修改成功');
-    });
-
-    /*修改密码第一步*/
-    $('#pasStep1').click(function(){
-        $('.form-box .input').triggerHandler('blur');
-        if(tips.text() != ''){
-            return false;
-        }
-        alert('下一步');
-    });
-
-    $('#pasStep2').click(function(){
-        $('.form-box .input').triggerHandler('blur');
-        if(tips.text() != ''){
-            return false;
-        }
-        alert('修改成功');
+        alert('保存成功');
     });
 
     /*错误提示*/

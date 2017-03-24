@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>修改个人资料</title>
+    <script type="text/javascript" src="../../js/fastclick.js"></script>
+    <script type="text/javascript" src="../../js/public.js"></script>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="../../css/public.css"/>
+
+    <link rel="stylesheet" href="../../css/updata.css"/>
+</head>
+<body>
+
+<div class="page-group">
+    <!--header-->
+   <header class="nav">
+       <a class="icon arr-l pull-left" href="#"></a>
+       <a href="javascript:void (0);" id="menu-btn" class="icon icon-menu pull-right"></a>
+       <span class="title">实名认证</span>
+   </header>
+
+    <div class="authentication list-block">
+        <form id="form-box" class="form-box" action="">
+            <div class="input-group">
+                <input id="name" class="input" type="text" placeholder="请输入你的姓名">
+            </div>
+            <div class="err-tip"></div>
+
+            <div class="input-group">
+                <input id="IDcard" class="input pr130" type="number" placeholder="请输入你的身份证号码">
+            </div>
+            <div class="err-tip"></div>
+        </form>
+
+        <button form="form-box"  id="submit" type="submit" class="refer-btn">提交</button>
+    </div>
+</div>
+
+<!--right menu-->
+<div id="mask" class="mask" >
+    <div id="close" class="close"></div>
+    <div id="right-menu" class="right-menu">
+        <ul>
+            <li>
+                <a class="rightMenu-bar-home" href="#">首页</a>
+            </li>
+            <li>
+                <a class="rightMenu-bar-project" href="#">定制房</a>
+            </li>
+            <li>
+                <a class="rightMenu-bar-mall" href="#">定制商城</a>
+            </li>
+            <li>
+                <a class="rightMenu-bar-TB" href="#">T币商城</a>
+            </li>
+        </ul>
+
+        <div class="hot-phone">
+            <h4>客服热线</h4>
+            <p>400-135-6677</p>
+        </div>
+    </div>
+</div>
+<!--Main-js-->
+<script type="text/javascript" src="../../js/zepto.min.js"></script>
+<script type="text/javascript" src="../../js/addons/layer/layer.js"></script>
+<script type="text/javascript" src="../../js/public.js"></script>
+<!--表单验证-->
+<script type="text/javascript" src="../../js/common/reg.js"></script>
+<!--Main-js end-->
+</body>
+</html>
