@@ -76,13 +76,6 @@ $(function(){
                 }
             }
 
-            /*if(self.is('#rule')){
-                if(!this.checked){
-                    errMsg='请阅读并且同意《房计划注册协议》';
-                    errTips(errMsg,inx,self);
-                }
-            }*/
-
             if(tips.text() == ''){
                 $('#register').removeClass('disabled');
             }
@@ -104,15 +97,15 @@ $(function(){
             ,rule=$('#rule');
 
         $('.form-box .input').triggerHandler('blur');
-        rule.triggerHandler('click');
 
         if(tips.text() != ''){
             self.addClass('disabled');
             return false;
         }else if(!rule.is(':checked')){
-               alert('请同意注册协议！');
-                return false;
+            alert('请同意注册协议！');
+            return false;
         }
+
         alert('注册成功');
     });
 
