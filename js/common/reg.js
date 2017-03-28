@@ -76,6 +76,13 @@ $(function(){
                 }
             }
 
+            if(self.is('#rule')){
+                if(!this.checked){
+                    errMsg='请阅读并且同意《房计划注册协议》';
+                    errTips(errMsg,inx,self);
+                }
+            }
+
             if(tips.text() == ''){
                 $('#register').removeClass('disabled');
             }
@@ -94,6 +101,7 @@ $(function(){
     /*注册提交*/
     $('#register').click(function(){
         var self=$(this);
+
         $('.form-box .input').triggerHandler('blur');
         if(tips.text() != ''){
             self.addClass('disabled');
