@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>推荐客户</title>
+    <script type="text/javascript" src="../../js/fastclick.js"></script>
+    <script type="text/javascript" src="../../js/public.js"></script>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="../../css/public.css"/>
+
+    <link rel="stylesheet" href="../../css/recommend.css"/>
+</head>
+<body>
+
+<div class="page-group">
+    <!--header-->
+   <header class="nav">
+       <a class="icon arr-l pull-left" href="#"></a>
+       <a href="javascript:void (0);" id="menu-btn" class="icon icon-menu pull-right"></a>
+       <span class="title">推荐客户</span>
+   </header>
+
+    <div class="user-info list-block">
+        <ul>
+            <li class="item-content">
+                <div class="item-inner">
+                    <div class="item-title-row">
+                        客户基本信息
+                    </div>
+                </div>
+            </li>
+            <li class="item-content">
+                <div class="item-media">姓名</div>
+                <div class="item-inner">
+                    <div class="item-title-row">
+                        刘宾
+                    </div>
+                </div>
+            </li>
+            <li class="item-content">
+                <div class="item-media">电话</div>
+                <div class="item-inner">
+                    <div class="item-title-row">
+                        15856552154
+                    </div>
+                </div>
+            </li>
+            <li class="item-content">
+                <div class="item-media">推荐时间</div>
+                <div class="item-inner">
+                    <div class="item-title-row">
+                        2015.05.08
+                    </div>
+                </div>
+            </li>
+            <li class="item-content">
+                <div class="item-media">注册时间</div>
+                <div class="item-inner">
+                    <div class="item-title-row">
+                        2015.05.20
+                    </div>
+                </div>
+            </li>
+            <li class="item-content">
+                <div class="item-media">是否认证</div>
+                <div class="item-inner">
+                    <div class="item-title-row">
+                        未认证
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="partIn">
+        <div class="title">参与项目情况</div>
+        <div class="partIn-tables">
+            <div class="table-tr table-head">
+                <div class="table-td part-stage">参与阶段</div>
+                <div class="table-td part-situation">参与情况</div>
+                <div class="table-td part-time">参与时间</div>
+                <div class="table-td part-TB">获得T币 / 冻结T币</div>
+            </div>
+
+            <!--
+                part-stage: 已推荐 被推荐人已注册但未报名时
+                part-none：未参与
+            -->
+
+            <div class="table-body">
+                <div class="table-tr">
+                    <div class="table-td part-stage">报名</div>
+                    <div class="table-td part-situation">
+                        已参与
+                        <div class="icon-suss"></div>
+                    </div>
+                    <div class="table-td part-time">2015.05.08</div>
+                    <div class="table-td part-TB">10/200</div>
+                </div>
+                <div class="table-tr part-freeze">
+                    <div class="table-td part-stage">定制选房</div>
+                    <div class="table-td part-situation">——</div>
+                    <div class="table-td part-time">——</div>
+                    <div class="table-td part-TB">0/10</div>
+                </div>
+                <div class="table-tr part-none">
+                    <div class="table-td part-stage">签约</div>
+                    <div class="table-td part-situation">——</div>
+                    <div class="table-td part-time">——</div>
+                    <div class="table-td part-TB">——</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--right menu-->
+<div id="mask" class="mask" >
+    <div id="close" class="close"></div>
+    <div id="right-menu" class="right-menu">
+        <ul>
+            <li>
+                <a class="rightMenu-bar-home" href="#">首页</a>
+            </li>
+            <li>
+                <a class="rightMenu-bar-project" href="#">定制房</a>
+            </li>
+            <li>
+                <a class="rightMenu-bar-mall" href="#">定制商城</a>
+            </li>
+            <li>
+                <a class="rightMenu-bar-TB" href="#">T币商城</a>
+            </li>
+        </ul>
+
+        <div class="hot-phone">
+            <h4>客服热线</h4>
+            <p>400-135-6677</p>
+        </div>
+    </div>
+</div>
+<!--Main-js-->
+<script type="text/javascript" src="../../js/zepto.min.js"></script>
+<script type="text/javascript" src="../../js/addons/layer/layer.js"></script>
+<script type="text/javascript" src="../../js/public.js"></script>
+<!--表单验证-->
+<script type="text/javascript" src="../../js/common/reg.js"></script>
+<!--Main-js end-->
+<script>
+    $(function () {
+        $(window).scroll(function(){
+            //$('#menu-tab')
+            var obj=$('#menu-tab');
+            var sTop = document.body.scrollTop;
+            var barHeight=$('header').height();
+            if(sTop > barHeight){
+                $('header').addClass('hf');
+                obj.addClass('sf');
+            }else {
+                $('header').removeClass('hf');
+                obj.removeClass('sf');
+            }
+        });
+
+        $('.menu-tab>.tab').click(function(){
+            var self=$(this);
+            tabInx=self.index();
+
+            self.addClass('active').siblings().removeClass('active');
+            $('.tab-box,.tab-box2').eq(tabInx).addClass('active').siblings().removeClass('active');
+        });
+    });
+</script>
+</body>
+</html>

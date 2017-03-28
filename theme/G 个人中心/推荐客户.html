@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>推荐客户</title>
+    <script type="text/javascript" src="../../js/fastclick.js"></script>
+    <script type="text/javascript" src="../../js/public.js"></script>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="../../css/public.css"/>
+
+    <link rel="stylesheet" href="../../css/recommend.css"/>
+</head>
+<body>
+
+<div class="page-group">
+    <!--header-->
+   <header class="nav">
+       <a class="icon arr-l pull-left" href="#"></a>
+       <a href="javascript:void (0);" id="menu-btn" class="icon icon-menu pull-right"></a>
+       <span class="title">推荐客户</span>
+   </header>
+
+    <div class="tabs">
+        <ul id="menu-tab" class="menu-tab clearfix">
+            <li class="tab active">推荐客户</li>
+            <li class="tab">我的客户</li>
+        </ul>
+
+        <!--推荐客户-->
+        <div class="tab-box active">
+            <form class="form-box" action="">
+                <!--input-group start-->
+                <div class="input-group">
+                    <input id="name" class="input" type="text" placeholder="被推荐人姓名">
+                </div>
+                <div class="err-tip"></div>
+                <!--input-group end-->
+
+                <!--input-group start-->
+                <div class="input-group">
+                    <input id="phone" class="input pr130" type="number" placeholder="被推荐人电话">
+                </div>
+                <div class="err-tip"></div>
+                <!--input-group end-->
+
+                <div class="input-group select clearfix">
+                    <div class="input-select-label">推荐购买项目</div>
+                    <div class="input-select">
+                        选择项目
+                        <div class="icon"></div>
+                    </div>
+                </div>
+                <div class="err-tip"></div>
+
+                <button id="login" type="submit" class="refer-btn">立即登录</button>
+            </form>
+        </div>
+
+        <!--我的客户-->
+        <div class="tab-box myRecommend">
+            <div class="myRecommend-count">
+                <div class="cont-item">
+                    <p class="title">累计赚取T币（个）</p>
+                    <p class="cont">999,999.90</p>
+                </div>
+                <div class="cont-item">
+                    <p class="title">冻结T币(个)</p>
+                    <p class="cont">50</p>
+                </div>
+                <div class="cont-item">
+                    <p class="title">累计推荐客户(个)</p>
+                    <p class="cont">10</p>
+                </div>
+            </div>
+
+            <div class="list-box">
+                <ul>
+                    <li>
+                        <a class="item-link item-content" href="#">
+                            <div class="list-item item-info">
+                                <p class="item-title">推荐人信息</p>
+                                <p class="item-cont">刘松 / 18680722507</p>
+                                <p class="item-time">2017.12.30</p>
+                            </div>
+                            <div class="list-item item-pro">
+                                <p class="item-title">推荐项目</p>
+                                <p class="item-cont">恒阳-御临天下</p>
+                            </div>
+                            <div class="list-item item-inner">
+                                <div class="icon tj-suss"></div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="item-link item-content" href="#">
+                            <div class="list-item item-info">
+                                <p class="item-title">推荐人信息</p>
+                                <p class="item-cont">刘松 / 18680722507</p>
+                                <p class="item-time">2017.12.30</p>
+                            </div>
+                            <div class="list-item item-pro">
+                                <p class="item-title">推荐项目</p>
+                                <p class="item-cont">恒阳-御临天下</p>
+                            </div>
+                            <div class="list-item item-inner">
+                                <div class="icon tj-shibai"></div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="item-link item-content" href="#">
+                            <div class="list-item item-info">
+                                <p class="item-title">推荐人信息</p>
+                                <p class="item-cont">刘松 / 18680722507</p>
+                                <p class="item-time">2017.12.30</p>
+                            </div>
+                            <div class="list-item item-pro">
+                                <p class="item-title">推荐项目</p>
+                                <p class="item-cont">恒阳-御临天下</p>
+                            </div>
+                            <div class="list-item item-inner">
+                                <div class="icon tj"></div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="item-link item-content" href="#">
+                            <div class="list-item item-info">
+                                <p class="item-title">推荐人信息</p>
+                                <p class="item-cont">刘松 / 18680722507</p>
+                                <p class="item-time">2017.12.30</p>
+                            </div>
+                            <div class="list-item item-pro">
+                                <p class="item-title">推荐项目</p>
+                                <p class="item-cont">恒阳-御临天下</p>
+                            </div>
+                            <div class="list-item item-inner">
+                                <div class="icon tj-suss"></div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="item-link item-content" href="#">
+                            <div class="list-item item-info">
+                                <p class="item-title">推荐人信息</p>
+                                <p class="item-cont">刘松 / 18680722507</p>
+                                <p class="item-time">2017.12.30</p>
+                            </div>
+                            <div class="list-item item-pro">
+                                <p class="item-title">推荐项目</p>
+                                <p class="item-cont">恒阳-御临天下</p>
+                            </div>
+                            <div class="list-item item-inner">
+                                <div class="icon tj-shibai"></div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="item-link item-content" href="#">
+                            <div class="list-item item-info">
+                                <p class="item-title">推荐人信息</p>
+                                <p class="item-cont">刘松 / 18680722507</p>
+                                <p class="item-time">2017.12.30</p>
+                            </div>
+                            <div class="list-item item-pro">
+                                <p class="item-title">推荐项目</p>
+                                <p class="item-cont">恒阳-御临天下</p>
+                            </div>
+                            <div class="list-item item-inner">
+                                <div class="icon tj"></div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="item-link item-content" href="#">
+                            <div class="list-item item-info">
+                                <p class="item-title">推荐人信息</p>
+                                <p class="item-cont">刘松 / 18680722507</p>
+                                <p class="item-time">2017.12.30</p>
+                            </div>
+                            <div class="list-item item-pro">
+                                <p class="item-title">推荐项目</p>
+                                <p class="item-cont">恒阳-御临天下</p>
+                            </div>
+                            <div class="list-item item-inner">
+                                <div class="icon tj-suss"></div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="item-link item-content" href="#">
+                            <div class="list-item item-info">
+                                <p class="item-title">推荐人信息</p>
+                                <p class="item-cont">刘松 / 18680722507</p>
+                                <p class="item-time">2017.12.30</p>
+                            </div>
+                            <div class="list-item item-pro">
+                                <p class="item-title">推荐项目</p>
+                                <p class="item-cont">恒阳-御临天下</p>
+                            </div>
+                            <div class="list-item item-inner">
+                                <div class="icon tj-shibai"></div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="item-link item-content" href="#">
+                            <div class="list-item item-info">
+                                <p class="item-title">推荐人信息</p>
+                                <p class="item-cont">刘松 / 18680722507</p>
+                                <p class="item-time">2017.12.30</p>
+                            </div>
+                            <div class="list-item item-pro">
+                                <p class="item-title">推荐项目</p>
+                                <p class="item-cont">恒阳-御临天下</p>
+                            </div>
+                            <div class="list-item item-inner">
+                                <div class="icon tj"></div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="item-link item-content" href="#">
+                            <div class="list-item item-info">
+                                <p class="item-title">推荐人信息</p>
+                                <p class="item-cont">刘松 / 18680722507</p>
+                                <p class="item-time">2017.12.30</p>
+                            </div>
+                            <div class="list-item item-pro">
+                                <p class="item-title">推荐项目</p>
+                                <p class="item-cont">恒阳-御临天下</p>
+                            </div>
+                            <div class="list-item item-inner">
+                                <div class="icon tj-suss"></div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="item-link item-content" href="#">
+                            <div class="list-item item-info">
+                                <p class="item-title">推荐人信息</p>
+                                <p class="item-cont">刘松 / 18680722507</p>
+                                <p class="item-time">2017.12.30</p>
+                            </div>
+                            <div class="list-item item-pro">
+                                <p class="item-title">推荐项目</p>
+                                <p class="item-cont">恒阳-御临天下</p>
+                            </div>
+                            <div class="list-item item-inner">
+                                <div class="icon tj-shibai"></div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="item-link item-content" href="#">
+                            <div class="list-item item-info">
+                                <p class="item-title">推荐人信息</p>
+                                <p class="item-cont">刘松 / 18680722507</p>
+                                <p class="item-time">2017.12.30</p>
+                            </div>
+                            <div class="list-item item-pro">
+                                <p class="item-title">推荐项目</p>
+                                <p class="item-cont">恒阳-御临天下</p>
+                            </div>
+                            <div class="list-item item-inner">
+                                <div class="icon tj"></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--right menu-->
+<div id="mask" class="mask" >
+    <div id="close" class="close"></div>
+    <div id="right-menu" class="right-menu">
+        <ul>
+            <li>
+                <a class="rightMenu-bar-home" href="#">首页</a>
+            </li>
+            <li>
+                <a class="rightMenu-bar-project" href="#">定制房</a>
+            </li>
+            <li>
+                <a class="rightMenu-bar-mall" href="#">定制商城</a>
+            </li>
+            <li>
+                <a class="rightMenu-bar-TB" href="#">T币商城</a>
+            </li>
+        </ul>
+
+        <div class="hot-phone">
+            <h4>客服热线</h4>
+            <p>400-135-6677</p>
+        </div>
+    </div>
+</div>
+<!--Main-js-->
+<script type="text/javascript" src="../../js/zepto.min.js"></script>
+<script type="text/javascript" src="../../js/addons/layer/layer.js"></script>
+<script type="text/javascript" src="../../js/public.js"></script>
+<!--表单验证-->
+<script type="text/javascript" src="../../js/common/reg.js"></script>
+<!--Main-js end-->
+<script>
+    $(function () {
+        $(window).scroll(function(){
+            //$('#menu-tab')
+            var obj=$('#menu-tab');
+            var sTop = document.body.scrollTop;
+            var barHeight=$('header').height();
+            if(sTop > barHeight){
+                obj.addClass('sf');
+            }else {
+                obj.removeClass('sf');
+            }
+        });
+
+        $('.menu-tab>.tab').click(function(){
+            var self=$(this);
+            tabInx=self.index();
+
+            self.addClass('active').siblings().removeClass('active');
+            $('.tab-box,.tab-box2').eq(tabInx).addClass('active').siblings().removeClass('active');
+        });
+    });
+</script>
+</body>
+</html>
