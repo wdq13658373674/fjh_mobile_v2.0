@@ -128,32 +128,10 @@
                 </li>
             </ul>
         </div>
-
-
-        <div id="mask" class="mask" ></div>
-        <div id="right-menu" class="right-menu">
-            <ul>
-                <li>
-                    <a class="rightMenu-bar-home" href="#">首页</a>
-                </li>
-                <li>
-                    <a class="rightMenu-bar-project" href="#">定制房</a>
-                </li>
-                <li>
-                    <a class="rightMenu-bar-mall" href="#">定制商城</a>
-                </li>
-                <li>
-                    <a class="rightMenu-bar-TB" href="#">T币商城</a>
-                </li>
-            </ul>
-
-            <div class="hot-phone">
-                <h4>客服热线</h4>
-                <p>400-135-6677</p>
-            </div>
-
-        </div>
     </div>
+
+    <!--right menu-->
+    <div id="mask" class="mask" ></div>
 </body>
 <!--Main-js-->
 <script type="text/javascript" src="../../js/zepto.min.js"></script>
@@ -161,13 +139,6 @@
 <script type="text/javascript" src="../../js/public.js"></script>
 <!--Main-js end-->
 <script>
-    $('#menu-btn').on('click', function () {
-        $('#mask').show();
-        $('#right-menu').css('left',9.24+'rem');
-    })
-    $('#mask').on('click', function () {
-        $(this).hide();
-        $('#right-menu').css('left',100+'%');
-    })
+    $('#mask').load('./右边菜单.html');
 </script>
 </html>

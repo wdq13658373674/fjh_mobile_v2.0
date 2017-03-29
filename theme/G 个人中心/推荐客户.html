@@ -289,30 +289,7 @@
 </div>
 
 <!--right menu-->
-<div id="mask" class="mask" >
-    <div id="close" class="close"></div>
-    <div id="right-menu" class="right-menu">
-        <ul>
-            <li>
-                <a class="rightMenu-bar-home" href="#">首页</a>
-            </li>
-            <li>
-                <a class="rightMenu-bar-project" href="#">定制房</a>
-            </li>
-            <li>
-                <a class="rightMenu-bar-mall" href="#">定制商城</a>
-            </li>
-            <li>
-                <a class="rightMenu-bar-TB" href="#">T币商城</a>
-            </li>
-        </ul>
-
-        <div class="hot-phone">
-            <h4>客服热线</h4>
-            <p>400-135-6677</p>
-        </div>
-    </div>
-</div>
+<div id="mask" class="mask"></div>
 <!--Main-js-->
 <script type="text/javascript" src="../../js/zepto.min.js"></script>
 <script type="text/javascript" src="../../js/addons/layer/layer.js"></script>
@@ -321,6 +298,7 @@
 <script type="text/javascript" src="../../js/common/reg.js"></script>
 <!--Main-js end-->
 <script>
+    $('#mask').load('./右边菜单.html');
     $(function () {
         $(window).scroll(function(){
             //$('#menu-tab')

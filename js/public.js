@@ -88,11 +88,13 @@ var mentBtn =  document.getElementById('menu-btn');
 if(mentBtn){
     $('#menu-btn').on('click', function () {
         $('#mask').show();
+        $('#close').show();
         $('#right-menu').css('left',9.24+'rem');
     });
-    $('#close').on('click', function () {
-        $("#mask").hide();
+    $('#mask').on('click', function () {
+        $('#close').hide();
         $('#right-menu').css('left',100+'%');
-    })
+        $('#mask').hide();
+    });
 }
 
