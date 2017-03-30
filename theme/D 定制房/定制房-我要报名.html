@@ -61,7 +61,7 @@
                     <i class="icon-check"></i>
                 </div>
             </label>
-            <!--<label class="label-check">
+            <label class="label-check">
                 <input class="input-check" type="checkbox" name="list" value="0"/>
 
                 <div class="dz-type check">
@@ -72,11 +72,11 @@
                         <p><span>二室两厅两卫</span></p>
                     </div>
                     <span class="v-line"></span>
-                    <div class="img"><img src="../../images/test/house2.png" alt=""/></div>
+                    <div class="img img-layer"><img src="../../images/test/house2.png" alt=""/></div>
 
                     <i class="icon-check"></i>
                 </div>
-            </label>-->
+            </label>
         </div>
 
         <!--个性化定制需求-->
@@ -94,6 +94,7 @@
 <!--弹出层-->
 <div class="dz-layer-wrap hide">
     <div class="dz-layer">
+        <i class="layer-close" onclick="layer.closeAll();"></i>
         <!--flash start-->
         <div id="flash1" class="swiper-container flash">
             <div class="swiper-wrapper">
@@ -103,7 +104,7 @@
                 <a href="#" class="swiper-slide"><img class="img" src="../../images/test/slider1.png" alt="A-1-4户型"/></a>
             </div>
 
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination reset-pagination"></div>
         </div>
         <!--flash end-->
 
@@ -156,7 +157,6 @@
                 loop: true
                 ,autoplay:4000
                 ,pagination : '.swiper-pagination'
-
             });
         })
     })
