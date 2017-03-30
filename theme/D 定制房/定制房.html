@@ -290,12 +290,10 @@
             }
         })
 
-
-
         /*
          * tab切换
          * */
-        // 锁定
+        // 下拉刷新锁定
         dropload.lock('down');
         dropload.noData();
         $('.menu-tab>.tab').click(function(){
@@ -306,11 +304,11 @@
             $('.tab-box,.tab-box2').eq(tabInx).addClass('active').siblings().removeClass('active');
 
             if(tabInx !==2){
-                // 锁定
+                // 下拉刷新锁定
                 dropload.lock('down');
                 dropload.noData();
             }else{
-                // 解锁
+                // 下拉刷新解锁
                 dropload.unlock();
                 dropload.noData(false);
             }
@@ -321,6 +319,7 @@
             loop: true
             ,autoplay:4000
         });
+        /*户型介绍flash*/
         var mySwiper2 = new Swiper('#flash2',{
             slidesPerView : 3
             ,spaceBetween : 16
