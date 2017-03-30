@@ -46,5 +46,17 @@
 
 <!--表单验证-->
 <script type="text/javascript" src="../../js/common/reg.js"></script>
+<script>
+    $(function(){
+        /*登陆提交*/
+        $('#login').click(function(){
+            $('.form-box .input').triggerHandler('blur');
+            if(tips.text() != ''){
+                return false;
+            }
+            alert('登陆成功');
+        });
+    })
+</script>
 </body>
 </html>

@@ -75,5 +75,26 @@
 
 <!--表单验证-->
 <script type="text/javascript" src="../../js/common/reg.js"></script>
+<script>
+    $(function(){
+        /*注册提交*/
+        $('#register').click(function(){
+            var self=$(this)
+                ,rule=$('#rule');
+
+            $('.form-box .input').triggerHandler('blur');
+
+            if(tips.text() != ''){
+                self.addClass('disabled');
+                return false;
+            }else if(!rule.is(':checked')){
+                alert('请同意注册协议！');
+                return false;
+            }
+
+            alert('注册成功');
+        });
+    })
+</script>
 </body>
 </html>

@@ -52,7 +52,18 @@
 <script type="text/javascript" src="../../js/common/reg.js"></script>
 <!--Main-js end-->
 <script>
-    $('#mask').load('./右边菜单.html');
+    $(function(){
+        $('#mask').load('./右边菜单.html');
+
+        /*实名认证提交*/
+        $('#submit').click(function(){
+            $('.form-box .input').triggerHandler('blur');
+            if(tips.text() != ''){
+                return false;
+            }
+            alert('保存成功');
+        });
+    })
 </script>
 </body>
 </html>

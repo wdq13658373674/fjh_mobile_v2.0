@@ -23,11 +23,10 @@ function times() {
     }
 }
 
-/*登陆注册表单验证*/
-$(function(){
-    var tips=$('.err-tip'),
-        errMsg='';
-    /*错误信息提示*/
+/*表单验证*/
+var tips=$('.err-tip'),
+    errMsg='';
+function checkMsg(){
     $('.form-box .input').each(function(index){
         var self=$(this)
             ,inx=index;
@@ -81,46 +80,10 @@ $(function(){
             }
         });
     })
-
-    /*登陆提交*/
-    $('#login').click(function(){
-        $('.form-box .input').triggerHandler('blur');
-        if(tips.text() != ''){
-            return false;
-        }
-        alert('登陆成功');
-    });
-
-    /*注册提交*/
-    $('#register').click(function(){
-        var self=$(this)
-            ,rule=$('#rule');
-
-        $('.form-box .input').triggerHandler('blur');
-
-        if(tips.text() != ''){
-            self.addClass('disabled');
-            return false;
-        }else if(!rule.is(':checked')){
-            alert('请同意注册协议！');
-            return false;
-        }
-
-        alert('注册成功');
-    });
-
-    /*实名认证提交*/
-    $('#submit').click(function(){
-        $('.form-box .input').triggerHandler('blur');
-        if(tips.text() != ''){
-            return false;
-        }
-        alert('保存成功');
-    });
-
-    /*错误提示*/
-    function errTips(errMsg,inx,self){
-        tips.eq(inx).text(errMsg);
-        self.parent().addClass('active');
-    }
-})
+};
+/*错误信息*/
+function errTips(errMsg,inx,self){
+    tips.eq(inx).text(errMsg);
+    self.parent().addClass('active');
+}
+checkMsg();

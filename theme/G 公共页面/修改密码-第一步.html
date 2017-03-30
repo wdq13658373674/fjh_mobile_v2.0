@@ -29,7 +29,7 @@
         <li>
             <div class="pull-left">
                 <i class="icon icon2"></i>
-                <span class="txt">绑定新手机</span>
+                <span class="txt">设置新密码</span>
             </div>
             <div class="line-dotted pull-left"></div>
         </li>
@@ -44,19 +44,22 @@
     <form class="form-box" action="">
         <!--input-group start-->
         <div class="input-group">
-            <input id="pas" class="input pl0" type="password" placeholder="请输入你的新密码"/>
+            <input id="phone" class="input pl0" type="number" placeholder="请输入原手机号码"/>
         </div>
         <div class="err-tip"></div>
         <!--input-group end-->
 
         <!--input-group start-->
-        <div class="input-group">
-            <input id="pas-sure" class="input pl0" type="password" placeholder="请确认你的新密码"/>
+        <div class="code-box clearfix">
+            <div class="input-group w5">
+                <input id="code" class="input pl0" type="text" placeholder="请输入验证码"/>
+            </div>
+            <a href="javascript:times();" id="send" class="code-btn">获取验证码</a>
         </div>
         <div class="err-tip"></div>
         <!--input-group end-->
 
-        <button id="pasStep1" class="refer-btn mb32">下一步</button>
+        <button id="nextStep" class="refer-btn mb32">下一步</button>
     </form>
 </div>
 
@@ -66,5 +69,17 @@
 
 <!--表单验证-->
 <script type="text/javascript" src="../../js/common/reg.js"></script>
+<script>
+    $(function(){
+        /*表单验证*/
+        $('#nextStep').click(function(){
+            $('.form-box .input').triggerHandler('blur');
+            if(tips.text() != ''){
+                return false;
+            }
+            alert('下一步');
+        });
+    })
+</script>
 </body>
 </html>

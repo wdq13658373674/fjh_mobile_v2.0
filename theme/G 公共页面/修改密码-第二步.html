@@ -56,7 +56,7 @@
         <div class="err-tip"></div>
         <!--input-group end-->
 
-        <button id="pasStep2" class="refer-btn mb32">下一步</button>
+        <button id="nextStep" class="refer-btn mb32">下一步</button>
     </form>
 </div>
 
@@ -66,5 +66,17 @@
 
 <!--表单验证-->
 <script type="text/javascript" src="../../js/common/reg.js"></script>
+<script>
+    $(function(){
+        /*表单验证*/
+        $('#nextStep').click(function(){
+            $('.form-box .input').triggerHandler('blur');
+            if(tips.text() != ''){
+                return false;
+            }
+            alert('下一步');
+        });
+    })
+</script>
 </body>
 </html>
