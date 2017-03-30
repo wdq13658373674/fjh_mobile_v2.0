@@ -94,7 +94,9 @@ if(mentBtn){
     $('#mask').on('click', function () {
         $('#close').hide();
         $('#right-menu').css('left',100+'%');
-        $('#mask').hide();
+        setTimeout(function(){
+            $('#mask').hide();
+        },500);
     });
 }
 
