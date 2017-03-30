@@ -46,7 +46,7 @@
         <img class="img" src="../../images/icon/href.png" alt="">
         <h2>恭喜你，修改成功！</h2>
         <hr class="line">
-        <p>系统将在 <span><em id="mes">3</em>秒</span> 后跳转</p>
+        <p class="p">系统将在 <span class="blue"><em id="mes">3</em>秒</span> 后跳转</p>
     </div>
 </div>
 
@@ -63,7 +63,7 @@
     intervalid = setInterval("fun()", 1000);
     function fun() {
         if (i == 0) {
-            window.location.href = "login.html";
+//            window.location.href = "login.html";
             clearInterval(intervalid);
         }
         document.getElementById("mes").innerHTML = i;
