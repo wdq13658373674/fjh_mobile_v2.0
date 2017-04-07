@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>index</title>
+    <script type="text/javascript" src="../../js/fastclick.js"></script>
+    <script type="text/javascript" src="../../js/public.js"></script>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="../../css/public.css"/>
+
+    <link rel="stylesheet" href="../../css/reg.css"/>
+</head>
+<body>
+<div class="page-group">
+    <div class="top-box"><a href="#" class="logo-link"></a></div>
+
+    <!--跳转-->
+    <div class="upDate-suss pt114">
+        <img class="img" src="../../images/icon/href.png" alt="">
+        <p class="f26 p ">系统将在 <span class="blue"><em id="mes">3</em>秒</span> 后跳转</p>
+        <a href="#" class="tz-btn">回到首页</a>
+    </div>
+</div>
+
+<!--Main-js-->
+<script type="text/javascript" src="../../js/zepto.min.js"></script>
+<!--Main-js end-->
+
+<!--表单验证-->
+<script type="text/javascript" src="../../js/common/reg.js"></script>
+<script>
+    /*跳转*/
+    var i = 3;
+    var intervalid;
+    intervalid = setInterval("fun()", 1000);
+    function fun() {
+        if (i == 0) {
+//            window.location.href = "login.html";
+            clearInterval(intervalid);
+        }
+        document.getElementById("mes").innerHTML = i;
+        i--;
+    }
+</script>
+</body>
+</html>
