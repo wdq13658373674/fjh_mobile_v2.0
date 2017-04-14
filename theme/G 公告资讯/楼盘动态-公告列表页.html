@@ -75,6 +75,7 @@
         /*下拉刷新*/
         var counter = 0;//页数
         var num = 4;// 每页展示4个
+
         var pageStart = 0,pageEnd = 0;
         refresh(function(me){
             $.ajax({
@@ -99,16 +100,14 @@
                                 break;
                             }
                         }
-                        // 为了测试，延迟1秒加载
-                        setTimeout(function(){
-                            $('.list-scroll-box').append(result);
-                            //必须重置
-                            me.resetload();
-                        },1000);
+
+                        //append
+                        $('.list-scroll-box').append(result);
+                        //必须重置
+                        me.resetload();
                     }
                 },
                 error: function(xhr, type){
-                    alert('Ajax error!');
                     //重置
                     me.resetload();
                 }
