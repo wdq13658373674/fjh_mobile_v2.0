@@ -269,7 +269,6 @@
 
 <!--scroll-->
 <script type="text/javascript" src="../../js/addons/dropload/dropload.min.js"></script>
-<script type="text/javascript" src="../../js/common/scroll.js"></script>
 <script>
     $(function(){
         /*滚动*/
@@ -336,45 +335,59 @@
             dropload.resetload();
         });
 
-        /*下拉刷新*/
-        refresh(function(me){
-            if(tabInx == 2){
-                $.ajax({
-                    type: 'GET',
-                    url: 'json/more.json',
-                    dataType: 'json',
-                    success: function(data){
-                        var result = '';
-                        counter++;
-                        pageEnd = num * counter;
-                        pageStart = pageEnd - num;
+        var counter = 0;
+        var num = 4;// 每页展示4个
+        var pageStart = 0,pageEnd = 0;
+        var dropload = $('.list-scroll-wrap').dropload({
+            scrollArea : window,
+            distance:10,
+            threshold:500,
+            autoLoad:true,
+            domDown:{
+                domClass : 'down-load',
+                domRefresh : '<div class="dropload-refresh">上拉加载更多</div>',
+                domLoad : '<div class="dropload-load"></div>',
+                domNoData : '<div class="dropload-noData">哦～,已经没有了!</div>'
+            },
+            loadDownFn : function(me){
+                if(tabInx == 2){
+                    $.ajax({
+                        type: 'GET',
+                        url: 'json/more.json',
+                        dataType: 'json',
+                        success: function(data){
+                            var result = '';
+                            counter++;
+                            pageEnd = num * counter;
+                            pageStart = pageEnd - num;
 
-                        if(pageStart <= data.lists.length){
-                            for(var i = pageStart; i < pageEnd; i++){
-                                result += '<li><a>'+ i +'</a></li>';
+                            if(pageStart <= data.lists.length){
+                                for(var i = pageStart; i < pageEnd; i++){
+                                    result += '<li><a>'+ i +'</a></li>';
 
-                                if((i + 1) >= data.lists.length){
-                                    tab2LoadEnd = true;// 数据加载完
-                                    // 锁定
-                                    me.lock();
-                                    me.noData();
-                                    break;
+                                    if((i + 1) >= data.lists.length){
+                                        tab2LoadEnd = true;// 数据加载完
+                                        // 锁定
+                                        me.lock();
+                                        me.noData();
+                                        break;
+                                    }
                                 }
+                                // 为了测试，延迟1秒加载
+                                setTimeout(function(){
+                                    $('.list-scroll-box').append(result);
+                                    //必须重置
+                                    me.resetload();
+                                },1000);
                             }
-                            // 为了测试，延迟1秒加载
-                            setTimeout(function(){
-                                $('.list-scroll-box').append(result);
-                                //必须重置
-                                me.resetload();
-                            },1000);
+                        },
+                        error: function(xhr, type){
+                            alert('Ajax error!');
+                            //重置
+                            me.resetload();
                         }
-                    },
-                    error: function(xhr, type){
-                        alert('Ajax error!');
-                        //重置
-                        me.resetload();
-                    }
-                });
+                    });
+                }
             }
         });
     })
