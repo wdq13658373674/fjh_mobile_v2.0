@@ -201,7 +201,7 @@
     <div class="tab-box no-height">
         <div class="tab-content pro-progress list-scroll-wrap">
             <ul class="pro-progress-list clearfix list-scroll-box">
-                <!--<li>
+                <li>
                     <div class="left-box">
                         <p class="gray f36">2016</p>
                         <p class="gray f25">09-05</p>
@@ -210,7 +210,7 @@
                         <p>土石方开标</p>
                         <p class="f25 gray">9月12日——土石方动工（现已有共计40多辆运输车，15台挖掘机开始动工。）9月5日——土石方开标（施工材料准备）</p>
                         
-                        &lt;!&ndash;img-list start&ndash;&gt;
+                        <!--img-list start-->
                         <div class="progress-img-list baguetteBox clearfix">
                             <a href="../../images/test/slider1.png" class="img-box">
                                 <img class="img" src="../../images/test/slider1.png" alt=""/>
@@ -219,7 +219,7 @@
                                 <img class="img" src="../../images/test/slider2.png" alt=""/>
                             </a>
                         </div>
-                        &lt;!&ndash;img-list end&ndash;&gt;
+                        <!--img-list end-->
                     </div>
                 </li>
                 <li>
@@ -231,7 +231,7 @@
                         <p>土石方开标</p>
                         <p class="f25 gray">5日——土石方开标（施工材料准备）</p>
                     </div>
-                </li>-->
+                </li>
             </ul>
         </div>
     </div>
@@ -269,7 +269,6 @@
 
 <!--scroll-->
 <script type="text/javascript" src="../../js/addons/dropload/dropload.min.js"></script>
-<script type="text/javascript" src="../../js/common/scroll.js"></script>
 <script>
     $(function(){
         /*滚动*/
@@ -337,23 +336,27 @@
         });
 
         /*下拉刷新*/
+        var counter = 0;
+        var num = 4;// 每页展示4个
+        var pageStart = 0,pageEnd = 0;
         refresh(function(me){
+
             if(tabInx == 2){
                 $.ajax({
                     type: 'GET',
-                    url: 'json/more.json',
+                    url: '../json/more.json',
                     dataType: 'json',
                     success: function(data){
-                        var result = '';
+                        var result = '',len=data.lists.length;
                         counter++;
                         pageEnd = num * counter;
                         pageStart = pageEnd - num;
 
-                        if(pageStart <= data.lists.length){
+                        if(pageStart <= len){
                             for(var i = pageStart; i < pageEnd; i++){
                                 result += '<li><a>'+ i +'</a></li>';
 
-                                if((i + 1) >= data.lists.length){
+                                if((i + 1) >= len){
                                     tab2LoadEnd = true;// 数据加载完
                                     // 锁定
                                     me.lock();

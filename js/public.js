@@ -101,3 +101,20 @@ if(mentBtn){
 }
 
 
+/*下拉刷新*/
+var dropload='';
+function refresh(callback){
+    dropload=$('.list-scroll-wrap').dropload({
+        scrollArea : window,
+        distance:10,
+        threshold :500,
+        autoLoad:true,
+        domDown:{
+            domClass : 'down-load',
+            domRefresh : '<div class="dropload-refresh">上拉加载更多</div>',
+            domLoad : '<div class="dropload-load"></div>',
+            domNoData : '<div class="dropload-noData">哦～,已经没有了!</div>'
+        },
+        loadDownFn : callback
+    });
+}
