@@ -73,7 +73,7 @@
 <script>
     $(function(){
         /*下拉刷新*/
-        var counter = 0;
+        var counter = 0;//页数
         var num = 4;// 每页展示4个
         var pageStart = 0,pageEnd = 0;
         refresh(function(me){
@@ -89,6 +89,7 @@
 
                     if(pageStart <= len){
                         for(var i = pageStart; i < pageEnd; i++){
+                            /*html结构*/
                             result +='<a href="#" class="news-list load-opacity">'+ i +'</a>'
 
                             if((i + 1) >= len){
