@@ -83,7 +83,9 @@
                 url: '../json/more.json',
                 dataType: 'json',
                 success: function(data){
-                    var result = '',len=data.lists.length;
+                    var result = ''
+                        ,len=data.lists.length;//列表总条数
+
                     counter++;
                     pageEnd = num * counter;
                     pageStart = pageEnd - num;
