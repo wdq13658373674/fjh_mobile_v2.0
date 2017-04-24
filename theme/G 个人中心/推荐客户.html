@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../../css/public.css"/>
 
     <link rel="stylesheet" href="../../css/recommend.css"/>
+    <link rel="stylesheet" href="../../css/datetime-picker.css"/>
 </head>
 <body>
 
@@ -49,14 +50,14 @@
 
                 <div class="input-group select clearfix">
                     <div class="input-select-label">推荐购买项目</div>
-                    <div class="input-select">
-                        选择项目
+                    <div class="input-select create-actions">
+                        <span id="input-value" class="input" data-value="0">选择项目</span>
                         <div class="icon"></div>
                     </div>
                 </div>
                 <div class="err-tip"></div>
 
-                <button id="login" type="submit" class="refer-btn">立即登录</button>
+                <button id="recommend" type="button" class="refer-btn">立即推荐</button>
             </form>
         </div>
 
@@ -294,12 +295,20 @@
 <script type="text/javascript" src="../../js/zepto.min.js"></script>
 <script type="text/javascript" src="../../js/addons/layer/layer.js"></script>
 <script type="text/javascript" src="../../js/public.js"></script>
+<script type="text/javascript" src="../../js/sm.js"></script>
 <!--表单验证-->
-<script type="text/javascript" src="../../js/common/reg.js"></script>
+<script type="text/javascript" src="../../js/common/verify.js"></script>
 <!--Main-js end-->
 <script>
     $('#mask').load('./右边菜单.html');
     $(function () {
+        $('#recommend').click(function(){
+            $('.form-box .input').triggerHandler('blur');
+            if(tips.text() != ''){
+                return false;
+            }
+            alert('推荐成功');
+        });
         $(window).scroll(function(){
             //$('#menu-tab')
             var obj=$('#menu-tab');
@@ -318,6 +327,52 @@
 
             self.addClass('active').siblings().removeClass('active');
             $('.tab-box,.tab-box2').eq(tabInx).addClass('active').siblings().removeClass('active');
+        });
+
+        /*多项选择*/
+        $(document).on('click', '.create-actions', function() {
+            var buttons1 = [
+                {
+                    text: '请选择',
+                    label: true
+                },
+                {
+                    text: '男',
+                    onClick: function() {
+                        alert("你选择了“卖出“");
+                    }
+                },
+                {
+                    text: '女',
+                    onClick: function() {
+                        alert("你选择了“买入“");
+                    }
+                },
+                {
+                    text: '女',
+                    onClick: function() {
+                        alert("你选择了“买入“");
+                    }
+                },
+                {
+                    text: '女',
+                    onClick: function() {
+                        alert("你选择了“买入“");
+                    }
+                },
+                {
+                    text: '女',
+                    onClick: function() {
+                        alert("你选择了“买入“");
+                    }
+                }
+            ];
+            var buttons2 = [{
+                text: '取消',
+                bg: 'danger'
+            }];
+            var groups = [buttons1, buttons2];
+            $.actions(groups);
         });
     });
 </script>
