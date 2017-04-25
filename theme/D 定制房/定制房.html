@@ -337,7 +337,7 @@
 
         /*下拉刷新*/
         var counter = 0;//页数
-        var num = 4;// 每页展示4个
+        var num = 5;// 每页展示4个
         var pageStart = 0,pageEnd = 0;
         refresh(function(me){
 
@@ -347,7 +347,9 @@
                     url: '../json/more.json',
                     dataType: 'json',
                     success: function(data){
-                        var result = '',len=data.lists.length;
+                        var result = '',
+                            len=data.lists.length;
+
                         counter++;
                         pageEnd = num * counter;
                         pageStart = pageEnd - num;
@@ -366,9 +368,12 @@
                             }
 
                             //append
-                            $('.list-scroll-box').append(result);
-                            //必须重置
-                            me.resetload();
+                            setTimeout(function(){
+                                $('.list-scroll-box').append(result);
+                                //必须重置
+                                me.resetload();
+                            },500)
+
                         }
                     },
                     error: function(xhr, type){
