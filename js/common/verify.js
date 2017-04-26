@@ -1,6 +1,3 @@
-/**
- * Created by ajay on 2017/4/24.
- */
 var tips=$('.err-tip'),
     errMsg='';
 function checkMsg(){
@@ -36,9 +33,34 @@ function checkMsg(){
                     errMsg='请选择购买项目!';
                     errTips(errMsg,inx,self);
                 }
-
             }
 
+            if(self.is('#openBank')){
+                if(isChineseChar(this.value)){
+                    errMsg='请填写正确的开户银行!';
+                    errTips(errMsg,inx,self);
+                }
+            }
+
+            if(self.is('#khzh')){
+                if(isAddr(this.value)){
+                    errMsg='请填写正确的开户行支行!';
+                    errTips(errMsg,inx,self);
+                }
+            }
+
+            if(self.is('#blankCard')){
+                if(this.value.length>19||this.value.length<16){
+                    errMsg='请填写正确的银行卡卡号!';
+                    errTips(errMsg,inx,self);
+                }
+            }
+            if(self.is('#reblankCard')){
+                if(this.value != $('#blankCard').val()){
+                    errMsg='两次输入的银行卡号不一致!';
+                    errTips(errMsg,inx,self);
+                }
+            }
         });
 
     })

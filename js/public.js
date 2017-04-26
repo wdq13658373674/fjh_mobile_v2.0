@@ -62,6 +62,19 @@ function is_name(name) {
     var reg = /^[\u4E00-\u9FA5]{2,5}(?:·[\u4E00-\u9FA5]{2,5})*/;
     var name = name.match(reg);
     if (name != null) {
+        return false;  //正确
+    } else {
+        return true; //错误
+    }
+}
+
+/*
+* 汉字
+* */
+function isChineseChar(Chinese){
+    var reg = /[^\u4E00-\u9FA5-\-]/g;
+    var Chinese = Chinese.match(reg);
+    if (Chinese != null) {
         return true;  //正确
     } else {
         return false; //错误
@@ -69,6 +82,19 @@ function is_name(name) {
 }
 
 /*
+ * 地址
+ * */
+function isAddr(addr){
+    var reg = /(?=.*?[\u4E00-\u9FA5])/;
+    var addr = addr.match(reg);
+    if (addr != null) {
+        return false;  //正确
+    } else {
+        return true; //错误
+    }
+}
+
+/*[A-Za-z0-9_\-\u4e00-\u9fa5]+
  *身份证格式验证
  * @card 身份证
  */
