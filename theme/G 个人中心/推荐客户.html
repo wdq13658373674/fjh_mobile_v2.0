@@ -309,8 +309,9 @@
             }
             alert('推荐成功');
         });
+
+        /*头部漂浮*/
         $(window).scroll(function(){
-            //$('#menu-tab')
             var obj=$('#menu-tab');
             var sTop = document.body.scrollTop;
             var barHeight=$('header').height();
@@ -320,7 +321,7 @@
                 obj.removeClass('sf');
             }
         });
-
+        /*选项卡*/
         $('.menu-tab>.tab').click(function(){
             var self=$(this);
             tabInx=self.index();
