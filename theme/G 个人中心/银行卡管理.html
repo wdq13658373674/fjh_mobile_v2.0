@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>银行卡管理</title>
+    <script type="text/javascript" src="../../js/fastclick.js"></script>
+    <script type="text/javascript" src="../../js/public.js"></script>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../../css/public.css"/>
+    <link rel="stylesheet" href="../../css/bankIdcard.css"/>
+
+</head>
+<body>
+
+<div class="page-group">
+    <!--header-->
+   <header class="nav">
+       <a class="icon arr-l pull-left" href="#"></a>
+       <a href="javascript:void (0);" id="menu-btn" class="icon icon-menu pull-right"></a>
+       <span class="title">银行卡管理</span>
+   </header>
+
+    <div class="authentication">
+        <div class="list-block">
+            <div class="blank-list">
+                <h2 class="blank-title">建设银行</h2>
+                <div class="blank-block">
+                    <div class="blank-img">
+                        <img src="../../images/blank/CCB.png" alt="">
+                    </div>
+                    <hr class="line">
+                    <div class="blank-text clearfix">
+                        <p class="blank-card pull-left">**** **** **** 0890</p>
+                        <a class="btn-link pull-right" href="#">修改</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--right menu-->
+<div id="mask" class="mask"></div>
+
+<!--Main-js-->
+<script type="text/javascript" src="../../js/zepto.min.js"></script>
+
+<!--Main-js end-->
+<script>
+    $(function(){
+        $('#mask').load('./右边菜单.html');
+    })
+</script>
+</body>
+</html>

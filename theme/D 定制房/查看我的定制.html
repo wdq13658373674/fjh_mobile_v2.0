@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>查看我的定制</title>
+    <script type="text/javascript" src="../../js/fastclick.js"></script>
+    <script type="text/javascript" src="../../js/public.js"></script>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="../../css/public.css"/>
+    <link rel="stylesheet" href="../../js/addons/swiper/swiper.min.css"/>
+
+    <link rel="stylesheet" href="../../css/house.css"/>
+    <style>
+        .type-descs{
+            margin: .64rem 0;
+        }
+        .btn-refund{
+            margin: 1.28rem auto;
+            text-align: center;
+            display: block;
+            width: 2.52rem;
+            height: 1.04rem;
+            line-height: 1.04rem;
+            border-radius: .06rem;
+            background-image: linear-gradient(to bottom, #ffffff, #eff2f9);
+            border: solid .02rem #c3cad8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-group">
+    <!--header-->
+   <header class="nav">
+       <a class="icon arr-l pull-left" href="#"></a>
+       <span class="title">查看我的定制</span>
+   </header>
+
+    <!--flash start-->
+    <div class="swiper-container flash">
+        <div class="swiper-wrapper">
+            <a href="#" class="swiper-slide"><img class="img" src="../../images/test/slider1.png" alt="A-1-1户型"/></a>
+            <a href="#" class="swiper-slide"><img class="img" src="../../images/test/slider2.png" alt="A-1-2户型"/></a>
+            <a href="#" class="swiper-slide"><img class="img" src="../../images/test/house2.png" alt="A-1-3户型"/></a>
+            <a href="#" class="swiper-slide"><img class="img" src="../../images/test/slider1.png" alt="A-1-4户型"/></a>
+        </div>
+
+        <div class="caption-box">
+            <span class="caption pull-left">A-1-1户型</span>
+            <div class="pull-right">
+                <span class="cur"></span>
+                /
+                <span class="total"></span>
+            </div>
+        </div>
+    </div>
+    <!--flash end-->
+
+    <!--dz-house-detail start-->
+    <div class="dz-house-detail">
+        <div class="f28 mt32">A-1-1户型</div>
+
+        <ul class="house-msg">
+            <li class="clearfix">
+                <div class="box">
+                    <span class="tit">建筑结构</span>
+                    <span class="con">三室两厅一卫</span>
+                </div>
+                <div class="box">
+                    <span class="tit">建筑面积</span>
+                    <span class="con">约139 <span class="f14 gray">m<sup>2</sup></span></span>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="box">
+                    <span class="tit">建筑分布</span>
+                    <span class="con">6#、7#</span>
+                </div>
+            </li>
+        </ul>
+
+        <div class="type-descs">
+            <span class="tit">户型描述</span>
+            <span class="con">约82平米的套二，大小适中，明厨明卫，动静分离。入户花园面积较大，作为入户的过渡空间，较好地保证了室内的私密性</span>
+        </div>
+        <hr class="line">
+        <a class="btn btn-refund" href="#">申请退款</a>
+    </div>
+    <!--dz-house-detail end-->
+
+    <!--footer-->
+    <footer class="footer-wrap">
+        <!--面包屑-->
+        <div class="crumbs">
+            <a href="#">房计划首页</a> >
+            <span>项目详情</span>
+        </div>
+
+        <div class="bottom-box clearfix">
+            <div class="left-box pull-left">
+                <p>重庆怡瑞房地产营销顾问有限公司沪ICP备16003014号</p>
+            </div>
+            <div class="right-box pull-right">
+                <p>客服热线</p>
+                <a href="tel:400-135-6677" class="blue f22">400-135-6677</a>
+            </div>
+        </div>
+    </footer>
+</div>
+<!--Main-js-->
+<script type="text/javascript" src="../../js/zepto.min.js"></script>
+<!--Main-js end-->
+<script type="text/javascript" src="../../js/addons/swiper/swiper.min.js"></script>
+<script>
+    $(function(){
+        $('.caption-box .total').text($('.swiper-slide').length);
+        var mySwiper = new Swiper ('.swiper-container', {
+            loop: true
+            ,autoplay:4000
+            ,onSlideChangeStart:function(e){
+                var cur=$('.caption-box .cur')
+                        ,caption=$('.caption-box .caption')
+                        ,num=e.realIndex + 1
+                        ,title=$('.swiper-slide img').eq(num).attr('alt');
+
+                cur.text(num);
+                caption.text(title);
+            }
+        });
+    })
+</script>
+</body>
+</html>

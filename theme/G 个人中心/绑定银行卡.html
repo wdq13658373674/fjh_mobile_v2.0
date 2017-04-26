@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>绑定银行卡</title>
+    <script type="text/javascript" src="../../js/fastclick.js"></script>
+    <script type="text/javascript" src="../../js/public.js"></script>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../../css/public.css"/>
+    <link rel="stylesheet" href="../../css/bankIdcard.css"/>
+    <link rel="stylesheet" href="../../css/datetime-picker.css"/>
+
+</head>
+<body>
+
+<div class="page-group">
+    <!--header-->
+   <header class="nav">
+       <a class="icon arr-l pull-left" href="#"></a>
+       <a href="javascript:void (0);" id="menu-btn" class="icon icon-menu pull-right"></a>
+       <span class="title">绑定银行卡</span>
+   </header>
+
+    <div class="authentication list-block">
+        <form id="form-box" class="form-box" action="">
+            <div class="input-group username">
+                <h2>流氓兔</h2>
+            </div>
+            <div class="input-group select">
+                <div class="input-select create-actions">
+                    <span id="input-value" class="">请选择你的开户银行</span>
+                    <div class="icon"></div>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <input id="openBank" class="input" type="text" placeholder="请输入您的开户行所在地">
+            </div>
+            <div class="err-tip"></div>
+
+            <div class="input-group">
+                <input id="khzh" class="input pr130" type="text" placeholder="请输入您的开户行支行">
+            </div>
+            <div class="err-tip"></div>
+
+            <div class="input-group">
+                <input id="blankCard" class="input pr130" type="number" minlength="16" maxlength="19" placeholder="请输入您的银行卡卡号">
+            </div>
+            <div class="err-tip"></div>
+
+            <div class="input-group">
+                <input id="reblankCard" class="input pr130" type="number" minlength="16" maxlength="19" placeholder="请确认您的银行卡卡号">
+            </div>
+            <div class="err-tip"></div>
+        </form>
+
+        <button form="form-box"  id="submit" type="submit" class="refer-btn">提交</button>
+    </div>
+</div>
+
+<!--right menu-->
+<div id="mask" class="mask"></div>
+
+<!--Main-js-->
+<script type="text/javascript" src="../../js/zepto.min.js"></script>
+<script type="text/javascript" src="../../js/addons/layer/layer.js"></script>
+<script type="text/javascript" src="../../js/public.js"></script>
+<!--表单验证-->
+<script type="text/javascript" src="../../js/common/verify.js"></script>
+<script type="text/javascript" src="../../js/sm.js"></script>
+<!--Main-js end-->
+<script>
+    $(function(){
+        $('#mask').load('./右边菜单.html');
+
+        /*实名认证提交*/
+        $('#submit').click(function(){
+            $('.form-box .input').triggerHandler('blur');
+            if(tips.text() != ''){
+                return false;
+            }
+            alert('保存成功');
+        });
+
+        /*多项选择*/
+        $(document).on('click', '.create-actions', function() {
+            var buttons1 = [
+                {
+                    text: '请选择',
+                    label: true
+                },
+                {
+                    text: '中国人民银行',
+                    onClick: function() {
+                        alert("你选择了“中国人民银行“");
+                    }
+                },
+                {
+                    text: '中国工商银行',
+                    onClick: function() {
+                        alert("你选择了“中国工商银行“");
+                    }
+                },
+                {
+                    text: '中国农业银行',
+                    onClick: function() {
+                        alert("你选择了“中国农业银行“");
+                    }
+                },
+                {
+                    text: '中国建设银行',
+                    onClick: function() {
+                        alert("你选择了“中国建设银行“");
+                    }
+                },
+                {
+                    text: '交通银行',
+                    onClick: function() {
+                        alert("你选择了“交通银行“");
+                    }
+                },
+                {
+                    text: '招商银行',
+                    onClick: function() {
+                        alert("你选择了“招商银行“");
+                    }
+                },
+                {
+                    text: '浦发银行',
+                    onClick: function() {
+                        alert("你选择了“浦发银行“");
+                    }
+                }
+            ];
+            var buttons2 = [{
+                text: '取消',
+                bg: 'danger'
+            }];
+            var groups = [buttons1, buttons2];
+            $.actions(groups);
+        });
+    })
+</script>
+</body>
+</html>
