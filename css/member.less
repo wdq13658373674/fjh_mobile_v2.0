@@ -168,3 +168,88 @@
             transform: scaleY(0.33);
         }
     }
+
+#tj_mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+  z-index: 999;
+}
+#tj_box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -343/@rem;
+  margin-top: -315.5/@rem;
+  width: 686/@rem;
+  height: 631/@rem;
+  border-radius: 20/@rem;
+  background-color: #ffffff;
+  padding: 33/@rem;
+  z-index: 999;
+}
+.tj_close{
+  position: absolute;
+  right: 28/@rem;
+  top: 28/@rem;
+}
+.tj_logo{
+  width: 263/@rem;
+  height: 74/@rem;
+  margin: 0 auto;
+}
+
+    .input-group{
+      margin-top: 82/@rem;
+      padding:16/@rem 0;
+      overflow: hidden;
+      position:relative;
+      &.select{
+        border: 0;
+        .input-select{
+          padding-left: 26/@rem;
+          width:100%;
+          height: 78/@rem;
+          line-height: 78/@rem;
+          border-radius: 3/@rem;
+          background-image: linear-gradient(to bottom, #eff2f9, #dbe0ed);
+          border: solid 1/@rem #c3c9d8;
+          color: #7f85a3;
+          position: relative;
+          li{
+            list-style: none;
+          }
+          .icon{
+            position: absolute;
+            right: 29/@rem;
+            top: 35/@rem;
+            font-size: 0;
+            line-height: 0;
+            border-width: 10/@rem;
+            border-color: #7f85a3;
+            border-bottom-width: 0;
+            border-style: dashed;
+            border-top-style: solid;
+            border-left-color: transparent;
+            border-right-color: transparent;
+          }
+        }
+      }
+    }
+    .tj_btn{
+      width: 100%;
+      height: 84.2/@rem;
+      border-radius: 5/@rem;
+      background-color: #fd5b5f;
+      border: solid 0 #979797;
+      font-size: 28/@rem;
+      color: #ffffff;
+      text-shadow: 0 -1/@rem 0 #dc4144;
+    }
+    .actions-modal-group{
+      max-height: 324/@rem;
+      overflow-y: auto;
+    }

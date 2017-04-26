@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="../../css/public.css" />
     <link rel="stylesheet" href="../../css/member.css" />
+    <link rel="stylesheet" href="../../css/datetime-picker.css"/>
 
 </head>
 
@@ -132,13 +133,98 @@
 
     <!--right menu-->
     <div id="mask" class="mask" ></div>
+
+    <div id="tj_mask"></div>
+    <div id="tj_box">
+        <a class="tj_close" href="javascript:void(0);">X</a>
+        <div class="tj_logo">
+            <img src="#" alt="我是logo" title="我是logo">
+        </div>
+        <form action="#">
+            <div class="input-group select clearfix">
+                <div class="input-select create-actions">
+                    <span id="input-value" class="input" data-value="0">选择你的推荐人</span>
+                    <div class="icon"></div>
+                </div>
+                <div class="error-tips"></div>
+            </div>
+            <div class="input-group">
+                <button class="tj_btn">提交</button>
+            </div>
+        </form>
+
+    </div>
+
+
 </body>
 <!--Main-js-->
 <script type="text/javascript" src="../../js/zepto.min.js"></script>
 <script type="text/javascript" src="../../js/addons/layer/layer.js"></script>
 <script type="text/javascript" src="../../js/public.js"></script>
+<script type="text/javascript" src="../../js/sm.js"></script>
 <!--Main-js end-->
 <script>
     $('#mask').load('./右边菜单.html');
+    /*多项选择*/
+    $(document).on('click', '.create-actions', function() {
+        var buttons1 = [
+            {
+                text: '请选择',
+                label: true
+            },
+            {
+                text: '男',
+                onClick: function() {
+                    $('#input-value').html('男');
+                    tj_close();
+                }
+            },
+            {
+                text: '女',
+                onClick: function() {
+                    $('#input-value').html('女');
+                    tj_close();
+                }
+            },
+            {
+                text: '女1',
+                onClick: function() {
+                    $('#input-value').html('女1');
+                    tj_close();
+                }
+            },
+            {
+                text: '女2',
+                onClick: function() {
+                    $('#input-value').html('女2');
+                    tj_close();
+                }
+            },
+            {
+                text: '女3',
+                onClick: function() {
+                    $('#input-value').html('女3');
+                    tj_close();
+                }
+            }
+        ];
+        var buttons2 = [{
+            text: '取消',
+            bg: 'danger'
+        }];
+        var groups = [buttons1, buttons2];
+        $.actions(groups);
+    });
+    $('#tj_mask').click(function(){
+        tj_close();
+    });
+    $('.tj_close').click(function () {
+        tj_close();
+    });
+    function tj_close(){
+        $('#tj_box').remove();
+        $('#tj_mask').remove();
+    }
+
 </script>
 </html>
