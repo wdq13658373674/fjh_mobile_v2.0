@@ -24,7 +24,7 @@
     <span class="title">定制项目</span>
 </header>
 
-    <ul class="dz-house-list">
+    <ul class="dz-house-list mt8">
         <li>
             <a href="#">
                 <div class="left-box pull-left">
@@ -116,6 +116,7 @@
             </a>
         </li>
     </ul>
+    </div>
     <!--footer-->
     <footer class="footer-wrap">
         <!--面包屑-->
@@ -142,57 +143,5 @@
 <!--插件-->
 <script type="text/javascript" src="../../js/addons/swiper/swiper.min.js"></script>
 <script type="text/javascript" src="../../js/addons/gallery/baguetteBox.min.js"></script>
-
-<!--scroll-->
-<script type="text/javascript" src="../../js/addons/dropload/dropload.min.js"></script>
-<script>
-    $(function(){
-
-        /*下拉刷新*/
-        var counter = 0;//页数
-        var num = 4;// 每页展示4个
-        var pageStart = 0,pageEnd = 0;
-        refresh(function(me){
-
-            if(tabInx == 2){
-                $.ajax({
-                    type: 'GET',
-                    url: '../json/more.json',
-                    dataType: 'json',
-                    success: function(data){
-                        var result = '',len=data.lists.length;
-                        counter++;
-                        pageEnd = num * counter;
-                        pageStart = pageEnd - num;
-
-                        if(pageStart <= len){
-                            for(var i = pageStart; i < pageEnd; i++){
-                                result += '<li><a>'+ i +'</a></li>';
-
-                                if((i + 1) >= len){
-                                    tab2LoadEnd = true;// 数据加载完
-                                    // 锁定
-                                    me.lock();
-                                    me.noData();
-                                    break;
-                                }
-                            }
-
-                            //append
-                            $('.list-scroll-box').append(result);
-                            //必须重置
-                            me.resetload();
-                        }
-                    },
-                    error: function(xhr, type){
-                        //重置
-                        me.resetload();
-                    }
-                });
-            }
-        });
-    })
-</script>
-
 </body>
 </html>
