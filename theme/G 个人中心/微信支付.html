@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>个人中心</title>
+    <script type="text/javascript" src="../../js/fastclick.js"></script>
+    <script type="text/javascript" src="../../js/public.js"></script>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="../../css/public.css" />
+    <link rel="stylesheet" href="../../css/pay.css" />
+
+</head>
+
+<body>
+    <div class="page-group">
+        <header class="nav">
+            <a class="icon arr-l pull-left" href="javascript:void (0);"></a>
+            <a href="javascript:void (0);" id="menu-btn" class="icon icon-menu pull-right"></a>
+            <span class="title">个人中心</span>
+        </header>
+        <div class="wxpaybox">
+            <div class="wpay">
+                <div class="top clearfix">
+                    <div class="pull-left wei-icon"></div>
+                    <div class="pull-right wei-txt">
+                        <p>扫一扫付款（元）</p>
+                        <p class="wei-price">2000.00</p>
+                    </div>
+                </div>
+                <div class="wei-block">
+                    <div class="wei-ewm">
+                        我是二维码
+                    </div>
+                    <div class="wei-tips">
+                        <p>打开手机微信</p>
+                        <p>扫一扫继续付款</p>
+                    </div>
+                    <div class="wei-logo">
+                        <img src="../../images/icon/wzflogo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<!--Main-js-->
+<script type="text/javascript" src="../../js/zepto.min.js"></script>
+<script type="text/javascript" src="../../js/addons/layer/layer.js"></script>
+<script type="text/javascript" src="../../js/public.js"></script>
+<script type="text/javascript" src="../../js/sm.js"></script>
+<!--Main-js end-->
+<script>
+    $('#mask').load('./右边菜单.html');
+    /*多项选择*/
+    $(document).on('click', '.create-actions', function() {
+        var buttons1 = [
+            {
+                text: '请选择',
+                label: true
+            },
+            {
+                text: '男',
+                onClick: function() {
+                    $('#input-value').html('男');
+                }
+            },
+            {
+                text: '女',
+                onClick: function() {
+                    $('#input-value').html('女');
+                }
+            },
+            {
+                text: '女1',
+                onClick: function() {
+                    $('#input-value').html('女1');
+                }
+            },
+            {
+                text: '女2',
+                onClick: function() {
+                    $('#input-value').html('女2');
+                }
+            },
+            {
+                text: '女3',
+                onClick: function() {
+                    $('#input-value').html('女3');
+                }
+            }
+        ];
+        var buttons2 = [{
+            text: '取消',
+            bg: 'danger'
+        }];
+        var groups = [buttons1, buttons2];
+        $.actions(groups);
+    });
+    $('#tj_mask').click(function(){
+        tj_close();
+    });
+    $('.tj_close').click(function () {
+        tj_close();
+    });
+    function tj_close(){
+        $('#tj_box').remove();
+        $('#tj_mask').remove();
+    }
+
+</script>
+</html>
