@@ -69,6 +69,10 @@
     </form>
 </div>
 
+<span id="moblie_tips">
+    <span id="moblie_tips_txt"></span>
+</span>
+
 <!--Main-js-->
 <script type="text/javascript" src="../../js/zepto.min.js"></script>
 <!--Main-js end-->
@@ -92,8 +96,17 @@
                 return false;
             }
 
-            alert('注册成功');
+            //alert('注册成功');
+            moblieTips('注册成功');
         });
+
+        function moblieTips(tips){
+            $('#moblie_tips_txt').html(tips);
+            $('#moblie_tips').show();
+            setTimeout(function(){
+                $('#moblie_tips').hide();
+            },500);
+        }
     })
 </script>
 </body>

@@ -144,3 +144,13 @@ function refresh(callback){
         loadDownFn : callback
     });
 }
+
+
+/*手机tips*/
+function moblieTips(tips){
+    $('#moblie_tips_txt').html(tips);
+    $('#moblie_tips').show();
+    setTimeout(function(){
+        $('#moblie_tips').hide();
+    },500);
+}
