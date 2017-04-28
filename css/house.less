@@ -138,8 +138,8 @@
   }
 }
 
-.dz-list-menu{.wh(auto,31/@rem,31/@rem);padding:0 32/@rem;margin-top:32/@rem;
-  a{margin-right:40/@rem;
+.dz-list-menu{.wh(auto,auto,31/@rem);padding:0 32/@rem;margin-top:32/@rem;min-height:40/@rem;
+  a{display:block;float:left;margin:30/@rem 40/@rem 0 0;
     &.active{color:@red;}
   }
 }
@@ -200,7 +200,7 @@
   }
   .pay-btn{.next-btn;margin-top:72/@rem;}
 
-  .rule-box{font-size: 24/@rem;margin-top:41/@rem;margin-bottom:41/@rem;.wh(auto,32/@rem,32/@rem);margin-left:159/@rem;
+  .rule-box{font-size: 24/@rem;margin:41/@rem auto;.wh(432/@rem,32/@rem,32/@rem);
     .rule-label{float:left;display:block;background: #ffffff;position: relative;z-index:1;
       &:after{display:block;.wh(100%,100%);content:'';position: absolute;top:0;left: 0;}
       .rule{display: none;}
