@@ -34,7 +34,7 @@
     <div id="flash1" class="swiper-container flash">
         <div class="swiper-wrapper">
             <a href="#" class="swiper-slide"><img class="img" src="../../images/test/slider1.png"/></a>
-            <a href="#" class="swiper-slide"><img class="img" src="../../images/test/slider2.png"/></a>
+            <a href="#" class="swiper-slide"><img class="img" src="../../images/house/bank1.png"/></a>
             <a href="#" class="swiper-slide"><img class="img" src="../../images/test/house2.png"/></a>
             <a href="#" class="swiper-slide"><img class="img" src="../../images/test/slider2.png"/></a>
         </div>
@@ -173,6 +173,7 @@
     <div class="tab-box active">
         <div class="tab-content pro-introduction">
             <img src="../../images/test/slider2.png" alt=""/>
+            <div>就啊就回到家啊说</div>
         </div>
     </div>
     <!--位置及周边-->
@@ -297,7 +298,11 @@
             }else{
                 obj.style.position = 'fixed';
             }
-        })
+        });
+
+        /*项目介绍去除编辑器样式*/
+        $('.pro-introduction').find('img,p,span,div,a').removeClass().removeAttr('style');
+
 
         /*flash*/
         var mySwiper1 = new Swiper('#flash1',{
