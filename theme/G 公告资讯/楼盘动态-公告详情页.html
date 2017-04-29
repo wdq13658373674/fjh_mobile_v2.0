@@ -56,5 +56,12 @@
 <!--Main-js-->
 <script type="text/javascript" src="../../js/zepto.min.js"></script>
 <!--Main-js end-->
+
+<script>
+    $(function(){
+        /*项目介绍去除编辑器样式*/
+        $('.pro-introduction').find('img,p,span,div,a').removeClass().removeAttr('style');
+    })
+</script>
 </body>
 </html>
