@@ -99,7 +99,7 @@
   }
 }
 
-.bar-btn-link{background: @red;text-align: center;
+.bar-btn-link{background: @red;text-align: center;border:20/@rem solid #ffffff;
   a{display:block;color:#ffffff;}
 }
 /*建设进度*/
@@ -173,8 +173,8 @@
     .dz-type{display:block;.wh(100%,auto);border:2/@rem solid @gray-border2;.round(20/@rem);padding:32/@rem 41/@rem;.flex();.justify-content();overflow: hidden;.align-items(center);margin-top:24/@rem;
       .title{font-size: 30/@rem;}
       .content{font-size:24/@rem;width:160/@rem;}
-      .img{.wh(136/@rem,137/@rem,137/@rem);text-align: center;z-index:10;
-        img{height:100%;}
+      .img{.wh(136/@rem,137/@rem,137/@rem);text-align: center;z-index:10;position:relative;
+        img{height:100%;position:absolute;z-index:10;left:0;top:0;}
       }
       .v-line{display:block;.wh(0,auto);min-height:108/@rem;border:2/@rem dashed @gray-border2;margin:0 10/@rem;}
     }
