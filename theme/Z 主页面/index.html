@@ -12,6 +12,10 @@
 
     <link rel="stylesheet" href="../../css/public.css"/>
 
+    <!--viewer-->
+    <link rel="stylesheet" href="../../js/addons/viewer/viewer.min.css">
+    <script src="../../js/addons/viewer/viewer.min.js"></script>
+
     <link rel="stylesheet" href="../../js/addons/swiper/swiper.min.css"/>
     <link rel="stylesheet" href="../../css/main.css"/>
 </head>
@@ -26,12 +30,12 @@
     </header>
 
     <!--flash start-->
-    <div id="flash1" class="swiper-container flash">
+    <div id="flash1" class="swiper-container flash  docs-pictures">
         <div class="swiper-wrapper">
-            <a href="#" class="swiper-slide"><img class="img" src="../../images/test/slider1.png"/></a>
-            <a href="#" class="swiper-slide"><img class="img" src="../../images/test/house2.png"/></a>
-            <a href="#" class="swiper-slide"><img class="img" src="../../images/test/slider1.png"/></a>
-            <a href="#" class="swiper-slide"><img class="img" src="../../images/test/slider2.png"/></a>
+            <a href="#" class="swiper-slide"><img class="img" data-original="../../images/test/slider2.png" src="../../images/test/slider1.png"/></a>
+            <a href="#" class="swiper-slide"><img class="img" data-original="../../images/test/house2.png" src="../../images/test/house2.png"/></a>
+            <a href="#" class="swiper-slide"><img class="img" data-original="../../images/test/slider1.png" src="../../images/test/slider1.png"/></a>
+            <a href="#" class="swiper-slide"><img class="img" data-original="../../images/test/slider2.png"  src="../../images/test/slider2.png"/></a>
         </div>
     </div>
     <!--flash end-->
@@ -39,11 +43,11 @@
     <!--menu-box-->
     <div class="menu-box">
         <a href="#" class="menu">
-            <img class="img" src="../../images/main/menu2.png" alt=""/>
+            <img class="img" src="../../images/main/menu1.png" alt=""/>
             <p>定制房</p>
         </a>
         <a href="#" class="menu">
-            <img class="img" src="../../images/main/menu1.png" alt=""/>
+            <img class="img" src="../../images/main/menu2.png" alt=""/>
             <p>定制商城</p>
         </a>
         <a href="#" class="menu">
@@ -162,6 +166,18 @@
         var mySwiper1 = new Swiper('#flash1',{
             loop: true
             ,autoplay:4000
+        });
+
+        var viewer = new Viewer(document.getElementById('flash1'), {
+            url: 'data-original',
+            button:false,
+            title:false,
+            navbar:false,
+            toolbar:false
+        });
+
+        $('body').click(function(){
+            viewer.hide();
         });
     })
 </script>
