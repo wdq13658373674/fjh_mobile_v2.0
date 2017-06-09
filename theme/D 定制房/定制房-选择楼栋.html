@@ -184,44 +184,5 @@
 <script type="text/javascript" src="../../js/zepto.min.js"></script>
 <script type="text/javascript" src="../../js/addons/layer/layer.js"></script>
 <!--Main-js end-->
-<script type="text/javascript" src="../../js/addons/swiper/swiper.min.js"></script>
-<script>
-    $(function(){
-        /*弹出层*/
-        var pub_html;
-        $('.label-check .img-layer').click(function(){
-            if($('.dz-layer-wrap').length>0){
-                var html=$('.dz-layer-wrap').html();
-                pub_html=html;
-            }
-            $('.dz-layer-wrap').remove();
-
-            layer.open({
-                type:1,
-                content: pub_html,
-                className:'dz-layer'
-            });
-
-            /*flash*/
-            var mySwiper1 = new Swiper('#flash1',{
-                loop: true
-                ,autoplay:4000
-                ,pagination : '.swiper-pagination'
-            });
-
-            /*图片放大缩小*/
-            var viewer = new Viewer(document.getElementById('flash1'), {
-                url: 'data-original',
-                button:false,
-                title:false,
-                navbar:false,
-                toolbar:false
-            });
-            $('body').click(function(){
-                viewer.hide();
-            });
-        });
-    })
-</script>
 </body>
 </html>
