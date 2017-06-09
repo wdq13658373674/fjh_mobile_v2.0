@@ -178,6 +178,11 @@
       }
       .v-line{display:block;.wh(0,auto);min-height:108/@rem;border:2/@rem dashed @gray-border2;margin:0 10/@rem;}
     }
+
+    .dz-house{.dz-type;
+      .content{width:auto;}
+      .con{margin-top:16/@rem;}
+    }
   }
 
   .textarea-box{margin:0 32/@rem;overflow: hidden;
@@ -254,5 +259,12 @@
   .explain{margin:52/@rem 0;font-size:24/@rem;color:@txt-black;
     .tit{.wh(auto,63/@rem,63/@rem);border-bottom:1px solid @gray-border2;}
     .con{margin-top:16/@rem;}
+  }
+}
+
+/*定制房-我要选房*/
+.dz-num-box{margin:0 32/@rem 56/@rem;.flex;.justify-content();.flex-wrap(wrap);
+  .dz-num{display:block;.wh(331/@rem,71/@rem,69/@rem);.round(10/@rem);border:solid 2/@rem @gray-border2;text-align: center;margin-top:24/@rem;
+    &.active{background: @red;color:#ffffff;border-color:@red;}
   }
 }
