@@ -179,6 +179,7 @@
       .v-line{display:block;.wh(0,auto);min-height:108/@rem;border:2/@rem dashed @gray-border2;margin:0 10/@rem;}
     }
 
+    /*定制房-选择房源*/
     .dz-house{.dz-type;
       .content{width:auto;}
       .con{margin-top:16/@rem;}
@@ -197,7 +198,9 @@
     .dz-bank-list{width:720/@rem;
       .label-check{.wh(333/@rem,137/@rem);float:left;margin:24/@rem 24/@rem 0 0;}
       .bank{display:block;.wh(333/@rem,137/@rem,137/@rem);border:2/@rem solid @gray-border2;.round(20/@rem);text-align: center;
-        .img{height:103/@rem; margin-top: 15/@rem}
+        .img{height:103/@rem; /*margin-top: 15/@rem;*/
+          &.h49{height:49/@rem;}
+        }
       }
     }
   }
