@@ -6,6 +6,8 @@
   .title{padding:0 24/@rem;background: #ffffff;font-size:28/@rem;text-align: center;}
 }
 
+.common-title{margin: .5rem .64rem 0;}
+
 /*tab切换*/
 .menu-tab{margin:32/@rem 32/@rem 0;
   .tab{.wh(auto,85/@rem,85/@rem);padding:0 32/@rem;float: left;text-align: center;font-size:28/@rem;
@@ -200,6 +202,7 @@
       .bank{display:block;.wh(333/@rem,137/@rem,137/@rem);border:2/@rem solid @gray-border2;.round(20/@rem);text-align: center;
         .img{height:103/@rem; /*margin-top: 15/@rem;*/
           &.h49{height:49/@rem;}
+          &.h63{.wh(56/@rem,60/@rem);float:left;margin:41/@rem 10/@rem 0 61/@rem;}
         }
       }
     }
@@ -270,4 +273,14 @@
   .dz-num{display:block;.wh(331/@rem,71/@rem,69/@rem);.round(10/@rem);border:solid 2/@rem @gray-border2;text-align: center;margin-top:24/@rem;
     &.active{background: @red;color:#ffffff;border-color:@red;}
   }
+
+  .input-check:checked + .dz-num,.input-check:checked + .floor-num{background: @red;color:#ffffff;border-color:@red;}
+
+  /*我要选房-选择楼层*/
+  .floor-num{display:block;.wh(78/@rem,78@rem,78/@rem);text-align: center;.round(5px);border: solid 2px @gray-border2;margin-top:24/@rem;}
 }
+
+
+/*我要选房-选择楼栋*/
+.fix-btn{position: fixed;left:0;right:0;bottom:0;margin:0 auto;background: #fff;z-index:10;}
+
