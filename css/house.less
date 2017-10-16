@@ -71,13 +71,11 @@
 .dz-type-wrap{background: #ffffff;overflow: hidden;padding:0 32/@rem;
   .dz-type-list{margin-top:64/@rem;
     li{text-align: center;
-      a{display:block;
-        .tit{.wh(100%,35/@rem,35/@rem);overflow:hidden;}
-        .img{.wh(218/@rem,192/@rem);overflow: hidden;text-align: center;border:1px solid @gray-border2;margin-top:16/@rem;
-          img{height:100%;}
-        }
-        .con{margin:18/@rem 18/@rem 0;.wh(auto,auto,53/@rem);}
+      .tit{.wh(100%,35/@rem,35/@rem);overflow:hidden;}
+      .img{.wh(218/@rem,192/@rem);overflow: hidden;text-align: center;border:1px solid @gray-border2;margin-top:16/@rem;
+        img{height:100%;}
       }
+      .con{margin:18/@rem 18/@rem 0;.wh(auto,auto,53/@rem);}
     }
   }
 
@@ -178,7 +176,7 @@
       .img{.wh(136/@rem,137/@rem,137/@rem);text-align: center;z-index:10;position:relative;
         img{height:100%;position:absolute;z-index:10;left:0;top:0;}
       }
-      .v-line{display:block;.wh(0,auto);min-height:108/@rem;border:2/@rem dashed @gray-border2;margin:0 10/@rem;}
+      .v-line{display:block;.wh(0,auto);min-height:108/@rem;border-right:2/@rem dashed @gray-border2;margin:0 10/@rem;}
     }
 
     /*定制房-选择房源*/
@@ -284,3 +282,24 @@
 /*我要选房-选择楼栋*/
 .fix-btn{position: fixed;left:0;right:0;bottom:0;margin:0 auto;background: #fff;z-index:10;}
 
+
+/*viewer 样式重置*/
+.viewer-list {
+  height:150px;
+}
+
+.viewer-list > li {
+  height:150px;
+  width:100px;
+}
+
+.viewer-tooltip {
+  font-size: 18/@rem;
+  height:40/@rem;
+  width: 100/@rem;
+  left: 50%;
+  top:50%;
+  line-height:40/@rem;
+  margin-left:-50/@rem;
+  margin-top:-20/@rem;
+}
