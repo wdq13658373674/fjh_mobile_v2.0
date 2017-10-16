@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="../../css/public.css"/>
     <link rel="stylesheet" href="../../js/addons/swiper/swiper.min.css"/>
 
+    <!--viewer-->
+    <link rel="stylesheet" href="../../js/addons/viewer/viewer.css">
+    <script src="../../js/addons/viewer/viewer.js"></script>
+
     <link rel="stylesheet" href="../../css/house.css"/>
 </head>
 <body>
@@ -104,8 +108,8 @@
         <!--flash start-->
         <div id="flash1" class="swiper-container flash">
             <div class="swiper-wrapper">
-                <a href="#" class="swiper-slide"><img class="img" src="../../images/test/slider1.png" alt="A-1-1户型"/></a>
-                <a href="#" class="swiper-slide"><img class="img" src="../../images/test/slider2.png" alt="A-1-2户型"/></a>
+                <a href="#" class="swiper-slide"><img class="img" data-original="../../images/test/slider1.png" src="../../images/test/slider1.png" alt="A-1-1户型"/></a>
+                <a href="#" class="swiper-slide"><img class="img" data-original="../../images/test/slider2.png" src="../../images/test/slider2.png" alt="A-1-2户型"/></a>
                 <a href="#" class="swiper-slide"><img class="img" src="../../images/test/house2.png" alt="A-1-3户型"/></a>
                 <a href="#" class="swiper-slide"><img class="img" src="../../images/test/slider1.png" alt="A-1-4户型"/></a>
             </div>
@@ -163,6 +167,18 @@
                 loop: true
                 ,autoplay:4000
                 ,pagination : '.swiper-pagination'
+            });
+
+            /*图片放大缩小*/
+            var viewer = new Viewer(document.getElementById('flash1'), {
+                url: 'data-original',
+                button:false,
+                title:false,
+                navbar:false,
+                toolbar:false
+            });
+            $('body').click(function(){
+                viewer.hide();
             });
         });
     })
