@@ -13,9 +13,12 @@
     <!--公共-->
     <link rel="stylesheet" href="../../css/public.css"/>
 
-    <!--插件-->
+    <!--swiper-->
     <link rel="stylesheet" href="../../js/addons/swiper/swiper.min.css"/>
     <link rel="stylesheet" href="../../js/addons/gallery/baguetteBox.min.css"/>
+
+    <!--viewer-->
+    <link rel="stylesheet" href="../../js/addons/viewer/viewer.min.css">
 
     <!--main-->
     <link rel="stylesheet" href="../../css/news.css"/>
@@ -104,41 +107,39 @@
     <!--dz-type-wrap start-->
     <div class="dz-type-wrap">
         <div id="flash2" class="swiper-container">
-            <ul class="dz-type-list swiper-wrapper">
-                <li class="swiper-slide">
-                    <a href="#">
-                        <p class="tit">A-1-1户型</p>
-                        <p class="img"><img src="../../images/test/house.png" alt=""/></p>
-                        <p class="con">三室两厅一卫约139 <span class="f14 gray">m<sup>2</sup></span></p>
-                    </a>
+            <ul id="viewer" class="dz-type-list swiper-wrapper">
+                <li class="swiper-slide view-flash">
+                    <p class="tit">A-1-1户型</p>
+                    <p class="img">
+                        <img src="../../images/test/house.png" alt=""/>
+                        <img src="../../images/test/type11.jpg" alt=""/>
+                        <img src="../../images/test/slider2.png" alt=""/>
+                    </p>
+                    <p class="con">三室两厅一卫约139 <span class="f14 gray">m<sup>2</sup></span></p>
                 </li>
-                <li class="swiper-slide">
-                    <a href="#">
-                        <p class="tit">A-1-1户型</p>
-                        <p class="img"><img src="../../images/test/house.png" alt=""/></p>
-                        <p class="con">三室两厅一卫约139 <span class="f14 gray">m<sup>2</sup></span></p>
-                    </a>
+                <li class="swiper-slide view-flash">
+                    <p class="tit">A-1-1户型</p>
+                    <p class="img">
+                        <img src="../../images/test/house.png" alt=""/>
+                        <img src="../../images/test/slider1.png" alt=""/>
+                    </p>
+                    <p class="con">三室两厅一卫约139 <span class="f14 gray">m<sup>2</sup></span></p>
                 </li>
-                <li class="swiper-slide">
-                    <a href="#">
-                        <p class="tit">A-1-1户型</p>
-                        <p class="img"><img src="../../images/test/house.png" alt=""/></p>
-                        <p class="con">三室两厅一卫约139 <span class="f14 gray">m<sup>2</sup></span></p>
-                    </a>
+                <li class="swiper-slide view-flash">
+                    <p class="tit">A-1-1户型</p>
+                    <p class="img">
+                        <img src="../../images/test/house.png" alt=""/>
+                        <img src="../../images/test/slider1.png" alt=""/>
+                    </p>
+                    <p class="con">三室两厅一卫约139 <span class="f14 gray">m<sup>2</sup></span></p>
                 </li>
-                <li class="swiper-slide">
-                    <a href="#">
-                        <p class="tit">A-1-1户型</p>
-                        <p class="img"><img src="../../images/test/house.png" alt=""/></p>
-                        <p class="con">三室两厅一卫约139 <span class="f14 gray">m<sup>2</sup></span></p>
-                    </a>
-                </li>
-                <li class="swiper-slide">
-                    <a href="#">
-                        <p class="tit">A-1-1户型</p>
-                        <p class="img"><img src="../../images/test/house.png" alt=""/></p>
-                        <p class="con">三室两厅一卫约139 <span class="f14 gray">m<sup>2</sup></span></p>
-                    </a>
+                <li class="swiper-slide view-flash">
+                    <p class="tit">A-1-1户型</p>
+                    <p class="img">
+                        <img src="../../images/test/house.png" alt=""/>
+                        <img src="../../images/test/slider1.png" alt=""/>
+                    </p>
+                    <p class="con">三室两厅一卫约139 <span class="f14 gray">m<sup>2</sup></span></p>
                 </li>
             </ul>
         </div>
@@ -275,9 +276,12 @@
 <!--Main-js-->
 <script type="text/javascript" src="../../js/zepto.min.js"></script>
 
-<!--插件-->
+<!--swiper-->
 <script type="text/javascript" src="../../js/addons/swiper/swiper.min.js"></script>
 <script type="text/javascript" src="../../js/addons/gallery/baguetteBox.min.js"></script>
+
+<!--viewer-->
+<script src="../../js/addons/viewer/viewer.min.js"></script>
 
 <!--scroll-->
 <script type="text/javascript" src="../../js/addons/dropload/dropload.min.js"></script>
@@ -317,7 +321,6 @@
 
         /*进度图片相册*/
         baguetteBox.run('.baguetteBox');
-
 
         /*
          * tab切换
@@ -399,6 +402,28 @@
                 });
             }
         });
+
+
+        /*图片放大缩小*/
+        for(var i=0,len=document.getElementsByClassName('view-flash').length;i<len;i++){
+            var viewer = new Viewer(document.getElementsByClassName('view-flash')[i], {
+                url:'src',//图片类型: String (图像属性) 或者 Function (返回图像url的函数)
+                button:false,
+                title:false,
+                navbar:true,
+                toolbar:false,
+                shown:function(){
+                    var obj=this.viewer;
+                    obj.canvas.onclick=function(e){
+                        var oEvent = e ? e : window.e;
+                        var target = oEvent.target || oEvent.srcElement;
+                        if(target.className == 'viewer-canvas'){
+                            obj.hide();
+                        }
+                    }
+                }
+            });
+        }
     })
 </script>
 
