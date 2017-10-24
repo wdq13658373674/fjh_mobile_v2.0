@@ -60,6 +60,18 @@
     </div>
     <!--flash end-->
 
+    <!--倒计时 start-->
+    <div class="count-timer clearfix">
+        <div class="tips pull-left"><span class="tips-txt">意向房源保留剩余时间</span></div>
+        <p id="time" class="time pull-left">
+            <span id="day">0</span> 天
+            <span id="hour">0</span> 时
+            <span id="minute">0</span> 分
+            <span id="second">0</span> 秒
+        </p>
+    </div>
+    <!--倒计时 end-->
+
     <!--dz-house-detail start-->
     <div class="dz-house-detail">
         <div class="f28 mt32">A-1-1户型</div>
@@ -117,6 +129,7 @@
 <script type="text/javascript" src="../../js/addons/swiper/swiper.min.js"></script>
 <script>
     $(function(){
+        /*flash*/
         $('.caption-box .total').text($('.swiper-slide').length);
         var mySwiper = new Swiper ('.swiper-container', {
             loop: true
@@ -131,6 +144,35 @@
                 caption.text(title);
             }
         });
+
+        /*倒计时*/
+        var date2 = new Date(2017,10,24,0,0,0);/*参数:年，月(0开始)，日，时，分，秒*/
+        countTime(date2);
+
+        /**
+         * 倒计时函数
+         * */
+        function countTime(date2) {
+            var countdown = setInterval(function(){
+                var date1 = new Date();
+                var date = (date2.getTime()-date1.getTime())/1000;
+
+                var _day = parseInt(date/(3600*24));//天数
+                var _hour = parseInt(date/3600%24);//小时
+                var _minute = parseInt(date/60%60);//分钟
+                var _second = parseInt(date%60);//秒
+
+                document.getElementById("day").innerHTML = _day;
+                document.getElementById("hour").innerHTML = _hour;
+                document.getElementById("minute").innerHTML = _minute;
+                document.getElementById("second").innerHTML = _second;
+                if(_day <= 0&&_hour <= 0&&_minute <= 0&&_second <= 0){
+                    document.getElementById("time").innerHTML = "已经结束";
+                    clearInterval(countdown);
+                    return false;
+                }
+            },1000);
+        }
     })
 </script>
 </body>

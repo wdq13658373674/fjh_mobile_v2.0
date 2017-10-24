@@ -457,7 +457,15 @@ sub {
 }
 
 /*加载页面*/
-.load-box{background: #fff;.wh(100%,auto);position: fixed;top:50%;margin-top:-181/@rem;
-  .img{.wh(400/@rem,300/@rem);}
-  .txt{font-size:30/@rem;.wh(auto,62/@rem,62/@rem);}
+.load-box{background: #fff;.wh(100%,auto);position: fixed;top:50%;margin-top:-431/@rem;
+  .img{.wh(800/@rem,auto);}
+  .txt{font-size:30/@rem;.wh(auto,62/@rem,62/@rem);margin-top:-90/@rem; position: relative;z-index: 9;}
+}
+
+/*倒计时*/
+.count-timer{color:#dc4144;padding:32/@rem;margin-top:40/@rem;background: #fff;
+  .tips{background: #ffe4e5 url("../images/house/red_arrow_r.png") top right no-repeat;background-size:auto 100%;margin-right:20/@rem;
+    .tips-txt{display:block;.wh(auto,50/@rem,50/@rem);padding:0 11/@rem;border: solid 1/@rem #ff787b;border-right:none;margin-right:10/@rem;font-size:24/@rem;}
+  }
+  .time{.wh(auto,50/@rem,50/@rem);}
 }
