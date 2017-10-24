@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>index</title>
+    <script type="text/javascript" src="../../js/fastclick.js"></script>
+    <script type="text/javascript" src="../../js/public.js"></script>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="../../css/public.css"/>
+</head>
+<body>
+<div class="page-group">
+    <div class="load-box text-align">
+        <!--swiper start-->
+        <div style="position:relative;">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img class="img" src="../../images/load.gif" alt=""/></div>
+                    <div class="swiper-slide"><img class="img" src="../../images/load.gif" alt=""/></div>
+                </div>
+            </div>
+        </div>
+        <!--swiper end-->
+
+        <div class="txt">排队中，请稍后……</div>
+    </div>
+</div>
+
+<!--Main-js-->
+<script type="text/javascript" src="../../js/zepto.min.js"></script>
+<!--Main-js end-->
+<link rel="stylesheet" href="../../js/addons/swiper/swiper.min.css"/>
+<script src="../../js/addons/swiper/swiper.min.js" type="text/javascript"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        loop:true,
+        autoplay: 2000 //可选选项，自动滑动
+    })
+</script>
+</body>
+</html>
