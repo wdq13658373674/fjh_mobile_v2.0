@@ -100,7 +100,29 @@
             <span class="con">约82平米的套二，大小适中，明厨明卫，动静分离。入户花园面积较大，作为入户的过渡空间，较好地保证了室内的私密性</span>
         </div>
         <hr class="line">
-        <a class="btn btn-refund" href="#">申请退款</a>
+
+        <div class="clearfix">
+            <a href="#" class="back pull-right">申请退款</a>
+            <a class="btn btn-refund" href="#">更改定制</a>
+        </div>
+
+        <div class="dz-btn-box clearfix">
+            <!--说明：
+                结束 : 添加 class = "over"
+            -->
+            <a href="#" class="circle-btn pull-left">
+                <span class="icon icon1">
+                    <img class="img" src="../../images/house/y.png" alt="">
+                </span>
+                <p class="txt">参与认筹</br>优惠活动</p>
+            </a>
+            <a href="#" class="circle-btn pull-left">
+                <span class="icon">
+                    <img class="img" src="../../images/house/p.png" alt="">
+                </span>
+                <p class="txt">定制车位</p>
+            </a>
+        </div>
     </div>
     <!--dz-house-detail end-->
 
@@ -146,7 +168,7 @@
         });
 
         /*倒计时*/
-        var date2 = new Date(2016,10,24,0,0,0);/*设置终止时间参数:年，月(0开始)，日，时，分，秒*/
+        var date2 = new Date(2018,10,24,0,0,0);/*设置终止时间参数:年，月(0开始)，日，时，分，秒*/
         countTime(date2);
         /**
          * 倒计时函数
@@ -154,6 +176,7 @@
         function countTime(date2) {
             var countdown = setInterval(function(){
                 var date1 = new Date();
+
                 var date = (date2.getTime()-date1.getTime())/1000;
 
                 var _day = parseInt(date/(3600*24));//天数
