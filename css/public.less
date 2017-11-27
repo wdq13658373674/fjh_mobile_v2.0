@@ -158,7 +158,7 @@ sub {
 .bar~.page-group{margin-bottom:88/@rem;}
 
 /*头部标题栏nav*/
-.nav{.wh(100%,100/@rem,100/@rem);background:#ffffff;padding:0 32/@rem;
+.nav{.wh(100%,100/@rem,100/@rem);background:#ffffff;padding:0 32/@rem;border-bottom:1/@rem solid @gray-border2;
   .icon{position:relative;z-index:20;display:block;
     &.arr-l{.wh(70/@rem,100%);background: url("../images/icon/arr_l.png") left center no-repeat;background-size: 30% auto;}
     &.icon-menu {
@@ -470,4 +470,41 @@ sub {
     .tips-txt{display:block;.wh(auto,50/@rem,50/@rem);padding:0 11/@rem;border: solid 1/@rem #ff787b;border-right:none;margin-right:10/@rem;font-size:24/@rem;}
   }
   .time{.wh(auto,50/@rem,50/@rem);}
+}
+
+/*我要选房-排队中*/
+.top-box{.wh(100%,417/@rem);overflow:hidden;background:@red url("../images/login.png") left bottom no-repeat;background-size: 100% auto;
+  .logo-link{display:block;.wh(100%,150/@rem);margin:90/@rem auto 0;}
+}
+.load-box2{background: #fff;.wh(100%,auto);
+  .img{.wh(800/@rem,auto);}
+  .txt{font-size:30/@rem;.wh(auto,62/@rem,62/@rem);margin-top:-100/@rem; position: relative;z-index: 9;}
+}
+.my-house{
+  margin:49/@rem 36/@rem 0;
+  border: solid 1/@rem #fd5b5f;
+  .round(7/@rem);
+  background: #fff;
+
+  .title{
+    .wh(121/@rem,40/@rem,40/@rem);color:#fff;
+    .linear-gradient(108deg,#ff9498,#fe77c9,43%,#fd5b5f);
+    .round();
+    margin:-20/@rem auto 0;
+    font-size:22/@rem;
+    text-align: center;
+    z-index:10;
+    position:relative;
+  }
+
+  .msg-table{
+    td{padding:5/@rem 15/@rem;}
+    margin:22/@rem 0;
+    .wh(100%,auto);
+    .tit{
+      font-size:18/@rem;
+      color:@gray;
+      margin-bottom:10/@rem;
+    }
+  }
 }

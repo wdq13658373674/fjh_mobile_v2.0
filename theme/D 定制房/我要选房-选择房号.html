@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>index</title>
+    <script type="text/javascript" src="../../js/fastclick.js"></script>
+    <script type="text/javascript" src="../../js/public.js"></script>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="../../css/public.css"/>
+
+    <link rel="stylesheet" href="../../css/house.css"/>
+
+    <style>
+        .page-group{position:fixed;height:100%;width:100%;}
+    </style>
+</head>
+<body>
+<div class="page-group">
+    <!--header-->
+   <header class="nav">
+       <a class="icon arr-l pull-left" href="#"></a>
+       <span class="title">我要定制</span>
+   </header>
+
+    <div class="house-select-wrap" style="margin-top:0;">
+        <div class="common-title f30">御临天下4号楼</div>
+
+        <div class="dz-num-wrap clearfix">
+            <div class="pull-left txt f24 gray">楼栋切换</div>
+            <div class="dz-num-box w3 clearfix">
+                <label class="label-check">
+                    <input type="radio" class="input-check" name="floor-num" checked>
+                    <span class="floor-num">1</span>
+                </label>
+                <label class="label-check">
+                    <input type="radio" class="input-check" name="floor-num">
+                    <span class="floor-num">2</span>
+                </label>
+                <label class="label-check">
+                    <input type="radio" class="input-check" name="floor-num">
+                    <span class="floor-num">3</span>
+                </label>
+                <label class="label-check">
+                    <input type="radio" class="input-check" name="floor-num">
+                    <span class="floor-num">4</span>
+                </label>
+                <label class="label-check">
+                    <input type="radio" class="input-check" name="floor-num">
+                    <span class="floor-num">5</span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="select-num-box">
+        <div class="barnner">
+            <div class="num">1</div>
+            <div class="num">2</div>
+            <div class="num">3</div>
+            <div class="num">4</div>
+            <div class="num">5</div>
+        </div>
+        <div class="move-box clearfix">
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+            <div class="item">22-25-12</div>
+        </div>
+    </div>
+
+    <div class="bottom-msg">
+        <div class="content">
+            <ul class="msg-list pull-left">
+                <li class="list">
+                    <div class="f18">房号</div>
+                    <div class="f30">3-22-12</div>
+                </li>
+                <li class="list">
+                    <div class="f18">建筑面积约</div>
+                    <div class="f24">158.68<span class="f14">m<sup>2</sup></span></div>
+                </li>
+                <li class="list">
+                    <div class="f18">A-1-1户型</div>
+                    <div class="f22">两室两厅双卫</div>
+                </li>
+            </ul>
+
+            <div class="total pull-right">
+                <ul class="total-list clearfix">
+                    <li class="list">
+                        <p class="tit">楼栋</p>
+                        <p class="f24">3</p>
+                    </li>
+                    <li class="list">
+                        <p class="tit">楼层</p>
+                        <p class="f24">22</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <button class="next-btn">确认房源</button>
+    </div>
+</div>
+<!--Main-js-->
+<script type="text/javascript" src="../../js/zepto.min.js"></script>
+<!--Main-js end-->
+<script>
+    $(function(){
+        $('.move-box').on('click','.item',function(){
+            var self =$(this);
+            var msg = $('.bottom-msg');
+
+            if(self.hasClass('active')){
+                self.removeClass('active');
+                msg.removeClass('slide-up');
+            }else {
+                self.addClass('active').siblings().removeClass('active');
+                msg.addClass('slide-up');
+            }
+        })
+    })
+</script>
+</body>
+</html>
