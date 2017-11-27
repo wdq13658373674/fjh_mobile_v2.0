@@ -201,6 +201,26 @@ css3 rgba(110, 142, 185, .4)!important;前三个是颜色值 后一个是透明�
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{@color-from}', endColorstr='#{@color-to}', GradientType=0 ); // IE6-9
 }
 
+/*
+渐变背景：
+@deg：角度
+@color-from：起始颜色
+@color-center：中颜色
+@@color-to：终止颜色
+*/
+.linear-gradient2(@deg,@color-from,@color-center,@per,@color-to) {
+  background-color: @color-center; // Old browsers
+  background-image: linear-gradient(@deg, @color-from,@color-center @per, @color-to); // Chrome, Safari4+
+  background-image: -webkit-linear-gradient(@deg, @color-from,@color-center @per, @color-to);           // Chrome10+, Safari5.1+
+  background-image:    -moz-linear-gradient(@deg, @color-from,@color-center @per, @color-to);           // FF3.6+
+  background-image:     -ms-linear-gradient(@deg, @color-from,@color-center @per, @color-to);           // IE10+
+  background-image:      -o-linear-gradient(@deg, @color-from,@color-center @per, @color-to);           // Opera 11.10+
+  background-image:         linear-gradient(@deg, @color-from,@color-center @per, @color-to);     // W3C
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{@color-from}', endColorstr='#{@color-to}', GradientType=0 ); // IE6-9
+}
+
+
+
 /*btn effect*/
 .btn-effect(@color:@gray-hover){
   -webkit-transition-duration: 0ms;
