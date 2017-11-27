@@ -420,6 +420,7 @@
 
 /*缩放*/
 .select-num-box{
+  .transition(.3s);
   position:relative;
   .wh(100%,auto);
   overflow: hidden;
@@ -444,8 +445,7 @@
 
 .move-box{
   .wh(200%,auto);
-  padding:18/@rem 5/@rem 8/@rem;
-  margin-left:57/@rem;
+  padding:18/@rem 5/@rem 8/@rem 62/@rem;
   transition:All 0.2s linear;
   -webkit-transition:All 0.2s linear;
   -moz-transition:All 0.2s linear;
@@ -469,7 +469,7 @@
   }
 }
 
-/*售房部*/
+/*售房部-选择付款方式*/
 .pay-title{
   margin:0 32/@rem;
   .wh(auto,107/@rem,107/@rem);
@@ -480,6 +480,7 @@
 }
 
 .pay-msg{
+  padding:32/@rem;
   margin:54/@rem auto;
   .wh(524/@rem,auto);
   .round(20/@rem);
