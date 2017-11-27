@@ -423,19 +423,19 @@
   position:relative;
   .wh(100%,auto);
   overflow: hidden;
-  background: #000;
   .barnner{
-    .wh(32/@rem,auto);
-    .rgba(0.74,74);
+    .wh(35/@rem,auto);
     .round(100/@rem);
-    background-color: #dae2f3;
-    border: solid 1px #7f85a3;
+    border: solid 1/@rem #7f85a3;
     position: absolute;
     top:18/@rem;
     left:17/@rem;
+    overflow: hidden;
+    z-index:10;
+    background: rgba(218, 226, 243, 0.7);
 
     .num{
-      .wh(100%,66/@rem,66/@rem);
+      .wh(auto,66/@rem,66/@rem);
       margin:0 0 10/@rem;
       text-align: center;
     }
@@ -443,7 +443,6 @@
 }
 
 .move-box{
-  background: cadetblue;
   .wh(200%,auto);
   padding:18/@rem 5/@rem 8/@rem;
   margin-left:57/@rem;
@@ -451,8 +450,6 @@
   -webkit-transition:All 0.2s linear;
   -moz-transition:All 0.2s linear;
   -o-transition:All 0.2s linear;
-
-
 
   .item{
     font-size:18/@rem;
