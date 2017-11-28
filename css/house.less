@@ -422,35 +422,34 @@
 .select-num-box{
   .transition(.3s);
   position:relative;
-  .wh(100%,auto);
+  .wh(100%,100%);
   overflow: hidden;
   .barnner{
     .wh(35/@rem,auto);
     .round(100/@rem);
     border: solid 1/@rem #7f85a3;
     position: absolute;
-    top:18/@rem;
+    margin-top:18/@rem;
+    top: 0;
     left:17/@rem;
     overflow: hidden;
     z-index:10;
     background: rgba(218, 226, 243, 0.7);
 
     .num{
-      .wh(auto,66/@rem,66/@rem);
-      margin:0 0 10/@rem;
+      .wh(100%,76/@rem,76/@rem);
       text-align: center;
     }
   }
 }
 
 .move-box{
-  .wh(200%,auto);
+  .wh(960/@rem,auto);
   padding:18/@rem 5/@rem 8/@rem;
   margin-left:57/@rem;
-  transition:All 0.2s linear;
-  -webkit-transition:All 0.2s linear;
-  -moz-transition:All 0.2s linear;
-  -o-transition:All 0.2s linear;
+  position: relative;
+  transform-origin: left top;
+  -webkit-transform-origin: left top;
 
   .item{
     font-size:18/@rem;
