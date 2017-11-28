@@ -76,6 +76,7 @@ $(function () {
                 'transform': 'scale(' + scale + ')',
                 '-webkit-transform': 'scale(' + scale + ')'
             });
+            $targetObj.animate({left:0,top:0},300);
         }
 
         if(scale>2){
