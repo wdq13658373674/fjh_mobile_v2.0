@@ -53,13 +53,13 @@ $(function () {
 
         if(Math.abs(left)>=moveLeft && Math.abs(left)>0){
             l=moveLeft*-1;
-            left=l
+            left=l;
             cat.touchjs.left=l;
         }
 
         if(Math.abs(top)>=moveTop && Math.abs(top)>0){
             t=moveTop*-1;
-            top=t
+            top=t;
             cat.touchjs.top=t;
         }
 //
