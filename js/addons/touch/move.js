@@ -95,5 +95,14 @@ $(function () {
         floor_num.css({"height":fh+"px","line-height":fh+"px"}).height(fh);
 
         pubScale=scale;
+
+        /*添加 start*/
+        var tarTop = Math.abs($targetObj.position().top)
+            ,scaleH = moveheight*pubScale;
+        if(tarTop >= scaleH){
+            $targetObj.animate({left:0,top:0},300);
+            floor.animate({left:0,top:0},300);
+        }
+        /*添加 end*/
     });
 });
