@@ -55,8 +55,8 @@
             </div>
         </div>
 
-        <div class="text-align">
-            <div class="select-descri clearfix">
+        <div class="select-descri">
+            <div class="select-box clearfix">
                 <span class="square"></span>
                 <span class="txt">可选房源</span>
                 <span class="square red"></span>
@@ -345,6 +345,7 @@
 <script type="text/javascript" src="../../js/addons/touch/move.js"></script>
 <script>
     $(function(){
+        var txt;
         $('.move-box').on('click','.item',function(){
             var self =$(this);
             var msg = $('.bottom-msg');
