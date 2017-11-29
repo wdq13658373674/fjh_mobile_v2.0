@@ -54,6 +54,17 @@
                 </label>
             </div>
         </div>
+
+        <div class="text-align">
+            <div class="select-descri clearfix">
+                <span class="square"></span>
+                <span class="txt">可选房源</span>
+                <span class="square red"></span>
+                <span class="txt">已选房源</span>
+                <span class="square gray"></span>
+                <span class="txt">被选房源</span>
+            </div>
+        </div>
     </div>
 
     <div class="select-num-box">
@@ -83,7 +94,7 @@
         <div class="move-box clearfix" id="move-box">
             <div class="item-box clearfix">
                 <div class="item">1-25-12</div>
-                <div class="item">1-25-12</div>
+                <div class="item disabled">1-25-12</div>
                 <div class="item">1-25-12</div>
                 <div class="item">1-25-12</div>
                 <div class="item">1-25-12</div>
@@ -337,6 +348,8 @@
         $('.move-box').on('click','.item',function(){
             var self =$(this);
             var msg = $('.bottom-msg');
+
+            if(self.hasClass('disabled')){return;}
 
             if(self.hasClass('active')){
                 self.removeClass('active');

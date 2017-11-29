@@ -366,6 +366,13 @@
 }
 
 /*我要选房-选择房号*/
+.select-descri{text-align: center;padding:13/@rem 0;display: inline-block;
+  .square{display:block;float:left;.wh(25/@rem,25/@rem);.round(1/@rem);margin-left:34/@rem;margin-right:8/@rem;border:2/@rem solid @gray-border2;
+    &.red{.linear-gradient2(132deg, #ff9498, #e778fe, 50%, #fd5b5f);border:0;}
+    &.gray{background:#d8d8d8;border:0;}
+  }
+  .txt{display:block;float:left;font-size:18/@rem;}
+}
 .dz-num-wrap{
   padding:0 32/@rem;
   .txt{margin-top:24/@rem;}
@@ -467,6 +474,13 @@
       color:#fff;
       border:0;
       .linear-gradient2(132deg, #ff9498, #e778fe ,50%, #fd5b5f)
+    }
+
+    &.disabled{
+      cursor: not-allowed;
+      pointer-events: none;
+      background-color: #d8d8d8;
+      border: solid 2/@rem #c9c9c9;
     }
   }
 }
