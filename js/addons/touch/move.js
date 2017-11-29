@@ -74,9 +74,10 @@ $(function () {
             cat.touchjs.scaleVal=0.5;
             $targetObj.css({
                 'transform': 'scale(' + scale + ')',
-                '-webkit-transform': 'scale(' + scale + ')'
+                '-webkit-transform': 'scale(' + scale + ')',
             });
-            $targetObj.animate({left:0,top:0},300);
+            /*$targetObj.animate({left:0,top:0},300);
+            floor.animate({left:0,top:0},300);*/
         }
 
         if(scale>2){
@@ -84,10 +85,9 @@ $(function () {
             cat.touchjs.scaleVal=2;
             $targetObj.css({
                 'transform': 'scale(' + scale + ')',
-                '-webkit-transform': 'scale(' + scale + ')'
+                '-webkit-transform': 'scale(' + scale + ')',
             });
         }
-
         fh=floorHeight*scale;
         floor_num.css({"height":fh+"px","line-height":fh+"px"}).height(fh);
 
