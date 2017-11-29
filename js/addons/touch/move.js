@@ -76,8 +76,11 @@ $(function () {
                 'transform': 'scale(' + scale + ')',
                 '-webkit-transform': 'scale(' + scale + ')',
             });
-            /*$targetObj.animate({left:0,top:0},300);
-            floor.animate({left:0,top:0},300);*/
+        }
+
+        if(pubScale>scale){
+            $targetObj.animate({left:0,top:0},300);
+            floor.animate({top:0},300);
         }
 
         if(scale>2){
