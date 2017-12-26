@@ -366,7 +366,7 @@
 }
 
 /*我要选房-选择房号*/
-.select-descri{.wh(auto,50/@rem);position: relative;overflow: hidden;text-align: center;}
+.select-descri{.wh(auto,50/@rem,50/@rem);overflow: hidden;text-align: center;}
 .select-box{.wh(auto,25/@rem,25/@rem);margin:13/@rem 0;display:inline-block;
   .square{display:block;float:left;.wh(25/@rem,25/@rem);.round(1/@rem);margin-right:8/@rem;border:2/@rem solid @gray-border2;
     &.red{.linear-gradient2(132deg, #ff9498, #e778fe, 50%, #fd5b5f);border:0;margin-left:34/@rem;}
@@ -434,7 +434,7 @@
   .wh(100%,100%);
   overflow: hidden;
   .barnner{
-    .wh(35/@rem,auto);
+    .wh(45/@rem,auto);
     .round(100/@rem);
     border: solid 1/@rem #7f85a3;
     position: absolute;
@@ -446,8 +446,10 @@
     background: rgba(218, 226, 243, 0.7);
 
     .num{
-      .wh(100%,76/@rem,76/@rem);
+      .wh(100%,66/@rem,66/@rem);
       text-align: center;
+      font-size:20/@rem;
+      margin-bottom:10/@rem;
     }
   }
 }
@@ -455,7 +457,7 @@
 .move-box{
   .wh(960/@rem,auto);
   padding:18/@rem 5/@rem 8/@rem;
-  margin-left:57/@rem;
+  margin-left:67/@rem;
   position: relative;
   transform-origin: left top;
   -webkit-transform-origin: left top;
@@ -511,6 +513,15 @@
     .wh(432/@rem,2/@rem);
     border: solid 1/@rem #d9e3d0;
     margin:30/@rem auto 0;
+  }
+}
+
+.pay-er-img{
+  margin:22/@rem auto;
+  .wh(180/@rem,180/@rem);
+  border:1/@rem solid @gray-border2;
+  img{
+    .wh(100%,100%);
   }
 }
 
