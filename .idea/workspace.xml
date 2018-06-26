@@ -1,0 +1,1235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list id="51fcb006-c793-4232-bf4a-0e55fc3242e3" name="New changelist" comment="New changelist">
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/house2.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/house2.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cssControl/button.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cssControl/import.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/addons/gallery/baguetteBox.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/addons/gallery/baguetteBox.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/jQuery1.12.3-min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/theme/D 定制房/我要选房-选择房号_test.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/theme/D 定制房/我要选房-选择楼栋_备份.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/fjh_mobile_v2.0.iml" afterPath="$PROJECT_DIR$/.idea/fjh_mobile_v2.0.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/preferred-vcs.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cssControl/control.css" afterPath="$PROJECT_DIR$/cssControl/control.css" />
+      <change beforePath="$PROJECT_DIR$/images/blank/CCB.png" afterPath="$PROJECT_DIR$/images/blank/CCB.png" />
+      <change beforePath="$PROJECT_DIR$/images/home.png" afterPath="$PROJECT_DIR$/images/home.png" />
+      <change beforePath="$PROJECT_DIR$/images/house/bank1.png" afterPath="$PROJECT_DIR$/images/house/bank1.png" />
+      <change beforePath="$PROJECT_DIR$/images/house/bank2.png" afterPath="$PROJECT_DIR$/images/house/bank2.png" />
+      <change beforePath="$PROJECT_DIR$/images/house/bank3.png" afterPath="$PROJECT_DIR$/images/house/bank3.png" />
+      <change beforePath="$PROJECT_DIR$/images/house/bank4.png" afterPath="$PROJECT_DIR$/images/house/bank4.png" />
+      <change beforePath="$PROJECT_DIR$/images/house/bank5.png" afterPath="$PROJECT_DIR$/images/house/bank5.png" />
+      <change beforePath="$PROJECT_DIR$/images/house/check.png" afterPath="$PROJECT_DIR$/images/house/check.png" />
+      <change beforePath="$PROJECT_DIR$/images/house/close.png" afterPath="$PROJECT_DIR$/images/house/close.png" />
+      <change beforePath="$PROJECT_DIR$/images/house/progress1.png" afterPath="$PROJECT_DIR$/images/house/progress1.png" />
+      <change beforePath="$PROJECT_DIR$/images/house/progress2.png" afterPath="$PROJECT_DIR$/images/house/progress2.png" />
+      <change beforePath="$PROJECT_DIR$/images/house/progress3.png" afterPath="$PROJECT_DIR$/images/house/progress3.png" />
+      <change beforePath="$PROJECT_DIR$/images/house/solid.png" afterPath="$PROJECT_DIR$/images/house/solid.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/arr_l.png" afterPath="$PROJECT_DIR$/images/icon/arr_l.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/checked.png" afterPath="$PROJECT_DIR$/images/icon/checked.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/dotted_gray.png" afterPath="$PROJECT_DIR$/images/icon/dotted_gray.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/dotted_red.png" afterPath="$PROJECT_DIR$/images/icon/dotted_red.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/fill.png" afterPath="$PROJECT_DIR$/images/icon/fill.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/gay-logo.png" afterPath="$PROJECT_DIR$/images/icon/gay-logo.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/group-24.png" afterPath="$PROJECT_DIR$/images/icon/group-24.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/group-25.png" afterPath="$PROJECT_DIR$/images/icon/group-25.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/group-32.png" afterPath="$PROJECT_DIR$/images/icon/group-32.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/group-34.png" afterPath="$PROJECT_DIR$/images/icon/group-34.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/group1.png" afterPath="$PROJECT_DIR$/images/icon/group1.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/group2.png" afterPath="$PROJECT_DIR$/images/icon/group2.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/group2_gray.png" afterPath="$PROJECT_DIR$/images/icon/group2_gray.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/group3.png" afterPath="$PROJECT_DIR$/images/icon/group3.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/group3_gray.png" afterPath="$PROJECT_DIR$/images/icon/group3_gray.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/href.png" afterPath="$PROJECT_DIR$/images/icon/href.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/icon-bankCard.png" afterPath="$PROJECT_DIR$/images/icon/icon-bankCard.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/icon-dz.png" afterPath="$PROJECT_DIR$/images/icon/icon-dz.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/icon-identity.png" afterPath="$PROJECT_DIR$/images/icon/icon-identity.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/icon-info.png" afterPath="$PROJECT_DIR$/images/icon/icon-info.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/icon-menu.png" afterPath="$PROJECT_DIR$/images/icon/icon-menu.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/icon-mobile.png" afterPath="$PROJECT_DIR$/images/icon/icon-mobile.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/icon-money.png" afterPath="$PROJECT_DIR$/images/icon/icon-money.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/icon-msg.png" afterPath="$PROJECT_DIR$/images/icon/icon-msg.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/icon-pro.png" afterPath="$PROJECT_DIR$/images/icon/icon-pro.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/icon-right-menu-TB.png" afterPath="$PROJECT_DIR$/images/icon/icon-right-menu-TB.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/icon-right-menu-home.png" afterPath="$PROJECT_DIR$/images/icon/icon-right-menu-home.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/icon-right-menu-mall.png" afterPath="$PROJECT_DIR$/images/icon/icon-right-menu-mall.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/icon-right-menu-project.png" afterPath="$PROJECT_DIR$/images/icon/icon-right-menu-project.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/icon-scanning.png" afterPath="$PROJECT_DIR$/images/icon/icon-scanning.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/icon-tj.png" afterPath="$PROJECT_DIR$/images/icon/icon-tj.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/icon-trades-s.png" afterPath="$PROJECT_DIR$/images/icon/icon-trades-s.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/icon-trades-z.png" afterPath="$PROJECT_DIR$/images/icon/icon-trades-z.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/icon-trades-zh.png" afterPath="$PROJECT_DIR$/images/icon/icon-trades-zh.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/icon-user.png" afterPath="$PROJECT_DIR$/images/icon/icon-user.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/icon-zh.png" afterPath="$PROJECT_DIR$/images/icon/icon-zh.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/icon-zl.png" afterPath="$PROJECT_DIR$/images/icon/icon-zl.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/rectangle-6.png" afterPath="$PROJECT_DIR$/images/icon/rectangle-6.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/suss.png" afterPath="$PROJECT_DIR$/images/icon/suss.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/tj-shibai.png" afterPath="$PROJECT_DIR$/images/icon/tj-shibai.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/tj.png" afterPath="$PROJECT_DIR$/images/icon/tj.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/tuijianchenggong.png" afterPath="$PROJECT_DIR$/images/icon/tuijianchenggong.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/user_ico1.png" afterPath="$PROJECT_DIR$/images/icon/user_ico1.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/user_ico2.png" afterPath="$PROJECT_DIR$/images/icon/user_ico2.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/user_icoh1.png" afterPath="$PROJECT_DIR$/images/icon/user_icoh1.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/user_icoh2.png" afterPath="$PROJECT_DIR$/images/icon/user_icoh2.png" />
+      <change beforePath="$PROJECT_DIR$/images/icon/wzflogo.png" afterPath="$PROJECT_DIR$/images/icon/wzflogo.png" />
+      <change beforePath="$PROJECT_DIR$/images/login.png" afterPath="$PROJECT_DIR$/images/login.png" />
+      <change beforePath="$PROJECT_DIR$/images/logo.png" afterPath="$PROJECT_DIR$/images/logo.png" />
+      <change beforePath="$PROJECT_DIR$/images/no-record.png" afterPath="$PROJECT_DIR$/images/no-record.png" />
+      <change beforePath="$PROJECT_DIR$/images/test/house.png" afterPath="$PROJECT_DIR$/images/test/house.png" />
+      <change beforePath="$PROJECT_DIR$/images/test/house2.png" afterPath="$PROJECT_DIR$/images/test/house2.png" />
+      <change beforePath="$PROJECT_DIR$/images/test/slider1.png" afterPath="$PROJECT_DIR$/images/test/slider1.png" />
+      <change beforePath="$PROJECT_DIR$/images/test/slider2.png" afterPath="$PROJECT_DIR$/images/test/slider2.png" />
+      <change beforePath="$PROJECT_DIR$/images/user_home.png" afterPath="$PROJECT_DIR$/images/user_home.png" />
+      <change beforePath="$PROJECT_DIR$/js/addons/swiper/swiper.min.css" afterPath="$PROJECT_DIR$/js/addons/swiper/swiper.min.css" />
+      <change beforePath="$PROJECT_DIR$/js/addons/swiper/swiper.min.js" afterPath="$PROJECT_DIR$/js/addons/swiper/swiper.min.js" />
+      <change beforePath="$PROJECT_DIR$/js/common/dropload.js" afterPath="$PROJECT_DIR$/js/common/dropload.js" />
+      <change beforePath="$PROJECT_DIR$/js/common/dropload.min.js" afterPath="$PROJECT_DIR$/js/common/dropload.min.js" />
+      <change beforePath="$PROJECT_DIR$/js/common/reg.js" afterPath="$PROJECT_DIR$/js/common/reg.js" />
+      <change beforePath="$PROJECT_DIR$/js/common/verify.js" afterPath="$PROJECT_DIR$/js/common/verify.js" />
+      <change beforePath="$PROJECT_DIR$/js/public.js" afterPath="$PROJECT_DIR$/js/public.js" />
+      <change beforePath="$PROJECT_DIR$/js/sm.js" afterPath="$PROJECT_DIR$/js/sm.js" />
+      <change beforePath="$PROJECT_DIR$/js/zepto.min.js" afterPath="$PROJECT_DIR$/js/zepto.min.js" />
+      <change beforePath="$PROJECT_DIR$/theme/D 定制房/定制房.html" afterPath="$PROJECT_DIR$/theme/D 定制房/定制房.html" />
+      <change beforePath="$PROJECT_DIR$/theme/D 定制房/我要选房-选择付款方式.html" afterPath="$PROJECT_DIR$/theme/D 定制房/我要选房-选择付款方式.html" />
+      <change beforePath="$PROJECT_DIR$/theme/D 定制房/我要选房-选择户型.html" afterPath="$PROJECT_DIR$/theme/D 定制房/我要选房-选择户型.html" />
+      <change beforePath="$PROJECT_DIR$/theme/D 定制房/我要选房-选择楼层和房号.html" afterPath="$PROJECT_DIR$/theme/D 定制房/我要选房-选择楼层和房号.html" />
+      <change beforePath="$PROJECT_DIR$/theme/D 定制房/我要选房-选择楼栋.html" afterPath="$PROJECT_DIR$/theme/D 定制房/我要选房-选择楼栋.html" />
+      <change beforePath="$PROJECT_DIR$/theme/G 个人中心/个人中心.html" afterPath="$PROJECT_DIR$/theme/G 个人中心/个人中心.html" />
+      <change beforePath="$PROJECT_DIR$/theme/G 个人中心/个人资料.html" afterPath="$PROJECT_DIR$/theme/G 个人中心/个人资料.html" />
+      <change beforePath="$PROJECT_DIR$/theme/G 个人中心/交易记录.html" afterPath="$PROJECT_DIR$/theme/G 个人中心/交易记录.html" />
+      <change beforePath="$PROJECT_DIR$/theme/G 个人中心/修改.html" afterPath="$PROJECT_DIR$/theme/G 个人中心/修改.html" />
+      <change beforePath="$PROJECT_DIR$/theme/G 个人中心/右边菜单.html" afterPath="$PROJECT_DIR$/theme/G 个人中心/右边菜单.html" />
+      <change beforePath="$PROJECT_DIR$/theme/G 个人中心/实名认证.html" afterPath="$PROJECT_DIR$/theme/G 个人中心/实名认证.html" />
+      <change beforePath="$PROJECT_DIR$/theme/G 个人中心/客户详情.html" afterPath="$PROJECT_DIR$/theme/G 个人中心/客户详情.html" />
+      <change beforePath="$PROJECT_DIR$/theme/G 个人中心/微信支付.html" afterPath="$PROJECT_DIR$/theme/G 个人中心/微信支付.html" />
+      <change beforePath="$PROJECT_DIR$/theme/G 个人中心/我的定制-项目详情.html" afterPath="$PROJECT_DIR$/theme/G 个人中心/我的定制-项目详情.html" />
+      <change beforePath="$PROJECT_DIR$/theme/G 个人中心/我的定制.html" afterPath="$PROJECT_DIR$/theme/G 个人中心/我的定制.html" />
+      <change beforePath="$PROJECT_DIR$/theme/G 个人中心/推荐客户.html" afterPath="$PROJECT_DIR$/theme/G 个人中心/推荐客户.html" />
+      <change beforePath="$PROJECT_DIR$/theme/G 个人中心/消息中心-消息详情.html" afterPath="$PROJECT_DIR$/theme/G 个人中心/消息中心-消息详情.html" />
+      <change beforePath="$PROJECT_DIR$/theme/G 个人中心/消息中心.html" afterPath="$PROJECT_DIR$/theme/G 个人中心/消息中心.html" />
+      <change beforePath="$PROJECT_DIR$/theme/G 个人中心/绑定银行卡.html" afterPath="$PROJECT_DIR$/theme/G 个人中心/绑定银行卡.html" />
+      <change beforePath="$PROJECT_DIR$/theme/G 个人中心/银行卡管理.html" afterPath="$PROJECT_DIR$/theme/G 个人中心/银行卡管理.html" />
+      <change beforePath="$PROJECT_DIR$/theme/G 公共页面/login.html" afterPath="$PROJECT_DIR$/theme/G 公共页面/登陆.html" />
+      <change beforePath="$PROJECT_DIR$/theme/G 公共页面/register.html" afterPath="$PROJECT_DIR$/theme/G 公共页面/注册.html" />
+      <change beforePath="$PROJECT_DIR$/theme/G 公共页面/修改密码-第一步.html" afterPath="$PROJECT_DIR$/theme/G 公共页面/修改密码-第一步.html" />
+      <change beforePath="$PROJECT_DIR$/theme/G 公共页面/修改密码-第三步.html" afterPath="$PROJECT_DIR$/theme/G 公共页面/修改密码-第三步.html" />
+      <change beforePath="$PROJECT_DIR$/theme/G 公共页面/修改密码-第二步.html" afterPath="$PROJECT_DIR$/theme/G 公共页面/修改密码-第二步.html" />
+      <change beforePath="$PROJECT_DIR$/theme/G 公共页面/更改手机号-第一步.html" afterPath="$PROJECT_DIR$/theme/G 公共页面/更改手机号-第一步.html" />
+      <change beforePath="$PROJECT_DIR$/theme/G 公共页面/更改手机号-第三步.html" afterPath="$PROJECT_DIR$/theme/G 公共页面/更改手机号-第三步.html" />
+      <change beforePath="$PROJECT_DIR$/theme/G 公共页面/更改手机号-第二步.html" afterPath="$PROJECT_DIR$/theme/G 公共页面/更改手机号-第二步.html" />
+      <change beforePath="$PROJECT_DIR$/theme/G 公共页面/跳转页.html" afterPath="$PROJECT_DIR$/theme/G 公共页面/跳转页.html" />
+      <change beforePath="$PROJECT_DIR$/theme/G 公告资讯/楼盘动态-公告列表页.html" afterPath="$PROJECT_DIR$/theme/G 公告资讯/楼盘动态-公告列表页.html" />
+      <change beforePath="$PROJECT_DIR$/theme/G 公告资讯/楼盘动态-公告详情页.html" afterPath="$PROJECT_DIR$/theme/G 公告资讯/楼盘动态-公告详情页.html" />
+      <change beforePath="$PROJECT_DIR$/theme/Z 主页面/index.html" afterPath="$PROJECT_DIR$/theme/Z 主页面/index.html" />
+      <change beforePath="$PROJECT_DIR$/theme/json/more.json" afterPath="" />
+    </list>
+    <list default="true" id="51024491-e873-40e2-810e-1727912a3665" name="默认的" comment="默认的">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change beforePath="$PROJECT_DIR$/cssControl/import.less" afterPath="$PROJECT_DIR$/cssControl/import.less" />
+      <change beforePath="$PROJECT_DIR$/js/addons/touch/move.js" afterPath="$PROJECT_DIR$/js/addons/touch/move.js" />
+      <change beforePath="$PROJECT_DIR$/theme/D 定制房/我要选房-选择房号.html" afterPath="$PROJECT_DIR$/theme/D 定制房/我要选房-选择房号.html" />
+    </list>
+    <ignored path="fjh_mobile_v2.0.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <file path="$PROJECT_DIR$/theme/Z 主页面/index.html" ignored="false" />
+    <file path="$PROJECT_DIR$/theme/G 个人中心/我的定制-项目详情.html" ignored="false" />
+    <file path="$PROJECT_DIR$/theme/D 定制房/我要选房-选择户型.html" ignored="false" />
+    <file path="$PROJECT_DIR$/theme/D 定制房/我要选房-选择付款方式.html" ignored="false" />
+    <file path="$PROJECT_DIR$/js/jQuery1.12.3-min.js" ignored="false" />
+    <file path="$PROJECT_DIR$/js/zepto.min.js" ignored="false" />
+    <file path="$PROJECT_DIR$/js/public.js" ignored="false" />
+    <file path="$PROJECT_DIR$/theme/D 定制房/我要选房-选择房号_test.html" ignored="false" />
+    <file path="$PROJECT_DIR$/theme/D 定制房/定制房.html" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="fjh_mobile_v2.0" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>checkbox</find>
+      <find>next-btn</find>
+      <find>scalable</find>
+      <find>.select-num-box</find>
+      <find>console</find>
+      <find>pay-msg</find>
+      <find>line</find>
+      <find>linear-gradient</find>
+      <find>pay-type</find>
+      <find>select-num-box</find>
+      <find>a.def.zoom_str</find>
+      <find>move_str</find>
+      <find>bottom-msg</find>
+      <find>t.animate</find>
+      <find>floor</find>
+      <find>item</find>
+      <find>cat</find>
+      <find>floor-num</find>
+      <find>.dz-num-wrap</find>
+      <find>$targetObj</find>
+      <find>.item</find>
+      <find>transformCss</find>
+      <find>select-descri</find>
+      <find>.barnner</find>
+      <find>.tit</find>
+      <find>house-select-wrap</find>
+      <find>售房部</find>
+      <find>label</find>
+      <find>.rule-label</find>
+      <find>rule-label</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>radio</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Push.Settings">
+    <option name="myUpdateMethod" value="REBASE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/theme/D 定制房/定制房-选择楼栋.html" />
+        <option value="$PROJECT_DIR$/theme/D 定制房/我要选房-选择楼层和房源.html" />
+        <option value="$PROJECT_DIR$/theme/D 定制房/viewer.html" />
+        <option value="$PROJECT_DIR$/js/addons/viewer/viewer1.css" />
+        <option value="$PROJECT_DIR$/js/addons/viewer/viewer1.js" />
+        <option value="$PROJECT_DIR$/js/addons/viewer/viwer1.css" />
+        <option value="$PROJECT_DIR$/js/addons/viewer/viewer.css" />
+        <option value="$PROJECT_DIR$/js/addons/viewer/viewer.min.css" />
+        <option value="$PROJECT_DIR$/js/addons/viewer/viewer.min.js" />
+        <option value="$PROJECT_DIR$/js/addons/viewer/viewer.js" />
+        <option value="$PROJECT_DIR$/css/house.css" />
+        <option value="$PROJECT_DIR$/js/addons/countTimer/jquery.countdown.js" />
+        <option value="$PROJECT_DIR$/css/myProject.less" />
+        <option value="$PROJECT_DIR$/theme/G 个人中心/我的定制-项目详情.html" />
+        <option value="$PROJECT_DIR$/css/public.css" />
+        <option value="$PROJECT_DIR$/theme/D 定制房/我要定制-选择楼栋和房源.html" />
+        <option value="$PROJECT_DIR$/theme/D 定制房/我要报名-选择意向户型.html" />
+        <option value="$PROJECT_DIR$/theme/D 定制房/我要选房-选择户型.html" />
+        <option value="$PROJECT_DIR$/theme/D 定制房/定制房-定制优惠列表.html" />
+        <option value="$PROJECT_DIR$/theme/D 定制房/定制房-参与认筹优惠活动.html" />
+        <option value="$PROJECT_DIR$/theme/D 定制房/我要定制-查看我的定制.html" />
+        <option value="$PROJECT_DIR$/theme/D 定制房/我要选房-选择付款方式.html" />
+        <option value="$PROJECT_DIR$/.git/config" />
+        <option value="$PROJECT_DIR$/theme/D 定制房/定制房-定制优惠详情.html" />
+        <option value="$PROJECT_DIR$/css/main.less" />
+        <option value="$PROJECT_DIR$/theme/D 定制房/我要选房-选择楼栋_备份.html" />
+        <option value="$PROJECT_DIR$/theme/D 定制房/我要选房-排队中.html" />
+        <option value="$PROJECT_DIR$/theme/D 定制房/我要选房-选择楼栋.html" />
+        <option value="$PROJECT_DIR$/theme/D 定制房/我要选房-选择楼层和房号.html" />
+        <option value="$PROJECT_DIR$/theme/G 公共页面/加载页.html" />
+        <option value="$PROJECT_DIR$/css/public.less" />
+        <option value="$PROJECT_DIR$/theme/D 定制房/test.html" />
+        <option value="$PROJECT_DIR$/theme/D 定制房/我要选房-选择房号.html" />
+        <option value="$PROJECT_DIR$/js/addons/touch/move.js" />
+        <option value="$PROJECT_DIR$/theme/D 定制房/我要选房-选择房号_test.html" />
+        <option value="$PROJECT_DIR$/cssControl/import.less" />
+        <option value="$PROJECT_DIR$/theme/D 定制房/售房部-选择付款方式.html" />
+        <option value="$PROJECT_DIR$/css/house.less" />
+        <option value="$PROJECT_DIR$/theme/D 定制房/定制房.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="203" />
+    <option name="y" value="43" />
+    <option name="width" value="1647" />
+    <option name="height" value="942" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="fjh_mobile_v2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fjh_mobile_v2.0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fjh_mobile_v2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fjh_mobile_v2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fjh_mobile_v2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fjh_mobile_v2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="theme" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="159" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="159" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="196" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1209" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="161" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="154" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="198" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1210" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Volumes/文件/项目/fjh_mobile_v2.0/css/reg.less" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
+    <property name="LayoutCode.rearrangeEntriesJavaScript 1.5" value="false" />
+    <property name="LayoutCode.rearrangeEntriesHTML" value="true" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
+      <recent name="$PROJECT_DIR$/images/icon" />
+      <recent name="$PROJECT_DIR$/theme/D 定制房" />
+      <recent name="$PROJECT_DIR$/css" />
+      <recent name="$PROJECT_DIR$/images/house" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/theme" />
+      <recent name="$PROJECT_DIR$/js/addons/dropload" />
+      <recent name="$PROJECT_DIR$/images" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://192.168.1.254/theme/D 定制房/我要选房-选择房号.html" />
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="FirefoxRemoteDebugType" factoryName="Firefox Remote">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="51024491-e873-40e2-810e-1727912a3665" name="默认的" comment="" />
+      <changelist id="51fcb006-c793-4232-bf4a-0e55fc3242e3" name="New changelist" comment="" />
+      <created>1489397711264</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1489397711264</updated>
+      <workItem from="1501636202435" duration="53000" />
+      <workItem from="1504690249041" duration="73000" />
+      <workItem from="1505966455615" duration="1566000" />
+      <workItem from="1507626361531" duration="1699000" />
+      <workItem from="1507684723327" duration="4831000" />
+      <workItem from="1507689686821" duration="298000" />
+      <workItem from="1507690024020" duration="53000" />
+      <workItem from="1507690096856" duration="828000" />
+      <workItem from="1507770828010" duration="533000" />
+      <workItem from="1507796066086" duration="2313000" />
+      <workItem from="1507857427003" duration="22808000" />
+      <workItem from="1508116790662" duration="15229000" />
+      <workItem from="1508220634023" duration="3280000" />
+      <workItem from="1508729510581" duration="4509000" />
+      <workItem from="1508824284112" duration="13167000" />
+      <workItem from="1508894203441" duration="3052000" />
+      <workItem from="1509067808596" duration="11499000" />
+      <workItem from="1509267905324" duration="1273000" />
+      <workItem from="1509432838379" duration="1598000" />
+      <workItem from="1509499096245" duration="910000" />
+      <workItem from="1509503204052" duration="710000" />
+      <workItem from="1509603326628" duration="834000" />
+      <workItem from="1509696341867" duration="644000" />
+      <workItem from="1509699065003" duration="568000" />
+      <workItem from="1511337966005" duration="5768000" />
+      <workItem from="1511400335587" duration="32622000" />
+      <workItem from="1511489515842" duration="16789000" />
+      <workItem from="1511745484028" duration="20442000" />
+      <workItem from="1511858230346" duration="3305000" />
+      <workItem from="1511918083283" duration="21779000" />
+      <workItem from="1512004568689" duration="13281000" />
+      <workItem from="1512437592224" duration="9000" />
+      <workItem from="1512438783384" duration="950000" />
+      <workItem from="1512956694490" duration="611000" />
+      <workItem from="1512959881658" duration="697000" />
+      <workItem from="1514256537972" duration="792000" />
+      <workItem from="1515577762226" duration="644000" />
+      <workItem from="1515639341661" duration="83000" />
+      <workItem from="1515639554312" duration="1513000" />
+      <workItem from="1521009884748" duration="1435000" />
+      <workItem from="1521089492674" duration="26000" />
+      <workItem from="1521090563031" duration="39000" />
+      <workItem from="1521099941570" duration="594000" />
+      <workItem from="1522222702896" duration="266000" />
+    </task>
+    <task id="LOCAL-00054" summary="房计划2.0微信">
+      <created>1493475155595</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1493475155595</updated>
+    </task>
+    <task id="LOCAL-00055" summary="房计划2.0微信">
+      <created>1493475275487</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1493475275487</updated>
+    </task>
+    <task id="LOCAL-00056" summary="房计划2.0微信">
+      <created>1493477866214</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1493477866214</updated>
+    </task>
+    <task id="LOCAL-00057" summary="房计划2.0微信">
+      <created>1493479057283</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1493479057283</updated>
+    </task>
+    <task id="LOCAL-00058" summary="房计划2.0微信">
+      <created>1493479805529</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1493479805529</updated>
+    </task>
+    <task id="LOCAL-00059" summary="房计划2.0微信">
+      <created>1493480716811</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1493480716811</updated>
+    </task>
+    <task id="LOCAL-00060" summary="房计划2.0微信">
+      <created>1493481518171</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1493481518171</updated>
+    </task>
+    <task id="LOCAL-00061" summary="房计划">
+      <created>1494907023724</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1494907023725</updated>
+    </task>
+    <task id="LOCAL-00062" summary="房计划2.0微信">
+      <created>1495004387539</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1495004387539</updated>
+    </task>
+    <task id="LOCAL-00063" summary="房计划2.0微信">
+      <created>1496979452141</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1496979452141</updated>
+    </task>
+    <task id="LOCAL-00064" summary="房计划2.0微信">
+      <created>1496979504875</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1496979504875</updated>
+    </task>
+    <task id="LOCAL-00065" summary="房计划2.0微信">
+      <created>1497511448377</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1497511448377</updated>
+    </task>
+    <task id="LOCAL-00066" summary="默认的">
+      <created>1507689438299</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1507689438299</updated>
+    </task>
+    <task id="LOCAL-00067" summary="默认的">
+      <created>1507690442148</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1507690442149</updated>
+    </task>
+    <task id="LOCAL-00068" summary="默认的">
+      <created>1508141736041</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1508141736041</updated>
+    </task>
+    <task id="LOCAL-00069" summary="New changelist">
+      <created>1508141771766</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1508141771766</updated>
+    </task>
+    <task id="LOCAL-00070" summary="New changelist">
+      <created>1508141802611</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1508141802611</updated>
+    </task>
+    <task id="LOCAL-00071" summary="默认的">
+      <created>1508141896592</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1508141896592</updated>
+    </task>
+    <task id="LOCAL-00072" summary="默认的">
+      <created>1508730232763</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1508730232763</updated>
+    </task>
+    <task id="LOCAL-00073" summary="默认的">
+      <created>1508738244231</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1508738244231</updated>
+    </task>
+    <task id="LOCAL-00074" summary="默认的">
+      <created>1508828870763</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1508828870763</updated>
+    </task>
+    <task id="LOCAL-00075" summary="默认的">
+      <created>1508834691504</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1508834691504</updated>
+    </task>
+    <task id="LOCAL-00076" summary="默认的">
+      <created>1508836469806</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1508836469806</updated>
+    </task>
+    <task id="LOCAL-00077" summary="默认的">
+      <created>1508837673301</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1508837673301</updated>
+    </task>
+    <task id="LOCAL-00078" summary="默认的">
+      <created>1509083532136</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1509083532136</updated>
+    </task>
+    <task id="LOCAL-00079" summary="默认的">
+      <created>1509433698571</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1509433698571</updated>
+    </task>
+    <task id="LOCAL-00080" summary="New changelist">
+      <created>1509499163086</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1509499163086</updated>
+    </task>
+    <task id="LOCAL-00081" summary="默认的">
+      <created>1509603576340</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1509603576341</updated>
+    </task>
+    <task id="LOCAL-00082" summary="默认的">
+      <created>1511751375057</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1511751375064</updated>
+    </task>
+    <task id="LOCAL-00083" summary="默认的">
+      <created>1511752899047</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1511752899047</updated>
+    </task>
+    <task id="LOCAL-00084" summary="默认的">
+      <created>1511755354988</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1511755354988</updated>
+    </task>
+    <task id="LOCAL-00085" summary="默认的">
+      <created>1511756249791</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1511756249791</updated>
+    </task>
+    <task id="LOCAL-00086" summary="New changelist">
+      <created>1511756266393</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1511756266394</updated>
+    </task>
+    <task id="LOCAL-00087" summary="New changelist">
+      <created>1511756280994</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1511756280995</updated>
+    </task>
+    <task id="LOCAL-00088" summary="New changelist">
+      <created>1511761754644</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1511761754644</updated>
+    </task>
+    <task id="LOCAL-00089" summary="默认的">
+      <created>1511763153466</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1511763153466</updated>
+    </task>
+    <task id="LOCAL-00090" summary="默认的">
+      <created>1511763349017</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1511763349017</updated>
+    </task>
+    <task id="LOCAL-00091" summary="默认的">
+      <created>1511765200223</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1511765200223</updated>
+    </task>
+    <task id="LOCAL-00092" summary="默认的">
+      <created>1511860655384</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1511860655385</updated>
+    </task>
+    <task id="LOCAL-00093" summary="默认的">
+      <created>1511923919717</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1511923919718</updated>
+    </task>
+    <task id="LOCAL-00094" summary="默认的">
+      <created>1511923943554</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1511923943554</updated>
+    </task>
+    <task id="LOCAL-00095" summary="默认的">
+      <created>1511928614949</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1511928614950</updated>
+    </task>
+    <task id="LOCAL-00096" summary="默认的">
+      <created>1511931436871</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1511931436871</updated>
+    </task>
+    <task id="LOCAL-00097" summary="默认的">
+      <created>1511936073845</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1511936073845</updated>
+    </task>
+    <task id="LOCAL-00098" summary="默认的">
+      <created>1511936676648</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1511936676649</updated>
+    </task>
+    <task id="LOCAL-00099" summary="默认的">
+      <created>1511937785258</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1511937785258</updated>
+    </task>
+    <task id="LOCAL-00100" summary="默认的">
+      <created>1511938036271</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1511938036271</updated>
+    </task>
+    <task id="LOCAL-00101" summary="默认的">
+      <created>1514256973193</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1514256973193</updated>
+    </task>
+    <task id="LOCAL-00102" summary="默认的">
+      <created>1514257244327</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1514257244327</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="213973000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="203" y="43" width="1647" height="942" extended-state="0" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23133868" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36818182" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15738499" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24970761" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="更改" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36727688" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="SHOW_UNVERSIONED_FILES_WHILE_COMMIT" value="false" />
+    <MESSAGE value="房计划" />
+    <MESSAGE value="房计划2.0微信" />
+    <MESSAGE value="New changelist" />
+    <MESSAGE value="默认的" />
+    <option name="LAST_COMMIT_MESSAGE" value="默认的" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/css/reg.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/pinchzoom.min.js" />
+    <entry file="file://$PROJECT_DIR$/theme/G 公共页面/加载页.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="47" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/pinchzoom-master20160513/demo/index.html" />
+    <entry file="file://$PROJECT_DIR$/js/addons/viewer/viewer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55308">
+          <caret line="2522" column="99" lean-forward="false" selection-start-line="2522" selection-start-column="91" selection-end-line="2522" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/D 定制房/定制房-户型列表页.html" />
+    <entry file="file://$PROJECT_DIR$/theme/D 定制房/我要选房-选择房号_备份.html" />
+    <entry file="file://$PROJECT_DIR$/css/house.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/icon/pay_list.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/test/slider1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/test/slider2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/test/house2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/test/type11.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/test/house.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/zooming.js" />
+    <entry file="file://$PROJECT_DIR$/theme/D 定制房/test.html" />
+    <entry file="file://$PROJECT_DIR$/js/addons/touch/touch.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="1" column="681" lean-forward="false" selection-start-line="1" selection-start-column="681" selection-end-line="1" selection-end-column="681" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/addons/touch/cat.touchjs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cssControl/form.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/addons/touch/move.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="96" column="23" lean-forward="true" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/D 定制房/定制房-参与认筹优惠活动.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="79" column="14" lean-forward="false" selection-start-line="73" selection-start-column="8" selection-end-line="79" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/D 定制房/定制房-定制优惠列表.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="91" column="6" lean-forward="true" selection-start-line="91" selection-start-column="6" selection-end-line="91" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/D 定制房/定制房-定制优惠详情.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="76" column="24" lean-forward="false" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/D 定制房/定制房-定制列表.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2594">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/D 定制房/定制房-定制列表-scroll.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3454">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/D 定制房/我要定制-查看我的定制.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3212">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/D 定制房/我要定制-选择楼栋和房源.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3980">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/D 定制房/我要报名-线下pos机.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-398">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/D 定制房/我要报名-选择意向户型.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1604">
+          <caret line="86" column="46" lean-forward="false" selection-start-line="86" selection-start-column="46" selection-end-line="86" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/D 定制房/我要选房-排队中.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-196">
+          <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/D 定制房/我要选房-选择付款方式.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-497">
+          <caret line="55" column="78" lean-forward="true" selection-start-line="55" selection-start-column="78" selection-end-line="55" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/D 定制房/我要选房-选择户型.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1065">
+          <caret line="91" column="14" lean-forward="false" selection-start-line="91" selection-start-column="14" selection-end-line="91" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/D 定制房/我要选房-选择房号.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="357" column="19" lean-forward="false" selection-start-line="357" selection-start-column="19" selection-end-line="357" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/D 定制房/我要选房-选择房号_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1659">
+          <caret line="555" column="67" lean-forward="false" selection-start-line="555" selection-start-column="67" selection-end-line="555" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/D 定制房/我要选房-选择楼层和房号.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="237" column="14" lean-forward="true" selection-start-line="233" selection-start-column="8" selection-end-line="237" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/D 定制房/我要选房-选择楼栋.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-266">
+          <caret line="31" column="37" lean-forward="false" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/D 定制房/我要选房-选择楼栋_备份.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="66" column="14" lean-forward="true" selection-start-line="62" selection-start-column="8" selection-end-line="66" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/D 定制房/户型-全部户型.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2466">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/D 定制房/户型-户型详情.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1978">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/no-record.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/D 定制房/售房部-选择付款方式.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="32" column="35" lean-forward="false" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/G 公共页面/注册.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2244">
+          <caret line="102" column="8" lean-forward="false" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/G 公共页面/登陆.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cssControl/button.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="50" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cssControl/import.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/public.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="44" lean-forward="false" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/public.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3476">
+          <caret line="158" column="0" lean-forward="false" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/Z 主页面/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/D 定制房/定制房.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="290" column="36" lean-forward="true" selection-start-line="290" selection-start-column="36" selection-end-line="290" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/D 定制房/我要报名-选择付款方式.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="88" column="14" lean-forward="true" selection-start-line="88" selection-start-column="14" selection-end-line="88" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/house.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="231" column="87" lean-forward="false" selection-start-line="231" selection-start-column="73" selection-end-line="231" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

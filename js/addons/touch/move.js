@@ -74,7 +74,7 @@ $(function () {
             cat.touchjs.scaleVal=0.5;
             $targetObj.css({
                 'transform': 'scale(' + scale + ')',
-                '-webkit-transform': 'scale(' + scale + ')',
+                '-webkit-transform': 'scale(' + scale + ')'
             });
         }
 

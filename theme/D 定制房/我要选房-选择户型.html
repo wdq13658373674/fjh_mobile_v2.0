@@ -11,12 +11,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
     <link rel="stylesheet" href="../../css/public.css"/>
+
     <link rel="stylesheet" href="../../js/addons/swiper/swiper.min.css"/>
-
-    <!--viewer-->
-    <link rel="stylesheet" href="../../js/addons/viewer/viewer.css">
-    <script src="../../js/addons/viewer/viewer.js"></script>
-
     <link rel="stylesheet" href="../../css/house.css"/>
 </head>
 <body>
@@ -89,7 +85,11 @@
             </label>
         </div>
 
-        <button class="next-btn mb32">下一步</button>
+        <div class="fix-btn">
+            <div class="fix-box">
+                <button class="next-btn mb32">下一步</button>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -159,18 +159,6 @@
                 loop: true
                 ,autoplay:4000
                 ,pagination : '.swiper-pagination'
-            });
-
-            /*图片放大缩小*/
-            var viewer = new Viewer(document.getElementById('flash1'), {
-                url: 'data-original',
-                button:false,
-                title:false,
-                navbar:false,
-                toolbar:false
-            });
-            $('body').click(function(){
-                viewer.hide();
             });
         });
     })
